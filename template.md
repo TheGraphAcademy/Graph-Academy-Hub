@@ -1,31 +1,36 @@
-# Hello fellow contributor, we're glad to have you! 
-## Please use this template as a guide when creating pages for The Graph Academy Hub.
+# Content template GitHub
 
-All pages use Markdown (a cheat sheet for this can be found [here](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)) so be sure to use `.md` as the extension when creating the page file. If you do not wish to use markdown, you can also use [Editor.md](https://pandao.github.io/editor.md/en.html "Editor.md") a open-source online markdown editor.
+## Hello fellow contributor, we're glad to have you!
 
-### Click [here](/README.md) for an example of what a fully-fledged page looks like.
-------------------------
-# [Template Begin]
-# Page Heading [H1]
+### Please use this template as a guide when creating pages for The Graph Academy Hub.
 
-## Summary [H2]
+All pages use Markdown \(a cheat sheet for this can be found [here](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)\) so be sure to use `.md` as the extension when creating the page file. If you do not wish to use markdown, you can also use [Editor.md](https://pandao.github.io/editor.md/en.html) a open-source online markdown editor.
 
-*A summary of what the page is about.*
+#### Click [here](./) for an example of what a fully-fledged page looks like.
 
-## Features [H2]
+## \[Template Begin\]
 
-*Main features.*
+## Page Heading \[H1\]
 
-### Sub-feature 1 [H3]
+### Summary \[H2\]
 
-*Content for sub-feature 1.*
+_A summary of what the page is about._
 
-### Sub-feature 2 [H3]
+### Features \[H2\]
 
-*Content for sub-feature 2.*
+_Main features._
 
-## Resources [H2]
+#### Sub-feature 1 \[H3\]
 
-*Relevant resources like website, github link, blog posts etc go here*
+_Content for sub-feature 1._
 
-# [Template End]
+#### Sub-feature 2 \[H3\]
+
+_Content for sub-feature 2._
+
+### Resources \[H2\]
+
+_Relevant resources like website, github link, blog posts etc go here_
+
+## \[Template End\]
+
