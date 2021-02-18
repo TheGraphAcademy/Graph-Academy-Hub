@@ -4,6 +4,8 @@
 
 The goal of The Graph Academy is to establish a go-to-resource for essential information about The Graph Protocol. It is our vision to jointly build a vast knowledge base that empowers community members to master The Graph and to excel as participants in the protocol.
 
+![Academy](https://i.imgur.com/0zxHSbm.png)
+
 We seek to create this single source of essential information on The Graph through the following community initiatives:
 
 1. [The Graph Academy](https://thegraph.academy/ "The Graph Academy") for hands-on, interactive tutorials and detailed guides´as well as news and discussions on recent developments in the The Graph ecosystem and much more 
@@ -21,3 +23,5 @@ The Graphlets-Hub is a decentralized community documentation, which allows every
 1. Create a GitHub account or login with your existing account
 2. Navigate to the [Graphlets-Hub's GitHub repository](https://github.com/TheGraphAcademy/Graphlets-Hub/ "Graphlets-Hub's GitHub repository") 
 3. Make your first pull request. This [tutorial video](https://www.youtube.com/watch?v=YTbRzhQju4c&t=1s "tutorial video") explains how this is done.
+
+Members of the community will review your pull request and check it for accuracy.
