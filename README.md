@@ -16,3 +16,8 @@ You are now in the Docs section which is the core of The Graph Academy. The docu
 If you're new to The Graph Protocol, you can learn more about it in this introduction: [What the Graph Is](https://thegraph.com/docs/introduction#what-the-graph-is "What the Graph Is")
 
 ## How to make changes to the Graphlets-Hub
+The Graphlets-Hub is a decentralized community documentation, which allows everyone to contribute in a meaningful way. If you like to participate, follow these steps:
+
+1. Create a GitHub account or login with your existing account
+2. Navigate to the [Graphlets-Hub's GitHub repository](https://github.com/TheGraphAcademy/Graphlets-Hub/ "Graphlets-Hub's GitHub repository") 
+3. Make your first pull request. This [tutorial video](https://www.youtube.com/watch?v=YTbRzhQju4c&t=1s "tutorial video") explains how this is done.
