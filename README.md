@@ -9,7 +9,7 @@ The goal of The Graph Academy is to establish a single go-to-resource for essent
 We seek to create this single source of essential information on The Graph through the following community initiatives:
 
 1. [The Graph Academy](https://thegraph.academy/ "The Graph Academy") for hands-on, interactive tutorials and detailed guides´as well as news and discussions on recent developments in the The Graph ecosystem and much more 
-2. [The Graph Academy Hub](https://github.com/TheGraphAcademy/Graphlets-Hub/ "The Graph Academy Hub") for detailed documentation from the figureheads and experts in The Graph community as well as everyone else who likes to participate
+2. [The Graph Academy Hub](https://github.com/TheGraphAcademy/Graph-Academy-Hub/ "The Graph Academy Hub") for detailed documentation from the figureheads and experts in The Graph community as well as everyone else who likes to participate
 3. [The monthly Graphtronauts Podcast](https://soundcloud.com/graph-community-podcast "The Graphtronauts Podcast") with exciting interviews and in-depth discussions on the protocol we all have come to love so much
 4. [Graphtronauts Monthly Newsletter](https://thegraph.academy/ "Graphtronauts Monthly Newsletter") with insightful updates about The Graph and community initiatives in the ecosystem to keep you up to date
 
@@ -21,13 +21,13 @@ If you're new to The Graph Protocol, you can learn more about it in this introdu
 The The Graph Academy Hub is a decentralized community documentation, which allows everyone to contribute in a meaningful way. If you like to participate, follow these steps:
 
 1. Create a GitHub account or login with your existing account
-2. Navigate to the [The Graph Academy Hub's GitHub repository](https://github.com/TheGraphAcademy/Graphlets-Hub/ "The Graph Academy Hub's GitHub repository") 
+2. Navigate to the [The Graph Academy Hub's GitHub repository](https://github.com/TheGraphAcademy/Graph-Academy-Hub/ "The Graph Academy Hub's GitHub repository") 
 3. Make your first pull request. This [tutorial video](https://www.youtube.com/watch?v=YTbRzhQju4c&t=1s "tutorial video") explains how this is done.
 
 Members of the community will review your pull request and check it for accuracy.
 
 ## Guidelines for contributors
-To help you get started and to keep the content within this documentation uniform, we have created a [template](https://github.com/TheGraphAcademy/Graphlets-Hub/blob/main/template.md "template") you can use when adding your own pages to the repo.
+To help you get started and to keep the content within this documentation uniform, we have created a [template](https://github.com/TheGraphAcademy/Graph-Academy-Hub/blob/main/template.md "template") you can use when adding your own pages to the repo.
 
 To keep the community safe and secure, every contributor upholds the following guidelines:
 
