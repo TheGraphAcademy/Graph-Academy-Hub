@@ -1,6 +1,6 @@
 # Content template GitHub
 
-## Hello fellow contributor, we're glad to have you!
+## Hello fellow contributor, we're glad to have you! 
 
 ### Please use this template as a guide when creating pages for The Graph Academy Hub.
 
