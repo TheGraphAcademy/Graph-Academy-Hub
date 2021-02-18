@@ -1,4 +1,4 @@
-# Welcome to Graphlets-Hub
+# Welcome to the Graphlets-Hub
 
 **The Graphlets-Hub is a free, open-source and community-driven knowledge base and documentation initiative on [The Graph Protocol](https://thegraph.com "The Graph Protocol") kickstarted by The Graph Academy.**
 
@@ -25,3 +25,27 @@ The Graphlets-Hub is a decentralized community documentation, which allows every
 3. Make your first pull request. This [tutorial video](https://www.youtube.com/watch?v=YTbRzhQju4c&t=1s "tutorial video") explains how this is done.
 
 Members of the community will review your pull request and check it for accuracy.
+
+## Guidelines for contributors
+To help you get started and to keep the content within this documentation uniform, we have created a [template](https://github.com/TheGraphAcademy/Graphlets-Hub/blob/main/template.md "template") you can use when adding your own pages to the repo.
+
+
+
+
+
+## Contribution Guidelines
+
+In the interest of keeping the content on EthHub looking uniform, we have set up a template that you can use when adding your own pages to the github repo. You can find the template [here](https://github.com/ethhub-io/ethhub/tree/138f04335ad4a090d8eb370a9af90ee82fccf1a6/template.md).
+
+To keep the community safe and secure, every contributor upholds the following guidelines:
+
+* Include links to supporting sources/documentation and additional resources
+* No marketing or sponsored posts
+* No promotion of ICOs/token sales
+* No inappropriate content
+* No speculation, price talk, or OTC offers or requests
+* No offtopic-discussion
+* No hate speech
+* We reserve the right to moderate or remove posts that contain factual inaccuracies or unsubstantiated claims.
+
+**DISCLAIMER: The Graph Academy and the Graphlets-Hub are completely independent and open-source initiatives founded by The Graph community members. Nothing contained in this Github repository should be considered financial or investment advice - it is for informational purposes only.**
