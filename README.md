@@ -29,14 +29,6 @@ Members of the community will review your pull request and check it for accuracy
 ## Guidelines for contributors
 To help you get started and to keep the content within this documentation uniform, we have created a [template](https://github.com/TheGraphAcademy/Graphlets-Hub/blob/main/template.md "template") you can use when adding your own pages to the repo.
 
-
-
-
-
-## Contribution Guidelines
-
-In the interest of keeping the content on EthHub looking uniform, we have set up a template that you can use when adding your own pages to the github repo. You can find the template [here](https://github.com/ethhub-io/ethhub/tree/138f04335ad4a090d8eb370a9af90ee82fccf1a6/template.md).
-
 To keep the community safe and secure, every contributor upholds the following guidelines:
 
 * Include links to supporting sources/documentation and additional resources
