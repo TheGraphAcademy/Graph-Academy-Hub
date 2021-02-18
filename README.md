@@ -2,7 +2,7 @@
 
 **The Graphlets-Hub is a free, open-source and community-driven knowledge base and documentation initiative on [The Graph Protocol](https://thegraph.com "The Graph Protocol") kickstarted by The Graph Academy.**
 
-The goal of The Graph Academy is to establish a go-to-resource for essential information about The Graph Protocol. It is our vision to jointly build a vast knowledge base that empowers community members to master The Graph and to excel as participants in the protocol.
+The goal of The Graph Academy is to establish a single go-to-resource for essential information about The Graph Protocol. It is our vision to jointly build a vast knowledge base that empowers community members to master The Graph and to excel as participants in the protocol.
 
 ![Academy](https://i.imgur.com/0zxHSbm.png)
 
