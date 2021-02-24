@@ -1,0 +1,11 @@
+apiVersion: 1
+providers:
+  - name: 'default'
+    orgId: 1
+    folder: ''
+    folderUid: ''
+    type: file
+    allowUiUpdates: true
+    updateIntervalSeconds: 31536000
+    options:
+      path: /etc/grafana/provisioning/dashboards

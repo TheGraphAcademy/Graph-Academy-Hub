@@ -1,0 +1,923 @@
+{
+  "annotations": {
+    "list": [
+      {
+        "builtIn": 1,
+        "datasource": "-- Grafana --",
+        "enable": true,
+        "hide": true,
+        "iconColor": "rgba(0, 211, 255, 1)",
+        "name": "Annotations & Alerts",
+        "type": "dashboard"
+      }
+    ]
+  },
+  "editable": true,
+  "gnetId": null,
+  "graphTooltip": 0,
+  "id": 5,
+  "iteration": 1599009031505,
+  "links": [],
+  "panels": [
+    {
+      "datasource": "postgres",
+      "fieldConfig": {
+        "defaults": {
+          "custom": {
+            "align": "left",
+            "displayMode": "auto"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "name"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 242
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 11,
+        "w": 12,
+        "x": 0,
+        "y": 0
+      },
+      "id": 2,
+      "maxDataPoints": 1,
+      "options": {
+        "showHeader": false
+      },
+      "pluginVersion": "7.1.3",
+      "targets": [
+        {
+          "format": "table",
+          "group": [],
+          "metricColumn": "none",
+          "rawQuery": true,
+          "rawSql": "with d as\n (select sdd.id,\n         sdd.failed,\n         sdd.synced,\n         sdd.earliest_ethereum_block_number,\n         sdd.latest_ethereum_block_number,\n         sdd.entity_count,\n         sdd.health,\n         sdd.ethereum_head_block_number,\n         sdd.network,\n         sdd.node_id\n    from subgraphs.subgraph_deployment_detail sdd\n   where id = '[[deployment]]')\nselect 'ID' as name, d.id as value from d\n union all\nselect 'Health', d.health::text from d\n union all\nselect 'Synced', d.synced::text from d\n union all\nselect 'Network', d.network::text from d\n union all\nselect 'Earliest processed ethereum block',\n       to_char(d.earliest_ethereum_block_number, '999G999G999G999') from d\n union all\nselect 'Latest processed ethereum block',\n       to_char( d.latest_ethereum_block_number, '999G999G999G999') from d\n union all\nselect 'Chain head block',\n       to_char(d.ethereum_head_block_number, '999G999G999G999') from d\n union all\nselect 'Block lag',\n       (d.ethereum_head_block_number-d.latest_ethereum_block_number)::text\n  from d\n union all\nselect 'Entity count', d.entity_count::text from d\n union all\nselect 'Indexing node', d.node_id::text from d\n",
+          "refId": "A",
+          "select": [
+            [
+              {
+                "params": [
+                  "value"
+                ],
+                "type": "column"
+              }
+            ]
+          ],
+          "timeColumn": "time",
+          "where": [
+            {
+              "name": "$__timeFilter",
+              "params": [],
+              "type": "macro"
+            }
+          ]
+        }
+      ],
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "Summary",
+      "transformations": [],
+      "type": "table"
+    },
+    {
+      "cacheTimeout": null,
+      "columns": [],
+      "datasource": "prometheus",
+      "fieldConfig": {
+        "defaults": {
+          "custom": {}
+        },
+        "overrides": []
+      },
+      "fontSize": "100%",
+      "gridPos": {
+        "h": 9,
+        "w": 12,
+        "x": 12,
+        "y": 0
+      },
+      "id": 4,
+      "links": [],
+      "pageSize": null,
+      "showHeader": true,
+      "sort": {
+        "col": 2,
+        "desc": true
+      },
+      "styles": [
+        {
+          "alias": "Time",
+          "align": "auto",
+          "dateFormat": "YYYY-MM-DD HH:mm:ss",
+          "pattern": "Time",
+          "type": "hidden"
+        },
+        {
+          "alias": "Time spent",
+          "align": "auto",
+          "colorMode": null,
+          "colors": [
+            "rgba(245, 54, 54, 0.9)",
+            "rgba(237, 129, 40, 0.89)",
+            "rgba(50, 172, 45, 0.97)"
+          ],
+          "dateFormat": "YYYY-MM-DD HH:mm:ss",
+          "decimals": 2,
+          "mappingType": 1,
+          "pattern": "Value",
+          "thresholds": [],
+          "type": "number",
+          "unit": "s"
+        },
+        {
+          "alias": "Section",
+          "align": "auto",
+          "colorMode": null,
+          "colors": [
+            "rgba(245, 54, 54, 0.9)",
+            "rgba(237, 129, 40, 0.89)",
+            "rgba(50, 172, 45, 0.97)"
+          ],
+          "dateFormat": "YYYY-MM-DD HH:mm:ss",
+          "decimals": 2,
+          "mappingType": 1,
+          "pattern": "Metric",
+          "thresholds": [],
+          "type": "string",
+          "unit": "short"
+        }
+      ],
+      "targets": [
+        {
+          "expr": "sum(increase(deployment_sync_secs{deployment=\"[[deployment]]\"}[1y]))",
+          "instant": true,
+          "interval": "",
+          "legendFormat": "total",
+          "refId": "L"
+        },
+        {
+          "expr": "sum(increase(deployment_sync_secs{deployment=\"[[deployment]]\",section=\"unknown\"}[1y]))",
+          "instant": true,
+          "interval": "",
+          "legendFormat": "unknown",
+          "refId": "B"
+        },
+        {
+          "expr": "sum(increase(deployment_sync_secs{deployment=\"[[deployment]]\",section=\"scan_blocks\"}[1y]))",
+          "format": "time_series",
+          "instant": true,
+          "interval": "",
+          "legendFormat": "scan_blocks",
+          "refId": "A"
+        },
+        {
+          "expr": "sum(increase(deployment_sync_secs{deployment=\"[[deployment]]\",section=\"module_init\"}[1y]))",
+          "instant": true,
+          "interval": "",
+          "legendFormat": "module_init",
+          "refId": "C"
+        },
+        {
+          "expr": "sum(increase(deployment_sync_secs{deployment=\"[[deployment]]\",section=\"run_handler\"}[1y]))",
+          "instant": true,
+          "interval": "",
+          "legendFormat": "run_handler",
+          "refId": "D"
+        },
+        {
+          "expr": "sum(increase(deployment_sync_secs{deployment=\"[[deployment]]\",section=\"transact_block\"}[1y]))",
+          "instant": true,
+          "interval": "",
+          "legendFormat": "transact_block",
+          "refId": "G"
+        },
+        {
+          "expr": "sum(increase(deployment_sync_secs{deployment=\"[[deployment]]\",section=\"host_export_other\"}[1y]))",
+          "instant": true,
+          "interval": "",
+          "legendFormat": "host_export_other",
+          "refId": "F"
+        },
+        {
+          "expr": "sum(increase(deployment_sync_secs{deployment=\"[[deployment]]\",section=\"host_export_store_get\"}[1y]))",
+          "instant": true,
+          "interval": "",
+          "legendFormat": "host_export_store_get",
+          "refId": "E"
+        },
+        {
+          "expr": "sum(increase(deployment_sync_secs{deployment=\"[[deployment]]\",section=\"host_export_store_set\"}[1y]))",
+          "instant": true,
+          "interval": "",
+          "legendFormat": "host_export_store_set",
+          "refId": "H"
+        },
+        {
+          "expr": "sum(increase(deployment_sync_secs{deployment=\"[[deployment]]\",section=\"host_export_ethereum_call\"}[1y]))",
+          "instant": true,
+          "interval": "",
+          "legendFormat": "host_export_ethereum_call",
+          "refId": "I"
+        },
+        {
+          "expr": "sum(increase(deployment_sync_secs{deployment=\"[[deployment]]\",section=\"host_export_ipfs_cat\"}[1y]))",
+          "instant": true,
+          "interval": "",
+          "legendFormat": "host_export_ipfs_cat",
+          "refId": "J"
+        },
+        {
+          "expr": "sum(increase(deployment_sync_secs{deployment=\"[[deployment]]\",section=\"host_export_ipfs_map\"}[1y]))",
+          "instant": true,
+          "interval": "",
+          "legendFormat": "host_export_ipfs_map",
+          "refId": "K"
+        },
+        {
+          "expr": "sum(increase(deployment_sync_secs{deployment=\"[[deployment]]\",section=\"store_get_asc_new\"}[1y]))",
+          "instant": true,
+          "interval": "",
+          "legendFormat": "store_get_asc_new",
+          "refId": "M"
+        },
+        {
+          "expr": "sum(increase(deployment_sync_secs{deployment=\"[[deployment]]\",section=\"apply_entity_modifications\"}[1y]))",
+          "instant": true,
+          "interval": "",
+          "legendFormat": "apply_entity_modifications",
+          "refId": "N"
+        },
+        {
+          "expr": "sum(increase(deployment_sync_secs{deployment=\"[[deployment]]\",section=\"check_interface_entity_uniqueness\"}[1y]))",
+          "instant": true,
+          "interval": "",
+          "legendFormat": "check_interface_entity_uniqueness",
+          "refId": "O"
+        },
+        {
+          "expr": "sum(increase(deployment_sync_secs{deployment=\"[[deployment]]\",section=\"apply_entity_modifications_update\"}[1y]))",
+          "instant": true,
+          "interval": "",
+          "legendFormat": "apply_entity_modifications_update",
+          "refId": "P"
+        },
+        {
+          "expr": "sum(increase(deployment_sync_secs{deployment=\"[[deployment]]\",section=\"apply_entity_modifications_insert\"}[1y]))",
+          "instant": true,
+          "interval": "",
+          "legendFormat": "apply_entity_modifications_insert",
+          "refId": "Q"
+        },
+        {
+          "expr": "sum(increase(deployment_sync_secs{deployment=\"[[deployment]]\",section=\"as_modifications\"}[1y]))",
+          "instant": true,
+          "interval": "",
+          "legendFormat": "as_modifications",
+          "refId": "R"
+        },
+        {
+          "expr": "sum(increase(deployment_sync_secs{deployment=\"[[deployment]]\",section=\"entity_cache_evict\"}[1y]))",
+          "instant": true,
+          "interval": "",
+          "legendFormat": "entity_cache_evict",
+          "refId": "S"
+        }
+      ],
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "Time spent while indexing",
+      "transform": "timeseries_to_rows",
+      "type": "table-old"
+    },
+    {
+      "cacheTimeout": null,
+      "colorBackground": false,
+      "colorPostfix": false,
+      "colorValue": false,
+      "colors": [
+        "#299c46",
+        "rgba(237, 129, 40, 0.89)",
+        "#d44a3a"
+      ],
+      "datasource": "prometheus",
+      "fieldConfig": {
+        "defaults": {
+          "custom": {}
+        },
+        "overrides": []
+      },
+      "format": "s",
+      "gauge": {
+        "maxValue": 100,
+        "minValue": 0,
+        "show": false,
+        "thresholdLabels": false,
+        "thresholdMarkers": true
+      },
+      "gridPos": {
+        "h": 2,
+        "w": 12,
+        "x": 12,
+        "y": 9
+      },
+      "id": 6,
+      "interval": null,
+      "links": [],
+      "mappingType": 1,
+      "mappingTypes": [
+        {
+          "name": "value to text",
+          "value": 1
+        },
+        {
+          "name": "range to text",
+          "value": 2
+        }
+      ],
+      "maxDataPoints": 100,
+      "nullPointMode": "connected",
+      "nullText": null,
+      "pluginVersion": "6.4.3",
+      "postfix": "",
+      "postfixFontSize": "50%",
+      "prefix": "",
+      "prefixFontSize": "50%",
+      "rangeMaps": [
+        {
+          "from": "null",
+          "text": "N/A",
+          "to": "null"
+        }
+      ],
+      "sparkline": {
+        "fillColor": "rgba(31, 118, 189, 0.18)",
+        "full": false,
+        "lineColor": "rgb(31, 120, 193)",
+        "show": false,
+        "ymax": null,
+        "ymin": null
+      },
+      "tableColumn": "Value",
+      "targets": [
+        {
+          "expr": "deployment_get_entity_conn_secs{deployment=\"subgraphs\"}",
+          "format": "table",
+          "instant": true,
+          "interval": "",
+          "legendFormat": "",
+          "refId": "A"
+        }
+      ],
+      "thresholds": "",
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "Total time waiting for DB connection",
+      "type": "singlestat",
+      "valueFontSize": "50%",
+      "valueMaps": [
+        {
+          "op": "=",
+          "text": "N/A",
+          "value": "null"
+        }
+      ],
+      "valueName": "current"
+    },
+    {
+      "aliasColors": {},
+      "bars": false,
+      "cacheTimeout": null,
+      "dashLength": 10,
+      "dashes": false,
+      "datasource": "prometheus",
+      "fieldConfig": {
+        "defaults": {
+          "custom": {},
+          "links": []
+        },
+        "overrides": []
+      },
+      "fill": 8,
+      "fillGradient": 0,
+      "gridPos": {
+        "h": 7,
+        "w": 12,
+        "x": 0,
+        "y": 11
+      },
+      "hiddenSeries": false,
+      "id": 10,
+      "legend": {
+        "alignAsTable": true,
+        "avg": false,
+        "current": false,
+        "max": false,
+        "min": false,
+        "rightSide": false,
+        "show": true,
+        "total": true,
+        "values": true
+      },
+      "lines": true,
+      "linewidth": 1,
+      "links": [],
+      "nullPointMode": "connected",
+      "percentage": false,
+      "pluginVersion": "7.1.3",
+      "pointradius": 2,
+      "points": false,
+      "renderer": "flot",
+      "repeatDirection": "v",
+      "seriesOverrides": [],
+      "spaceLength": 10,
+      "stack": true,
+      "steppedLine": false,
+      "targets": [
+        {
+          "expr": "sum(increase(query_execution_time_count{deployment=\"[[deployment]]\"}[1m]))",
+          "format": "time_series",
+          "instant": false,
+          "interval": "",
+          "intervalFactor": 1,
+          "legendFormat": "{{subgraph_deployment}}",
+          "refId": "A"
+        }
+      ],
+      "thresholds": [],
+      "timeFrom": null,
+      "timeRegions": [],
+      "timeShift": null,
+      "title": "Queries  per minute",
+      "tooltip": {
+        "shared": true,
+        "sort": 2,
+        "value_type": "individual"
+      },
+      "type": "graph",
+      "xaxis": {
+        "buckets": null,
+        "mode": "time",
+        "name": null,
+        "show": true,
+        "values": []
+      },
+      "yaxes": [
+        {
+          "format": "locale",
+          "label": "",
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        },
+        {
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": false
+        }
+      ],
+      "yaxis": {
+        "align": false,
+        "alignLevel": null
+      }
+    }
+  ],
+  "schemaVersion": 26,
+  "style": "dark",
+  "tags": [],
+  "templating": {
+    "list": [
+      {
+        "allValue": null,
+        "current": {
+          "selected": true,
+          "text": "airswap/airswap (C)",
+          "value": "QmZ28XHpz1BNhR5jU2ABCqo2PqHutAPE8woaW1tYdDFDqV"
+        },
+        "datasource": "postgres",
+        "definition": "select\n  g.name || (case\n        when g.pending_version = v.id then ' (P)'\n        when g.current_version = v.id then ' (C)'\n        else ' (U)' end) as __text,\n  d.id as __value\nfrom subgraphs.subgraph_deployment as d,\n     subgraphs.subgraph_deployment_assignment as a,\n     subgraphs.subgraph_version as v,\n     subgraphs.subgraph as g\nwhere g.id = v.subgraph\n  and v.id in (g.pending_version, g.current_version)\n  and a.id = d.id\n  and v.deployment = d.id\n",
+        "hide": 0,
+        "includeAll": false,
+        "label": "Deployment ID",
+        "multi": false,
+        "name": "deployment",
+        "options": [
+          {
+            "selected": false,
+            "text": "0age/dharma-dai-subgraph (C)",
+            "value": "QmXVYLAKUi9miLv8sNzfu6iErA9wzuwVSNAK9WkbLTtfZq"
+          },
+          {
+            "selected": false,
+            "text": "2key/develop (C)",
+            "value": "QmddJ5VBFy3epn7MTzTXcX3UGjsoRqFAz7iCCm6qpSXANt"
+          },
+          {
+            "selected": false,
+            "text": "2key/prod (C)",
+            "value": "Qmbz837FhW5NfNm8d5wB8SNKkT4G5dRaMDc2bUWTk3BLz5"
+          },
+          {
+            "selected": false,
+            "text": "2key/staging (C)",
+            "value": "QmaQWtxt84ikw22MtAL8BWf54gfpBjDqhZC5k5KAzvqpvY"
+          },
+          {
+            "selected": false,
+            "text": "aave/protocol (C)",
+            "value": "QmU3qzWocSGuywhLonGiYmv22XS5sHatfEBp3vrJrRGdD6"
+          },
+          {
+            "selected": false,
+            "text": "aave/protocol-multy-kovan-raw (C)",
+            "value": "QmYXGUvEMwUnn4tGMpCs1b6mjc5XVndLrCsk8RyfYvwg87"
+          },
+          {
+            "selected": false,
+            "text": "aave/protocol-multy-raw (C)",
+            "value": "QmaTCNvS72s7gULbrnKE9D4WaDA3HBD7yXUA9d2wGJUXHQ"
+          },
+          {
+            "selected": false,
+            "text": "aave/protocol-raw (C)",
+            "value": "QmNQz8mhUnkAcfDDEuKZaVdBwffZtYfoUtbQ9NYpaSS1QH"
+          },
+          {
+            "selected": true,
+            "text": "airswap/airswap (C)",
+            "value": "QmZ28XHpz1BNhR5jU2ABCqo2PqHutAPE8woaW1tYdDFDqV"
+          },
+          {
+            "selected": false,
+            "text": "alekspickle/akropolis-os-beta (C)",
+            "value": "QmQdjJqHnD9B2ZfwrXG36PxzbzVfJwr3ciqd7aVZwSTAeg"
+          },
+          {
+            "selected": false,
+            "text": "alekspickle/bridge-dai (C)",
+            "value": "QmccF8PhARDFwKWgW9w48tYEadmJMfFvrvFqcKQK1zUi6t"
+          },
+          {
+            "selected": false,
+            "text": "aragon/aragon-court (C)",
+            "value": "QmSRVKKymWYF8u4Q3yhfVNRTz1Ss8CR7oQKmwrv7zKpSvC"
+          },
+          {
+            "selected": false,
+            "text": "aragon/aragon-tokens-mainnet (C)",
+            "value": "QmSEsvwHoQP1EEECNAaThwEnyaybTNr7r8h53ggJHHpPDz"
+          },
+          {
+            "selected": false,
+            "text": "aragon/aragon-voting-mainnet (C)",
+            "value": "QmbXPGpiUcPzNobopm535zmYkNyTpCXNUNw7PU1sUgErNJ"
+          },
+          {
+            "selected": false,
+            "text": "balancer-labs/balancer (C)",
+            "value": "QmeFg9CytoWn2ztZaMbrb4qyziDNFFx8V6BQxVF3YwqBos"
+          },
+          {
+            "selected": false,
+            "text": "balancer-labs/balancer-kovan (C)",
+            "value": "QmaoPaoGa6XWZvagWkbp82FcoJKpFUTtuAu44xgbtFVGxw"
+          },
+          {
+            "selected": false,
+            "text": "betoken/betoken-v1 (C)",
+            "value": "QmPYqLEMUDX41JaBnR4Fdg7fja7zPDVNVWRL9NUW5ysMoa"
+          },
+          {
+            "selected": false,
+            "text": "blocklytics/bancor-network (C)",
+            "value": "QmThQRVHJYU4aT1T4WPNa5cUc8qPS1ZFCHTUngYddFDxtx"
+          },
+          {
+            "selected": false,
+            "text": "blocklytics/curve (C)",
+            "value": "QmNs5fU6VkyGUsaNsa5sUHEKpzCA5AZWKJG8LaBrcCRpmW"
+          },
+          {
+            "selected": false,
+            "text": "blocklytics/ethereum-blocks (C)",
+            "value": "QmNtTKStPBm3bnghvyKLNY5B8etER8CG9ei9m7APT1kdx6"
+          },
+          {
+            "selected": false,
+            "text": "blocklytics/uniswap-ownership (C)",
+            "value": "QmP9MRvVzwHxr3sGvujihbvJzcTz2LYLMfi5DyihBg6VUd"
+          },
+          {
+            "selected": false,
+            "text": "centrifuge/tinlake (C)",
+            "value": "QmafHy6tioWo44WebZzteh7PS7gGe5t9jZ8v5uSWuZjJho"
+          },
+          {
+            "selected": false,
+            "text": "daostack/alchemy (C)",
+            "value": "QmNrxPs2GR7h6EF2MYbqALBDMYPpsNQw6SRm63EojQpqoe"
+          },
+          {
+            "selected": false,
+            "text": "daostack/master (C)",
+            "value": "QmVtAuJfvnPTUP3zdeMYKYbjhQeRy5x2m43mELEnr5Uxw6"
+          },
+          {
+            "selected": false,
+            "text": "daostack/v39_4_xdai (C)",
+            "value": "QmcU5BAviySfjpSpzauH2tVx9uetr1BmRGiZvuEMN7o6F4"
+          },
+          {
+            "selected": false,
+            "text": "decentraland/marketplace (C)",
+            "value": "QmPTCpBUWvMjm8y22anuKnnAWySRDRUZwGYRxshj42NmeG"
+          },
+          {
+            "selected": false,
+            "text": "destiner/dydx (C)",
+            "value": "QmSsv4sJNwyEkSmwWgErmHS4tneAuVEoChSRNcyXSE1mjG"
+          },
+          {
+            "selected": false,
+            "text": "destiner/fulcrum (C)",
+            "value": "QmUQrzb279Xcyrj5nfhTuZWY1cgqErychuFLdHAybCEqyc"
+          },
+          {
+            "selected": false,
+            "text": "destiner/maker (C)",
+            "value": "QmVGdeH6BcdJZxYGHs1ZrBTybS5ZxH2jbV7VT4ePB2M45j"
+          },
+          {
+            "selected": false,
+            "text": "drbh/etherdelta (C)",
+            "value": "Qmcex1gk3Fp6ZWn9xAZunx3UrH2jhkC5WkFgfQ6ygwgPTC"
+          },
+          {
+            "selected": false,
+            "text": "ensdomains/ens (C)",
+            "value": "QmY8Uzg61ttrogeTyCKLcDDR4gKNK44g9qkGDqeProkSHE"
+          },
+          {
+            "selected": false,
+            "text": "erasureprotocol/v130 (C)",
+            "value": "QmYJGbX9YEyxm4wudKRgWLTocJrigKmPd8GJ6MzvPEE3uv"
+          },
+          {
+            "selected": false,
+            "text": "futureswap/futureswap-v1 (C)",
+            "value": "QmbMg3FXtnUFHUhV4Hfy3qRzBDVFsj3YJ3ehKoAvrCPAUw"
+          },
+          {
+            "selected": false,
+            "text": "gnosis/conditional-tokens (C)",
+            "value": "QmQ37cHgUp8LtHBXNokTWGBu63UYbQ8PoQTyXZsbmGcW8Z"
+          },
+          {
+            "selected": false,
+            "text": "gnosis/omen (C)",
+            "value": "QmXFudsbz2zoRRhbtUf84wBWKT3pDDUsDEPNAcAiVZqFKp"
+          },
+          {
+            "selected": false,
+            "text": "gnosis/protocol (C)",
+            "value": "QmUwHbdySuzAQEVAv7wHGcnXm3nhDUGfRjEeCJpQvmFrJK"
+          },
+          {
+            "selected": false,
+            "text": "gnosis/protocol-staging (C)",
+            "value": "QmYKNmyZrYGzGF8rP61JSZr9rCrNgNmfDHB9kRB8J9jNpM"
+          },
+          {
+            "selected": false,
+            "text": "graphitetools/tokensets (C)",
+            "value": "QmZ6noN8Ek4dPpyvmSv4AdAtefVWtUsopBc8hFKFiWo1Uw"
+          },
+          {
+            "selected": false,
+            "text": "graphprotocol/compound-v2 (C)",
+            "value": "Qmb7e8bYoj93F9u33R3JY1H764626C8KHUgWMeVjWPiwdD"
+          },
+          {
+            "selected": false,
+            "text": "graphprotocol/everest (C)",
+            "value": "QmVsp1bC9rS3rf861cXgyvsqkpdsTXKSnS4729boXZvZyH"
+          },
+          {
+            "selected": false,
+            "text": "graphprotocol/everest-ropsten (C)",
+            "value": "QmW55SEoahmkP1r4qgyUo4qjonZnKTeXL41gBu5HhYjMgW"
+          },
+          {
+            "selected": false,
+            "text": "graphprotocol/uniswap (C)",
+            "value": "QmRuorV4Ck1sVdpfpAAwfYXnf3cfSkbDwZvvzWud9SH8Dg"
+          },
+          {
+            "selected": false,
+            "text": "ianlapham/uniswapbackup (C)",
+            "value": "QmPT53GALCGnMRH8iiaLTcy8VaVa1twwXCuWbFDZD5wmL9"
+          },
+          {
+            "selected": false,
+            "text": "jamesyoung/metacarteldao (C)",
+            "value": "QmPuLbUddJCGwVMVSppveeBPQjM27hZgUVBzL6uu2sn8NF"
+          },
+          {
+            "selected": false,
+            "text": "jasoons/always-for-sale-gallery (C)",
+            "value": "QmWNcVnVeLHW2QzbUvgEycYdPCNEict1Kd7n9p8ywNPTqD"
+          },
+          {
+            "selected": false,
+            "text": "knownorigin/known-origin (C)",
+            "value": "QmVAzo9aRgAFJuVBBvpFf1bJVs8N94JQ1eK8Tw4LUbEMBc"
+          },
+          {
+            "selected": false,
+            "text": "livepeer/livepeer (C)",
+            "value": "QmRkqEVeZ8bRmMfvBHJvoB4NbnPgXNcuszLZWNNF49skY8"
+          },
+          {
+            "selected": false,
+            "text": "lmcorbalan/lisandro-staging (C)",
+            "value": "QmT5MEDRx4ZaZ41pfn2X5gGBmwn21wYAQ8G6T7ikbXQYL1"
+          },
+          {
+            "selected": false,
+            "text": "melonproject/melon (C)",
+            "value": "QmSit3JaU9MzrRHFNVmzXC5jamuN8spSAUNGccLTzTLSrB"
+          },
+          {
+            "selected": false,
+            "text": "molochventures/moloch (C)",
+            "value": "QmTXzATwNfgGVukV1fX2T6xw9f6LAYRVWpsdXyRWzUR2H9"
+          },
+          {
+            "selected": false,
+            "text": "nategeier/mint-factory (C)",
+            "value": "QmYUdKTsNe9fDuWZMeXTAF7tKosSuokzgauHQSEUUU89B1"
+          },
+          {
+            "selected": false,
+            "text": "nategeier/mintbase (C)",
+            "value": "QmW5UcMhXwXrMqRpTdT3MKB7HYDxbsp5oe9Atkuh4sgAA5"
+          },
+          {
+            "selected": false,
+            "text": "nicosantangelo/watchtower (C)",
+            "value": "QmXB2mf78FTeXPFT7R7LUiUGNxypTbDnoMXYGu7oRAfh9z"
+          },
+          {
+            "selected": false,
+            "text": "odyssy-automaton/daohaus (C)",
+            "value": "QmNx64LzyVJezNEZ8L1qdTCwrT8Etr36QNkgAXaBUEo3qX"
+          },
+          {
+            "selected": false,
+            "text": "odyssy-automaton/daohaus-moloch-factory (C)",
+            "value": "Qmb3MXmt5jUxayREyDcmuc2TjxbnGXwrxEd86otfWRZQzK"
+          },
+          {
+            "selected": false,
+            "text": "opiumprotocol/opium-network (C)",
+            "value": "QmUEC2JTmMbqtHSpX4KUrEnpce6HkGGxHZjLF4vJxp5Ht4"
+          },
+          {
+            "selected": false,
+            "text": "pioul/uniswap (C)",
+            "value": "QmRpG1kMLJxnruvCScfs4JYPeHJEnJk1ZsEdhpfqaGPUHs"
+          },
+          {
+            "selected": false,
+            "text": "pooltogether/pooltogether (C)",
+            "value": "QmecFPxMeFeHETwJdrivTNecBTCko5nyRGgidRrVp4BSfc"
+          },
+          {
+            "selected": false,
+            "text": "protofire/augur-v2-kovan (C)",
+            "value": "QmVro9WqnLroiHv4dy8cf9S3kSqpBhmk7wvy2fpC9taWAM"
+          },
+          {
+            "selected": false,
+            "text": "protofire/dydx (C)",
+            "value": "QmQx9BPnarDU29c1vroiWCBd4wrZuMpngvA6peuSB2Kzy6"
+          },
+          {
+            "selected": false,
+            "text": "protofire/instadapp-defi-smart-accounts (C)",
+            "value": "QmVq7HyoYqCUuWLrwBk2YhRZeXfYhaCaJAXHgJHuA7fxMW"
+          },
+          {
+            "selected": false,
+            "text": "protofire/maker-protocol (C)",
+            "value": "QmZ6wJtb2yG4nKniDCh6uQJqPjWTiM3ERkaCHCv5HKNjmZ"
+          },
+          {
+            "selected": false,
+            "text": "protofire/makerdao-governance (C)",
+            "value": "Qmb3hd2hYd2nWFgcmRswykF1dUBSrDUrinYCgN1dmE1tNy"
+          },
+          {
+            "selected": false,
+            "text": "protofire/makerdao-governance-v1_5 (C)",
+            "value": "QmaRZtSupvqYtDfKTAZsnUGi8UwLbtjsYerBr96UQpgaCk"
+          },
+          {
+            "selected": false,
+            "text": "protofire/mkr-registry (C)",
+            "value": "QmT5JLPZYRfha8zaiZfJH49ZGoK21tpr9PAGk9oXrgyBHh"
+          },
+          {
+            "selected": false,
+            "text": "protofire/set-protocol (C)",
+            "value": "QmVYXg3EKqjJTZzr6SNCUw8JGRB4oCmg8vdRLdv5LCa9iH"
+          },
+          {
+            "selected": false,
+            "text": "sablierhq/sablier (C)",
+            "value": "QmPfFHJkvCHWbaXB15ULSmcB7vLMTxVJviyviaKjfYC2Xz"
+          },
+          {
+            "selected": false,
+            "text": "synthetixio-team/synthetix-exchanges (C)",
+            "value": "QmexdBRMy6o2WZDwcr57wqhXTCSSaTj1S7d7zcT5dWKuk8"
+          },
+          {
+            "selected": false,
+            "text": "synthetixio-team/synthetix-rates (C)",
+            "value": "QmNr2BTXWNskkRzqdTJTNKm61Uyos4qLbJn6XL2ws1de7j"
+          },
+          {
+            "selected": false,
+            "text": "taobun/last-mainnet (C)",
+            "value": "QmdPN9obE5Biui2o4Gtg9zPj8hgWjdxZVsTqcq8hP92K1R"
+          },
+          {
+            "selected": false,
+            "text": "wildcards-world/wildcards (C)",
+            "value": "QmeaTKtgmUG6Xz2GkzR3x7gi5y1MNnYMvbfW5WcwxSv7Mk"
+          }
+        ],
+        "query": "select\n  g.name || (case\n        when g.pending_version = v.id then ' (P)'\n        when g.current_version = v.id then ' (C)'\n        else ' (U)' end) as __text,\n  d.id as __value\nfrom subgraphs.subgraph_deployment as d,\n     subgraphs.subgraph_deployment_assignment as a,\n     subgraphs.subgraph_version as v,\n     subgraphs.subgraph as g\nwhere g.id = v.subgraph\n  and v.id in (g.pending_version, g.current_version)\n  and a.id = d.id\n  and v.deployment = d.id\n",
+        "refresh": 0,
+        "regex": "",
+        "skipUrlSync": false,
+        "sort": 5,
+        "tagValuesQuery": "",
+        "tags": [],
+        "tagsQuery": "",
+        "type": "query",
+        "useTags": false
+      }
+    ]
+  },
+  "time": {
+    "from": "now-6h",
+    "to": "now"
+  },
+  "timepicker": {
+    "refresh_intervals": [
+      "5s",
+      "10s",
+      "30s",
+      "1m",
+      "5m",
+      "15m",
+      "30m",
+      "1h",
+      "2h",
+      "1d"
+    ]
+  },
+  "timezone": "",
+  "title": "Deployment details",
+  "uid": "SjWDBHSGz",
+  "version": 14
+}
