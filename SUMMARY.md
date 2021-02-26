@@ -5,7 +5,7 @@
 
 ## Technical documentation <a id="technical-documentation"></a>
 
-* [Overview](network/test.md)
+* [Overview](technical-documentation/test.md)
 
 ## Network Roles <a id="network"></a>
 
