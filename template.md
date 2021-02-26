@@ -33,6 +33,8 @@ _Content for sub-feature 2._
 _Relevant resources like website, github link, blog posts etc go here_
 
 
+------------
+
 
 # Content template GitBook
 
