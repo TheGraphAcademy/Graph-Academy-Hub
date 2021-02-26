@@ -38,13 +38,13 @@ _Relevant resources like website, github link, blog posts etc go here_
 
 ### All documentation written in the GitHub repo is automatically synced to http://docs.thegraph.academy/
 
-#### Section overview
+## Section overview
 To create a section overview, create a new folder and include an empty README.md only with the title of the section.
 
-#### Content structure
+## Content structure
 Use SUMMARY.md to structure of the content over at docs.thegraph.academy and to include/exclude files. Use this file for defining pages and subpages etc.
 
-#### Description
+## Description
 
 Add the following before the first headline to create a description
 
@@ -54,7 +54,7 @@ description: Detailed documentation about the roles within The Graph Network
 ---
 ```
 
-#### Page link
+## Page link
 
 Add the following to create a page link
 
@@ -62,7 +62,7 @@ Add the following to create a page link
 {% page-ref page="../the-graph-ecosystem/organizational-structure/edge-and-node.md" %}
 ```
 
-#### Hints
+## Hints
 
 Add the following to create hints:
 ```
@@ -78,7 +78,7 @@ Add the following to create hints:
 {% hint style="info" %} Text. {% endhint %} {% endtab %}
 ```
 
-#### Tabs
+## Tabs
 Add tabs this way
 ```
 {% tabs %} {% tab title="Indexing rewards" %}
