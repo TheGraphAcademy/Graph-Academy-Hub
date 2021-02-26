@@ -32,5 +32,59 @@ _Content for sub-feature 2._
 
 _Relevant resources like website, github link, blog posts etc go here_
 
-## \[Template End\]
+
+
+# Content template GitBook
+
+### All documentation written in the GitHub repo is automatically synced to http://docs.thegraph.academy/
+
+#### Section overview
+To create a section overview, create a new folder and include an empty README.md only with the title of the section.
+
+#### Content structure
+Use SUMMARY.md to structure of the content over at docs.thegraph.academy and to include/exclude files. Use this file for defining pages and subpages etc.
+
+#### Description
+
+Add the following before the first headline to create a description
+
+```
+---
+description: Detailed documentation about the roles within The Graph Network
+---
+```
+
+#### Page link
+
+Add the following to create a page link
+
+```
+{% page-ref page="../the-graph-ecosystem/organizational-structure/edge-and-node.md" %}
+```
+
+#### Hints
+
+Add the following to create hints:
+```
+{% hint style="danger" %} Text. {% endhint %}
+```
+```
+{% hint style="success" %} Text. {% endhint %}
+```
+```
+{% hint style="success" %} Text. {% endhint %}
+```
+```
+{% hint style="info" %} Text. {% endhint %} {% endtab %}
+```
+
+#### Tabs
+Add tabs this way
+```
+{% tabs %} {% tab title="Indexing rewards" %}
+Text
+{% tab title="Query fee rebates" %}
+Text
+```
+
 
