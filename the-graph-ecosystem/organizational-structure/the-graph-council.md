@@ -12,11 +12,9 @@ The mandate of The Graph Council includes the following core functions:
 
 In the future, it is planned to further decentralize The Graph's governance, for instance by replacing individual members with nested multisigs or DAOs.
 
-#### The Graph ecosystem also consists of:
+## The Graph ecosystem also consists of:
 
 {% page-ref page="edge-and-node.md" %}
 
 {% page-ref page="the-graph-foundation.md" %}
-
-
 

@@ -6,5 +6,3 @@ This documentation is an in-depth tutorial on how to choose profitable indexers.
 
 {% page-ref page="tools.md" %}
 
-
-

@@ -6,17 +6,17 @@ First of all, the network page shows you the most important stats about the netw
 
 ## Metrics
 
-The metrics on the network page help Delegators to gain a quick overview of Indexers. 
+The metrics on the network page help Delegators to gain a quick overview of Indexers.
 
 ![Network Page of The Graph](../../../../.gitbook/assets/image%20%288%29.png)
 
 ### Fee and Reward cut Percentages
 
-`Fee and reward cuts` refer to the percentages Indexers deduct from the indexing and querying rewards that are distributed to their Delegators. 
+`Fee and reward cuts` refer to the percentages Indexers deduct from the indexing and querying rewards that are distributed to their Delegators.
 
 ![](../../../../.gitbook/assets/image%20%289%29.png)
 
-An indexer with a fee cut of 20% keeps a total of 20% of earned rewards for themselves. 
+An indexer with a fee cut of 20% keeps a total of 20% of earned rewards for themselves.
 
 {% hint style="info" %}
 **Example:** If the delegated stake earns a total of 100 GRT within a week of staking, an Indexer with a 20% cut will keep a total of 20 GRT for themselves.
@@ -34,7 +34,7 @@ Indexers have a `cooldown period` that determines how often they can change dele
 
 ### Stake Owned and Delegated
 
-Within the `stake owned` ****column Delegators can see how many GRT are deposited by the Indexer as collateral to prevent malicious behavior. 
+Within the `stake owned` _\*\*_column Delegators can see how many GRT are deposited by the Indexer as collateral to prevent malicious behavior.
 
 ![](../../../../.gitbook/assets/image%20%285%29.png)
 
@@ -42,9 +42,9 @@ Should an indexer behave in a harmful way, a percentage of his owned stake will 
 
 {% page-ref page="../../../indexers/" %}
 
-The higher the collateral, the more is at risk for the indexer. 
+The higher the collateral, the more is at risk for the indexer.
 
-In the next column, `stake delegated` , Delegators can see the amount of GRT that is delegated to one particular Indexer. In the image above, Delegators can see that 238 million GRT are delegated to the very first Indexer in the list. This means that community members think that this is a highly trustworthy and profitable indexer and have subsequently delegated a large amount of GRT with this indexer. 
+In the next column, `stake delegated` , Delegators can see the amount of GRT that is delegated to one particular Indexer. In the image above, Delegators can see that 238 million GRT are delegated to the very first Indexer in the list. This means that community members think that this is a highly trustworthy and profitable indexer and have subsequently delegated a large amount of GRT with this indexer.
 
 {% hint style="warning" %}
 We will see in the following why this conclusion could be superficial.
@@ -60,7 +60,7 @@ What is important to analyze is whether or not an Indexer is `overdelegated`. If
 
 ![](../../../../.gitbook/assets/1%20%281%29.jpg)
 
-This implies that the amount of GRT delegated to the Indexer is higher than the available delegation capacity the Indexer can still productively accept. 
+This implies that the amount of GRT delegated to the Indexer is higher than the available delegation capacity the Indexer can still productively accept.
 
 {% hint style="danger" %}
 If an Indexer is overdelegated, staking rewards are diluted.

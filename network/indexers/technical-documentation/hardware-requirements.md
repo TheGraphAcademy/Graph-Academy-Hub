@@ -11,8 +11,6 @@ In the following, you can find the hardware requirements to participate in the n
 
 > **Small** = enough to get started with indexing several subgraphs  
 > **Standard** = default setup  
-> **Medium** =  required for indexing 100 subgraphs and performing 200-500 requests per second  
+> **Medium** = required for indexing 100 subgraphs and performing 200-500 requests per second  
 > **Large** = Required for indexing all currently used subgraphs and serving requests for the related traffic
-
-
 

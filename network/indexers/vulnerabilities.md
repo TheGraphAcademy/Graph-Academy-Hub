@@ -1,8 +1,8 @@
 # Vulnerabilities
 
-### **Sandwich Attack**
+## **Sandwich Attack**
 
-_As described by_ [_Jim / Cryptovestor_](https://forum.thegraph.com/t/this-month-in-graph-indexing-january-edition/1041)_:_ By monitoring changes in Indexer cuts using [Stakemachine's dashboard](https://thegraph.stake-machine.com/?orgId=1&refresh=5m) a delegator, with the assistance of Indexer\_payne, picked up on a potential **Sandwich Attack**, first described and named by Indexer Nuviba. A genuine Sandwich Attack is a malicious attempt by an Indexer to pretend they will share the majority of rewards with their Delegators, but then take all the rewards for themselves and hide the fact that they did so. 
+_As described by_ [_Jim / Cryptovestor_](https://forum.thegraph.com/t/this-month-in-graph-indexing-january-edition/1041)_:_ By monitoring changes in Indexer cuts using [Stakemachine's dashboard](https://thegraph.stake-machine.com/?orgId=1&refresh=5m) a delegator, with the assistance of Indexer\_payne, picked up on a potential **Sandwich Attack**, first described and named by Indexer Nuviba. A genuine Sandwich Attack is a malicious attempt by an Indexer to pretend they will share the majority of rewards with their Delegators, but then take all the rewards for themselves and hide the fact that they did so.
 
 {% hint style="info" %}
 This variant of a **Sandwich Attack** was explained by nuviba.eth \| 0x62a0—fc8c4a

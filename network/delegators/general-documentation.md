@@ -2,13 +2,7 @@
 
 DRAFT
 
-
-
 Everything delegators need to know
-
-
-
-
 
 **What is query fee cut and indexing reward cut?**
 

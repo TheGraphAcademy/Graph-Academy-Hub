@@ -2,13 +2,13 @@
 
 The idea behind The Graph Network was conceived and given shape by [Graph Protocol, Inc.](graph-protocol-inc..md) After having launched the mainnet of The Graph Network on December 17th, 2020, Graph Protocol, Inc. decided to change its name to [**Edge & Node**](https://edgeandnode.com/). The intention behind the change of the name was to highlight the ongoing decentralization in the network. As such, Edge & Node is no longer the central team developing and promoting the protocol. Instead, Edge & Node will provide services to the ecosystem and will be involved with the protocol.
 
-#### The Graph ecosystem also consists of:
+### The Graph ecosystem also consists of:
 
 {% page-ref page="the-graph-foundation.md" %}
 
 {% page-ref page="the-graph-council.md" %}
 
-### Present team members of Edge & Node
+## Present team members of Edge & Node
 
 * **Jannis Pohlmann**, Tech Lead & Co-Founder. [Linkedin.com](https://de.linkedin.com/in/jannispohlmann)
 * **Brandon Ramirez**,  Research Lead & Co-Founder. [Linkedin.com](https://www.linkedin.com/in/1stramirez)
@@ -27,7 +27,7 @@ The idea behind The Graph Network was conceived and given shape by [Graph Protoc
 * **Zac Burns**, Software Engineer. [Linkedin.com](https://www.linkedin.com/in/zacktburns)
 * **Jackson Blazensky**, Protocol Researcher. [Linkedin.com](https://www.linkedin.com/in/jackson-blazensky-8409a183)
 
-### Former team members
+## Former team members
 
 None.
 

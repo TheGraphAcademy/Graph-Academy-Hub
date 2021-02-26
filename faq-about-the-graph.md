@@ -26,8 +26,6 @@ This FAQ is categorized into different topics to give you an easy overview. **Cl
 
    Other questions about The Graph that did not fit into a category.
 
-
-
 ### The Graph in general
 
 Everything you need to know about The Graph ecosystem.

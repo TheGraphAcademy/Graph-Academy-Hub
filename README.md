@@ -1,4 +1,4 @@
-# Welcome to the The Graph Hub
+# Welcome to The Graph
 
 **The Graph Hub is a free, open-source and community-driven knowledge base and documentation initiative on** [**The Graph Protocol**](https://thegraph.com) **kickstarted by The Graph Academy.**
 
@@ -45,3 +45,4 @@ To keep the community safe and secure, every contributor upholds the following g
 ### We reserve the right to moderate or remove posts that contain factual inaccuracies or unsubstantiated claims.
 
 **DISCLAIMER: The Graph Academy and The Graph Hub are free and open-source initiatives founded by The Graph community members. Nothing contained in this Github repository should be considered financial or investment advice - it is for informational purposes only.**
+
