@@ -1,4 +1,4 @@
-# Welcome to The Graph
+# Welcome to The Graph Hub
 
 **The Graph Hub is a free, open-source and community-driven knowledge base and documentation initiative on** [**The Graph Protocol**](https://thegraph.com) **kickstarted by The Graph Academy.**
 
