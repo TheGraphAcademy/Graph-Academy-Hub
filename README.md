@@ -1,6 +1,6 @@
 # Welcome to The Graph Hub
 
-**The Graph Hub is a free, open-source and community-driven knowledge base and documentation initiative on** [**The Graph Protocol**](https://thegraph.com) **kickstarted by The Graph Academy.**
+**The Graph Hub is a free, open-source and community-driven knowledge base and documentation initiative on** [**The Graph Protocol**](https://thegraph.com) **kickstarted by The Graph Academy.** 
 
 The goal of The Graph Academy is to establish a single go-to-resource for essential information about The Graph Protocol. It is our vision to jointly build a vast knowledge base that empowers community members to master The Graph and to excel as participants in the protocol.
 
