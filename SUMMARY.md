@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Welcome to The Graph](README.md)
+* [Welcome to The Graph Hub](README.md)
 * [FAQs](faq-about-the-graph.md)
 
 ## Technical documentation <a id="technical-documentation"></a>
