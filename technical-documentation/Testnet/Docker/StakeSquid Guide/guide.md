@@ -26,7 +26,7 @@ The good thing about Docker, is that the data is stored in named volumes on the 
 
 Note that you **need** access to an **Ethereum Archive Node that supports EIP-1898**. The setup for the archive node is **not included** in this docker setup.
 
-The minimum configuration should to be the CPX51 VPS at Hetzner. Feel free to sign up using our [referral link](https://hetzner.cloud/?ref=x2opTk2fg2fM) -- you can save 20€ and we get 10€ bonus for setting up some testnet nodes to support the network growth. :)
+The minimum configuration should to be the CPX51 VPS at Hetzner. Feel free to sign up using our [referral link](https://thegraph.academy/recommends/hetzner/) -- you can save 20€ and we get 10€ bonus for setting up some testnet nodes to support the network growth. :)
 
 ## Ethereum Archive Node Specs
 |                       | Minimum Specs    | Recommended Specs | Maxed out Specs   |
