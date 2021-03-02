@@ -5,8 +5,9 @@
 
 ## Technical documentation <a id="technical-documentation"></a>
 
-* [Overview](technical-documentation/test.md)
-* [TestPayne](technical-documentation/Testnet/Docker/StakeSquid%20Guide/guide.md)
+* [Testnet](technical-documentation/Testnet/)
+    * [Setting up a Testnet Indexer](technical-documentation/Testnet/Docker/StakeSquid%20Guide/guide.md)
+
 
 ## Network Roles <a id="network"></a>
 
