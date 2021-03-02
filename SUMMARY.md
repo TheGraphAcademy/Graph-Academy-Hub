@@ -6,7 +6,7 @@
 ## Technical documentation <a id="technical-documentation"></a>
 
 * [Testnet](technical-documentation/Testnet/)
-    * [Setting up a Testnet Indexer](technical-documentation/Testnet/Docker/StakeSquid%20Guide/guide.md)
+    * [Graph Protocol Testnet Docker Compose](technical-documentation/Testnet/Docker/StakeSquid%20Guide/guide.md)
 
 
 ## Network Roles <a id="network"></a>
