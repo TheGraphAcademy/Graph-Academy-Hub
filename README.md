@@ -40,6 +40,7 @@ To keep the community safe and secure, every contributor upholds the following g
 * No inappropriate content
 * No speculation, price talk, or OTC offers or requests
 * No offtopic-discussion
+* No affiliate links
 * No hate speech
 
 ### We reserve the right to moderate or remove posts that contain factual inaccuracies or unsubstantiated claims.
