@@ -286,7 +286,7 @@ You cannot edit your grand submission. The free to check if this becomes a featu
 
 > Do I need to create example content when I apply for a grant?
 
-Yes, this doing so is encouraged by the team. They suggest to make detailed plans and to set yourself KPIs.
+Yes, this doing so is encouraged by the team. They suggest to make detailed plans and to set yourself KPIs. It's also encouraged to create an MVP.
 
 ### The Graph explorer <a id="f3be"></a>
 
