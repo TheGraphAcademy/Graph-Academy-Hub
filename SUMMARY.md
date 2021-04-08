@@ -5,7 +5,9 @@
 
 ## Technical documentation <a id="technical-documentation"></a>
 
-* [Overview](technical-documentation/test.md)
+* [Testnet](technical-documentation/Testnet/)
+    * [Graph Protocol Testnet Docker Compose](technical-documentation/Testnet/Docker/StakeSquid%20Guide/guide.md)
+
 
 ## Network Roles <a id="network"></a>
 
@@ -18,6 +20,7 @@
   * [Technical Documentation](network/indexers/technical-documentation/README.md)
     * [Indexing & Querying](network/indexers/technical-documentation/example.md)
     * [Hardware requirements](network/indexers/technical-documentation/hardware-requirements.md)
+    * [IPFS hash converter](network/indexers/technical-documentation/get-ipfs-hash-from-deployment-id.md)
   * [Vulnerabilities](network/indexers/vulnerabilities.md)
 * [Curators](network/curators.md)
 * [Delegators](network/delegators/README.md)

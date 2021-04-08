@@ -5,7 +5,6 @@ Graph Protocol Testnet Docker Compose
 **Github repository**: https://github.com/StakeSquid/graphprotocol-testnet-docker
 **Setup video**: https://www.youtube.com/watch?v=bSr8L1GPk54
 
-
 A monitoring solution for hosting a graph node on a single Docker host with [Prometheus](https://prometheus.io/), [Grafana](http://grafana.org/), [cAdvisor](https://github.com/google/cadvisor),
 [NodeExporter](https://github.com/prometheus/node_exporter) and alerting with [AlertManager](https://github.com/prometheus/alertmanager).
 
@@ -30,7 +29,9 @@ The good thing about Docker, is that the data is stored in named volumes on the 
 
 Note that you **need** access to an **Ethereum Archive Node that supports EIP-1898**. The setup for the archive node is **not included** in this docker setup.
 
-The minimum configuration should to be the CPX51 VPS at Hetzner. Feel free to sign up using our [referral link](https://hetzner.cloud/?ref=x2opTk2fg2fM) -- you can save 20€ and we get 10€ bonus for setting up some testnet nodes to support the network growth. :)
+
+The minimum configuration should to be the CPX51 VPS at Hetzner. Feel free to sign up using our [referral link](https://thegraph.academy/recommends/hetzner/) -- you can save 20€ and we get 10€ bonus for setting up some testnet nodes to support the network growth. :)
+
 
 ## Ethereum Archive Node Specs
 |                       | Minimum Specs    | Recommended Specs | Maxed out Specs   |
@@ -203,6 +204,7 @@ To make yourself a mnemonic eth wallet you can go to this [website](https://ianc
 
 ## Run
 
+
 In the root of the repo, create (or edit, it's already there) a file called `start` and insert the following lines in it:
 
 ```bash
@@ -227,6 +229,7 @@ docker-compose up -d --remove-orphans --build $@
 ```
 
 **To start the software, just do `bash start`**
+
 
 `EMAIL` is only used as contact to create SSL certificates. Usually it doesn't receive any emails but is required by the certificate issuer.
 
@@ -257,6 +260,7 @@ To find out the `GEO_COORDINATES` you can search for an ip location website and 
 In case something goes wrong try to add `--force-recreate` at the end of the command, eg.: `bash start.sh --force-recreate`.
 
 Containers:
+
 
 * Graph Node (query node) `https://query.sld.tld`
 * Graph Node (index node) `https://index.sld.tld`
@@ -580,6 +584,7 @@ https://github.com/graphprotocol/indexer/blob/main/docs/errors.md
     
     To get rid of it, set `graph indexer rules set global allocationAmount 0.01`
 
+
 -   **How to see what subgraphs are available for indexing**
 
     All available subgraphs are located in grafana graphql dashboard.
@@ -587,3 +592,4 @@ https://github.com/graphprotocol/indexer/blob/main/docs/errors.md
     To convert subgraph id to ipfs hash you can use script ```subgraph_convert.py```
 
     Before running script install python3 module called ```base58```.
+
