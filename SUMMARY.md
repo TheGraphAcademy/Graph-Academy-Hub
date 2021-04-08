@@ -20,6 +20,7 @@
   * [Technical Documentation](network/indexers/technical-documentation/README.md)
     * [Indexing & Querying](network/indexers/technical-documentation/example.md)
     * [Hardware requirements](network/indexers/technical-documentation/hardware-requirements.md)
+    * [IPFS hash converter](network/indexers/technical-documentation/get-ipfs-hash-from-deployment-id.md)
   * [Vulnerabilities](network/indexers/vulnerabilities.md)
 * [Curators](network/curators.md)
 * [Delegators](network/delegators/README.md)
