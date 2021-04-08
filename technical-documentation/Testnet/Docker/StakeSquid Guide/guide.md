@@ -189,9 +189,9 @@ Under "Service > My Domains > Manage Domain > Manage Freenom DNS" you can add mo
 
 Create 3 subdomains, named as follows:
 ```
-index.domain.whatever
-query.domain.whatever
-dashboard.domain.whatever
+index.sld.tld
+query.sld.tld
+dashboard.sld.tld
 ```
 
 ## Create a mnemonic
@@ -258,7 +258,9 @@ docker-compose up -d --remove-orphans --build $@
 
 To find out the `GEO_COORDINATES` you can search for an ip location website and check your server exact coordinates.
 
-In case something goes wrong try to add `--force-recreate` at the end of the command, eg.: `bash start.sh --force-recreate`.
+`JSON_STRING` do not modify this, leave as it is.
+
+In case something goes wrong try to add `--force-recreate` at the end of the command, eg.: `bash start --force-recreate`.
 
 Containers:
 
