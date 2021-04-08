@@ -2,7 +2,8 @@
 Graph Protocol Testnet Docker Compose
 ========
 
-**Github repository**: https://github.com/StakeSquid/graphprotocol-testnet-docker
+**Github repository**: https://github.com/StakeSquid/graphprotocol-testnet-docker 
+
 **Setup video**: https://www.youtube.com/watch?v=bSr8L1GPk54
 
 A monitoring solution for hosting a graph node on a single Docker host with [Prometheus](https://prometheus.io/), [Grafana](http://grafana.org/), [cAdvisor](https://github.com/google/cadvisor),
