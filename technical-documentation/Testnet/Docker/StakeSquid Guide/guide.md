@@ -2,6 +2,10 @@
 Graph Protocol Testnet Docker Compose
 ========
 
+**Github repository**: https://github.com/StakeSquid/graphprotocol-testnet-docker
+**Setup video**: https://www.youtube.com/watch?v=bSr8L1GPk54
+
+
 A monitoring solution for hosting a graph node on a single Docker host with [Prometheus](https://prometheus.io/), [Grafana](http://grafana.org/), [cAdvisor](https://github.com/google/cadvisor),
 [NodeExporter](https://github.com/prometheus/node_exporter) and alerting with [AlertManager](https://github.com/prometheus/alertmanager).
 
@@ -44,6 +48,7 @@ The minimum configuration should to be the CPX51 VPS at Hetzner. Feel free to si
 |---------------------|-----------|--------|----------|---------------|
 | OpenEthereum 3.0.x  | yes ✔️    | no ⚠️  | yes ✔️   | 7 TB          |
 | OpenEthereum 3.1    | yes ✔️    | no ⚠️  | no ☠️    | 7 TB          |
+| OpenEthereum 3.2    | yes ✔️    | TBD ⚠️ | yes ✔️   | 7 TB          |
 | Parity 2.5.13       | yes ✔️    | yes ✔️ | no ☠️    | 7 TB          |
 | GETH                | no ⚠️     | yes ✔️ | yes ✔️   | 7 TB          |
 | TurboGETH           | no ⚠️     | no ⚠️  | yes ✔️   | 1.5 TB        |
@@ -198,31 +203,30 @@ To make yourself a mnemonic eth wallet you can go to this [website](https://ianc
 
 ## Run
 
-In the root of the repo, create a file called `start.sh` and insert the following lines in it:
+In the root of the repo, create (or edit, it's already there) a file called `start` and insert the following lines in it:
 
 ```bash
-EMAIL=my@email \
-INDEX_HOST=index.domain.whatever \
-QUERY_HOST=query.domain.whatever \
-GRAFANA_HOST=dashboard.domain.whatever \
+ADMIN_TOKEN="your-vector-admin-token" \
+EMAIL=email@sld.tld \
+INDEX_HOST=index.sld.tld \
+QUERY_HOST=query.sld.tld \
+GRAFANA_HOST=dashboard.sld.tld \
 ADMIN_USER=admin \
-ADMIN_PASSWORD=change_me \
-DB_HOST=postgres \
-AGENT_DB_HOST=postgres2 \
+ADMIN_PASSWORD=password \
 DB_USER=user \
-DB_PASS=db-password \
+DB_PASS=password \
 AGENT_DB_NAME=indexer-agent \
 GRAPH_NODE_DB_NAME=graph-node \
-MAINNET_RPC="mainnet:<ETH_RPC_URL>" \
-RINKEBY_RPC="<infura url>" \
-OPERATOR_SEED_PHRASE="<12 or 15 word private key seed phrase>" \
-STAKING_WALLET_ADDRESS=<0x...> \
-GEO_COORDINATES="<longitude latitude>" \
+ETHEREUM_RPC="mainnet:url:port" \
+RINKEBY_RPC="url:port" \
+OPERATOR_SEED_PHRASE="12 or 15 word phrase" \
+STAKING_WALLET_ADDRESS=0x... \
+GEO_COORDINATES="69.420 69.420" \
+JSON_STRING=$(jq -n --arg at "$ADMIN_TOKEN" --arg rr "$RINKEBY_RPC" --arg osp "$OPERATOR_SEED_PHRASE" '{"adminToken":$at,"chainProviders":{"4":$rr},"logLevel":"info","natsUrl":"nats://nats1.connext.provide.network:4222,nats://nats2.connext.provide.network:4222,nats://nats3.connext.provide.network:4222","authUrl":"https://messaging.connext.network","messagingUrl":"https://messaging.connext.network","production":true,"baseGasSubsidyPercentage":0,"allowedSwaps":[],"skipCheckIn":true,"mnemonic":$osp}') \
 docker-compose up -d --remove-orphans --build $@
-
 ```
 
-**To start the software, just do `bash start.sh`**
+**To start the software, just do `bash start`**
 
 `EMAIL` is only used as contact to create SSL certificates. Usually it doesn't receive any emails but is required by the certificate issuer.
 
@@ -254,8 +258,8 @@ In case something goes wrong try to add `--force-recreate` at the end of the com
 
 Containers:
 
-* Graph Node (query node) `https://query.mydomain.tk`
-* Graph Node (index node) `https://index.mydomain.tk`
+* Graph Node (query node) `https://query.sld.tld`
+* Graph Node (index node) `https://index.sld.tld`
 * Indexer Agent
 * Indexer Service
 * Indexer CLI
@@ -575,3 +579,11 @@ https://github.com/graphprotocol/indexer/blob/main/docs/errors.md
     This means that one of your rules has `allocationAmount null` — usually I've seen this being the `global` rule missing a value.
     
     To get rid of it, set `graph indexer rules set global allocationAmount 0.01`
+
+-   **How to see what subgraphs are available for indexing**
+
+    All available subgraphs are located in grafana graphql dashboard.
+
+    To convert subgraph id to ipfs hash you can use script ```subgraph_convert.py```
+
+    Before running script install python3 module called ```base58```.
