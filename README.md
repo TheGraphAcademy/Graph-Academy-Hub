@@ -43,7 +43,7 @@ To keep the community safe and secure, every contributor upholds the following g
 * No affiliate links
 * No hate speech
 
-### We reserve the right to moderate or remove posts that contain factual inaccuracies or unsubstantiated claims.
+### We reserve the right to moderate or remove posts that contain factual inaccuracies or unsubstantiated claims or violate the rules.
 
 **DISCLAIMER: The Graph Academy and The Graph Hub are free and open-source initiatives founded by The Graph community members. Nothing contained in this Github repository should be considered financial or investment advice - it is for informational purposes only.**
 
