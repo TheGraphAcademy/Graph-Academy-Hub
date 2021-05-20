@@ -5,9 +5,9 @@ A detailed step-by-step guide to deploying a full Graph Protocol Indexer stack o
 
 Navigate the guide using the contents links on the left.
 
-Note to reader: Although this guide as a whole is catered towards testnet deployment, the Architecture section is geared towards very serious, production-ready, mainnet-ready Graph deployments.
+Note to reader: Although this guide as a whole caters to testnet deployment, the Architecture section is geared towards very powerful, production-ready, mainnet-ready Graph infrastructure deployments.
 
-That being said, if you are deploying just for fun on testnet, a spare PC with 16 core cpu and lots of SSD storage is a very good place to start with learning about Indexing on The Graph.
+That being said, if you are deploying just for fun and/or the learning experience on testnet, a spare PC with 16 core cpu and lots of SSD storage is a very good place to start with learning about Indexing on The Graph.
 
 ## Reference Architecture
 For the purposes of this guide, the following reference architecture will be used for a very capable Graph indexing deployment that can comfortably handle many subgraphs and Ethereum chain growth for the next 6-12months or more:
