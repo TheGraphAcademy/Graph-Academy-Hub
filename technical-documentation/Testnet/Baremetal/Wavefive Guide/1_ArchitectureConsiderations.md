@@ -15,7 +15,7 @@ For the purposes of this guide, the following reference architecture will be use
 
 |Component   |Platform   |Spec   |
 |---|---|---|
-|graph-test-eth-0 (OpenEthereum 3.0.1, trace enabled)   |VM   |32vcpu, 64GBram, 12TB dedicated ZFS RaidZ2   |
+|graph-test-eth-0 (OpenEthereum 3.2.6, trace enabled)   |VM   |32vcpu, 64GBram, 12TB dedicated ZFS RaidZ2   |
 |graph-test-postgres-0 (graph-node, graph-agent DBs)   |VM   |32vcpu, 32GBram, Thin-provisioned 2TB shared ZFS RaidZ2   |
 |graph-test-node-0   |LXC   |8vcpu, 8GBram, Thin-provisioned 16GB shared ZFS RaidZ2   |
 |graph-test-node-1   |LXC   |8vcpu, 8GBram, Thin-provisioned 16GB shared ZFS RaidZ2   |
