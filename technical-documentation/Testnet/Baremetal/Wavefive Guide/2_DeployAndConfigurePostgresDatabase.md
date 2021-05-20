@@ -43,7 +43,7 @@ Success. You can now start the database server using:
 ## Configure Postgres for remote access
 If your database will be accessed remotely, you need to update the Postgres configuration to allow connections from remote hosts:
 
-Open `/etc/postgresql/13/main/postgresql.conf` in an editor, find `#listen_addresses = 'localhost'` and change it to `listen_addresses = '*'` (or if you have very specific hosts/IPs that will access the database, you can use those instead for additional security)
+Open `/etc/postgresql/13/main/postgresql.conf` in an editor, find `#listen_addresses = 'localhost'` and change it to `listen_addresses = '*'` (or if you have very specific interfaces that will allow access the database, you can use those instead for additional security)
 
 Open `/etc/postgresql/13/main/pg_hba.conf` in an editor and add `host  all  all 0.0.0.0/0 md5` to the top of the file. Again, if you want to restrict scope to specific subnets or IP addresses you can choose to do so here for additional security.
 

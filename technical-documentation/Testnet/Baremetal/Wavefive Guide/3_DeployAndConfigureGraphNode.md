@@ -99,15 +99,15 @@ Description=Graph Indexer Node
 After=network.target 
 Wants=network.target
 [Service]
-User=node
-Group=node
-WorkingDirectory=/home/node/
+User=user
+Group=user
+WorkingDirectory=/home/user/
 StandardOutput=journal
 StandardError=journal
 Type=simple
 Restart=always
 RestartSec=5
-ExecStart= /home/node/graph-startup.sh
+ExecStart= /home/user/graph-startup.sh
 
 [Install]
 WantedBy=default.target
