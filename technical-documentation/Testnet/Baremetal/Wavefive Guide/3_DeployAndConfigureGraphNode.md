@@ -7,9 +7,9 @@ This guide provides instructions for:
 The contents of this guide has been pulled together from a variety of sources. It has been tested on Ubuntu Server 18.04 and 20.04. Your mileage may vary. The exact versions of Graph components needed for mainnet/testnet are documented [here](https://github.com/graphprotocol/indexer/blob/main/docs/networks.md#testnet-httpstestnetthegraphcom-rinkeby) - many of the commands include specific versions of the Graph software and you will need to crosscheck and use the latest versions approved for the network you are deploying on. 
 
 ## Prerequisites
-First and foremost, it is assumed that you have [decided on your architecture](https://github.com/cryptovestor21/GraphProtocolGuides/wiki/Decide-on-your-Architecture) before starting this guide - VMs or containers, storage sizing and redundancy, Eth node choice. At all times, this guide will use the [reference architecture](https://github.com/cryptovestor21/GraphProtocolGuides/wiki/Decide-on-your-Architecture#reference-architecture) for all instructions. This guide is not intended for absolute beginners. It assumes some knowledge of using a linux terminal. Before you get started you will need to have your Ubuntu server instance up and running and up to date. Your server will require an internet connection. This guide assumes that you are logged into the server using a non-root account with SUDO access. Security will not be covered in this guide.
+First and foremost, it is assumed that you have decided on your architecture per the earlier part of this guide series - VMs or containers, storage sizing and redundancy, Eth node choice. At all times, this guide will use the reference architecture from the first page for all instructions. This guide is not intended for absolute beginners. It assumes some knowledge of using a linux terminal. Before you get started you will need to have your Ubuntu server instance up and running and up to date. Your server will require an internet connection. This guide assumes that you are logged into the server using a non-root account with SUDO access. Security will not be covered in this guide.
 
-Please note that in order to successfully build and compile this software you will need 4 cores and 2GB of memory as a minimum.
+Note: If you are using Linux containers and being economical with the resources you assign to them, you need to be sure that you supply them with enough memory and compute power to install and build rust packages, or you will see strange, un-diagnosable behavior when compiling the source code. 4 vcpu and 2GB of memory should be sufficient in most cases.
 
 ## graph-node installation
 Per the reference architecture, two of these nodes should be deployed. To avoid repetition, the guide will only run through the first install. We will also build a query-node, which is simply a graph-node with indexing turned off and graphql query logging turned on, for use in serving queries to consumers and analyzing the performance of served queries.
@@ -99,15 +99,15 @@ Description=Graph Indexer Node
 After=network.target 
 Wants=network.target
 [Service]
-User=node
-Group=node
-WorkingDirectory=/home/node/
+User=user
+Group=user
+WorkingDirectory=/home/user/
 StandardOutput=journal
 StandardError=journal
 Type=simple
 Restart=always
 RestartSec=5
-ExecStart= /home/node/graph-startup.sh
+ExecStart= /home/user/graph-startup.sh
 
 [Install]
 WantedBy=default.target
@@ -148,7 +148,7 @@ sudo systemctl enable graphindexer.service
 
 ## query-node installation
 
-Follow the [graph-node](https://github.com/cryptovestor21/GraphProtocolGuides/wiki/Deploy-and-Configure-Graph-Components#graph-node-installation) installation steps. Stop just before you hit the `Congifure graph-node startup script` section.
+Follow the graph-node installation steps above to build a query node. Stop just before you hit the `Congifure graph-node startup script` section.
 
 ### Configure query-node startup script
 
@@ -207,7 +207,7 @@ Mar 23 16:36:22.023 INFO Starting metrics server at: http://localhost:8040, comp
 Mar 23 16:36:22.023 INFO Starting GraphQL WebSocket server at: ws://localhost:8001, component: SubscriptionServer
 ```
 
-You can now use the [graph-node systemd configuration](https://github.com/cryptovestor21/GraphProtocolGuides/wiki/Deploy-and-Configure-graph-node-Components/_edit#graph-node-systemd-configuration) to automate restarting of the query node.
+You can now use the graph-node systemd configuration section of this guide to automate restarting of the query node.
 
 You have successfully built two graph-nodes and one query node.
 

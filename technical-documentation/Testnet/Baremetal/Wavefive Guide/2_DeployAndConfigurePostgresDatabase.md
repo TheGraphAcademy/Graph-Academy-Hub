@@ -9,7 +9,7 @@ This guide provides instructions for:
 The contents of this guide has been pulled together from a variety of sources. It has been tested on Ubuntu Server 18.04 and 20.04. Your mileage may vary. Most of the Postgres install detail has been pulled from koen84's install scripts and edited for manual installation - https://github.com/koen84/Graph-tools/blob/master/install/postgres.sh
 
 ## Prerequisites
-First and foremost, it is assumed that you have [decided on your architecture](https://github.com/cryptovestor21/GraphProtocolGuides/wiki/Decide-on-your-Architecture) before starting this guide - VMs or containers, storage sizing and redundancy, Eth node choice. At all times, this guide will use the [reference architecture](https://github.com/cryptovestor21/GraphProtocolGuides/wiki/Decide-on-your-Architecture#reference-architecture) for all instructions. This guide is not intended for absolute beginners. It assumes some knowledge of using a linux terminal. Before you get started you will need to have your Ubuntu server instance up and running and up to date. Your server will require an internet connection. This guide assumes that you are logged into the server using a non-root account with SUDO access. Security will not be covered in this guide.
+First and foremost, it is assumed that you have decided on your architecture per the earlier part of this guide series - VMs or containers, storage sizing and redundancy, Eth node choice. At all times, this guide will use the reference architecture from the first page for all instructions. This guide is not intended for absolute beginners. It assumes some knowledge of using a linux terminal. Before you get started you will need to have your Ubuntu server instance up and running and up to date. Your server will require an internet connection. This guide assumes that you are logged into the server using a non-root account with SUDO access. Security will not be covered in this guide.
 
 Additional packages that may need to be installed:
 gnupg - `sudo apt-get install gnupg`
@@ -43,7 +43,7 @@ Success. You can now start the database server using:
 ## Configure Postgres for remote access
 If your database will be accessed remotely, you need to update the Postgres configuration to allow connections from remote hosts:
 
-Open `/etc/postgresql/13/main/postgresql.conf` in an editor, find `#listen_addresses = 'localhost'` and change it to `listen_addresses = '*'` (or if you have very specific hosts/IPs that will access the database, you can use those instead for additional security)
+Open `/etc/postgresql/13/main/postgresql.conf` in an editor, find `#listen_addresses = 'localhost'` and change it to `listen_addresses = '*'` (or if you have very specific interfaces that will allow access the database, you can use those instead for additional security)
 
 Open `/etc/postgresql/13/main/pg_hba.conf` in an editor and add `host  all  all 0.0.0.0/0 md5` to the top of the file. Again, if you want to restrict scope to specific subnets or IP addresses you can choose to do so here for additional security.
 
