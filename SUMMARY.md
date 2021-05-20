@@ -7,6 +7,11 @@
 
 * [Testnet](technical-documentation/Testnet/)
     * [Graph Protocol Testnet Docker Compose](technical-documentation/Testnet/Docker/StakeSquid%20Guide/guide.md)
+    * [Graph Protocol Testnet Baremetal](technical-documentation/Testnet/Docker/technical-documentation/Testnet/Baremetal/Wavefive%20Guide/README.md)
+		* [Architecture Considerations](technical-documentation/Testnet/Baremetal/Wavefive%20Guide/1_ArchitectureConsiderations.md)
+		* [Deploy and Configure Database](technical-documentation/Testnet/Baremetal/Wavefive%20Guide/2_DeployAndConfigurePostgresDatabase.md)
+		* [Deploy and Configure Graph-node](Testnet/Baremetal/Wavefive%20Guide/3_DeployAndConfigureGraphNode.md)
+		* [Deploy and Configure Indexer stack](technical-documentation/Testnet/Baremetal/Wavefive%20Guide/4_DeployAndConfigureGraphIndexerStack.md)    
 
 
 ## Network Roles <a id="network"></a>
