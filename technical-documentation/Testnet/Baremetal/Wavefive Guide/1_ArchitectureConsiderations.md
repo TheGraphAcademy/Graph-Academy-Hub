@@ -1,4 +1,11 @@
-Note to reader: Although this guide as a whole is catered towards testnet deployment, this specific document is geared towards very serious, production-ready, mainnet-ready Graph deployments.
+Graph Protocol Testnet on Baremetal
+========
+
+A detailed step-by-step guide to deploying a full Graph Protocol Indexer stack on baremetal. This guide also includes some architectural advice to assist with resiliency and performance.
+
+Navigate the guide using the contents links on the left.
+
+Note to reader: Although this guide as a whole is catered towards testnet deployment, the Architecture section is geared towards very serious, production-ready, mainnet-ready Graph deployments.
 
 That being said, if you are deploying just for fun on testnet, a spare PC with 16 core cpu and lots of SSD storage is a very good place to start with learning about Indexing on The Graph.
 
