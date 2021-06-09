@@ -1,6 +1,13 @@
-Note to reader: Although this guide as a whole is catered towards testnet deployment, this specific document is geared towards very serious, production-ready, mainnet-ready Graph deployments.
+Graph Protocol Testnet on Baremetal
+========
 
-That being said, if you are deploying just for fun on testnet, a spare PC with 16 core cpu and lots of SSD storage is a very good place to start with learning about Indexing on The Graph.
+A detailed step-by-step guide to deploying a full Graph Protocol Indexer stack on baremetal. This guide also includes some architectural advice to assist with resiliency and performance.
+
+Navigate the guide using the contents links on the left.
+
+Note to reader: Although this guide as a whole caters to testnet deployment, the Architecture section is geared towards very powerful, production-ready, mainnet-ready Graph infrastructure deployments.
+
+That being said, if you are deploying just for fun and/or the learning experience on testnet, a spare PC with 16 core cpu and lots of SSD storage is a very good place to start with learning about Indexing on The Graph.
 
 ## Reference Architecture
 For the purposes of this guide, the following reference architecture will be used for a very capable Graph indexing deployment that can comfortably handle many subgraphs and Ethereum chain growth for the next 6-12months or more:
@@ -8,7 +15,7 @@ For the purposes of this guide, the following reference architecture will be use
 
 |Component   |Platform   |Spec   |
 |---|---|---|
-|graph-test-eth-0 (OpenEthereum 3.0.1, trace enabled)   |VM   |32vcpu, 64GBram, 12TB dedicated ZFS RaidZ2   |
+|graph-test-eth-0 (OpenEthereum 3.2.6, trace enabled)   |VM   |32vcpu, 64GBram, 12TB dedicated ZFS RaidZ2   |
 |graph-test-postgres-0 (graph-node, graph-agent DBs)   |VM   |32vcpu, 32GBram, Thin-provisioned 2TB shared ZFS RaidZ2   |
 |graph-test-node-0   |LXC   |8vcpu, 8GBram, Thin-provisioned 16GB shared ZFS RaidZ2   |
 |graph-test-node-1   |LXC   |8vcpu, 8GBram, Thin-provisioned 16GB shared ZFS RaidZ2   |

@@ -151,7 +151,7 @@ graph-indexer-service start \\
     --graph-node-status-endpoint http://graph-test-node-0:8030/graphql \\
     --ethereum-network rinkeby\\
     --ethereum http://graph-test-eth-0:8545/ \\
-    --mnemonic 'impose spin trophy spread sing pyramid adult solution ask theory strong army' \\
+    --mnemonic 'correct horse battery staple...' \\
     --indexer-address 0x70E77e6b48D8241fAc901Fbd60F43612f77D8088 \\
     --postgres-host graph-test-postgres-0 \\
     --postgres-port 5432 \\
