@@ -13,6 +13,8 @@
 		* [Deploy and Configure Graph-node](technical-documentation/Testnet/Baremetal/Wavefive%20Guide/3_DeployAndConfigureGraphNode.md)
 		* [Deploy and Configure Indexer stack](technical-documentation/Testnet/Baremetal/Wavefive%20Guide/4_DeployAndConfigureGraphIndexerStack.md)    
 
+* [Monitoring](technical-documentation/Monitoring/)
+    * [Ethereum Node Chainhead Monitoring - no third parties ](technical-documentation/Monintoring/LocalEthereumNodeChainheadMonitoring.md)
 
 ## Network Roles <a id="network"></a>
 
