@@ -38,7 +38,7 @@ To build the Grafana panel from scratch:
 
 You should now have a panel, with alerting for chainhead issues, that looks something like this:
 
-![Local%20Ethereum%20Node%20Monitoring%2012164f32641441ac8a62cb6e2f0b138d/Untitled.png](Local%20Ethereum%20Node%20Monitoring%2012164f32641441ac8a62cb6e2f0b138d/Untitled.png)
+![panel1.png](./panel1.png)
 
 The best way to test your alerting is to do so on testnet, by creating an eth node issue yourself (misconfiguration of the eth node in the graph-node config, for example) on a testnet deployment.
 
@@ -46,4 +46,4 @@ The best way to test your alerting is to do so on testnet, by creating an eth no
 
 You can create another chainhead monitoring panel to complement the one above - simply make a similar panel but use the basic metric `ethereum_chain_head_number` for a useful view of the chainhead, as seen by your graph-nodes:
 
-![Local%20Ethereum%20Node%20Monitoring%2012164f32641441ac8a62cb6e2f0b138d/Untitled%201.png](Local%20Ethereum%20Node%20Monitoring%2012164f32641441ac8a62cb6e2f0b138d/Untitled%201.png)
+![panel2.png](./panel2.png)
