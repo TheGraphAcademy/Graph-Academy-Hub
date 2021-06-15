@@ -1,6 +1,8 @@
+## Contributor Details
+This documentation was contributed by Jim Cousins at [wavefive.co](https://wavefive.co/). Wavefive provides consulting and active governance participation in Web3 and runs a Graph Indexing service since the original Graph testnet, "Mission Control."
+
 Graph Protocol Testnet on Baremetal
 ========
-
 A detailed step-by-step guide to deploying a full Graph Protocol Indexer stack on baremetal. This guide also includes some architectural advice to assist with resiliency and performance.
 
 Navigate the guide using the contents links on the left.
