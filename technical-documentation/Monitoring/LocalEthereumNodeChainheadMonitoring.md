@@ -1,8 +1,8 @@
 ## Contributor Details
 This documentation was contributed by [Jim Cousins](https://twitter.com/_cryptovestor) at [wavefive.co](https://wavefive.co/). Wavefive provides consulting and active governance participation in Web3 and runs a Graph Indexing service since the original Graph testnet, "Mission Control."
 
-# Local Ethereum Node Monitoring
-
+Local Ethereum Node Monitoring
+========
 ### Summary
 
 Monitoring the state of your Ethereum archive nodes, used by your Graph Protocol infrastructure, is extremely important. If your Ethereum nodes stop ingesting blocks, your entire Graph operation will cease to Index and you will quickly lose query business as your deployment begins to fall behind the chainhead. If you aren't monitoring the state of the chainhead on your nodes, you may not even be aware of an issue until you have lost significant query business. There are a couple of identified ways to implement this monitoring, each with their own tradeoffs:
