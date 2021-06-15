@@ -1,5 +1,7 @@
+{% hint style="info" %}
 ## Contributor Details
 This documentation was contributed by [Jim Cousins](https://twitter.com/_cryptovestor) at [wavefive.co](https://wavefive.co/). Wavefive provides consulting and active governance participation in Web3 and runs a Graph Indexing service since the original Graph testnet, "Mission Control."
+{% endhint %}
 
 Local Ethereum Node Monitoring
 ========
