@@ -233,7 +233,7 @@ In your profile dashboard, you’ll have dots \(purple for undelegating / green 
 
 ### Delegators Protocol Actions (by Indexer_Payne)
 
-> 1. How are rewards distributed? What is the current APY?
+> How are rewards distributed? What is the current APY?
 
 Rewards that come from the protocol inflation are first distributed proportional to the curation signal a subgraph has, then distributed proportional towards allocated stake on that subgraph.
 
@@ -252,7 +252,7 @@ You can calculate the APY by looking at the number of allocated stake versus the
 
 *Note that your APY as a delegator depends on the indexer’s rewards cut. Indexers take part of your rewards as their cut, but some of them may also give you some of their own rewards, in order to attract more delegators.*
 
-> 2. How does the rewards cuts system work?
+> How does the rewards cuts system work?
 
 From an indexer perspective, rewards are distributed proportionally to their active allocation. From that, the indexer gives away to delegators a percentage of the rewards, based on his cuts %.
 
@@ -265,45 +265,45 @@ When rewards are distributed between the indexer and his delegates, the total re
 
 You can play around with the tools pinned in the #delegators channels in the Discord server or in this [notion board](https://www.notion.so/Community-Guides-abbb10f4dba040d5ba81648ca093e70c "notion board"), especially the rewards calculators, since they give a much better insight into how the rewards are calculated and distributed.
 
-> 3. How to calculate my personal rewards?
+> How to calculate my personal rewards?
 
 You can check some of the community-made tools, for rewards projection. Note that rewards might get diluted over time, as more stake is allocated in the network.
 You can find the tools pinned in the #delegators channels in the Discord server, or in this [notion board](https://www.notion.so/thegraph/Community-Guides-abbb10f4dba040d5ba81648ca093e70c "notion board").
 
-> 4. When are rewards distributed
+> When are rewards distributed
 
 Indexer’s active allocations are continuously accruing rewards while they’re active. Rewards are collected by the indexers, and distributed whenever their allocations are closed. That happens either manually, whenever the indexer wants to force close them, or automatically every maximum 28 epochs - max allocation lifetime (right now, one epoch lasts for ~24h).
 
-> 5. Where do I see my rewards
+> Where do I see my rewards
 
 You can see your rewards in your profile/wallet dashboard, in the Network dApp.
 
 There are also some really great community-made tools you can check, the list is pinned in the #delegators channels in the Discord server or [here](https://www.notion.so/Community-Guides-abbb10f4dba040d5ba81648ca093e70c "here").
 
-> 6. Why are my rewards not increasing every day?
+> Why are my rewards not increasing every day?
 
 Read the 4th question and answer. To further add to that point, it’s also important to know that every time an indexer closes and reopens his allocation(s), it costs them quite a bit of money in terms of gas, to do so. With the current gas prices, it costs around $50 to close and another $50 reopen an allocation. Doing so daily, for 2 parallel allocations (default configuration for the indexers), means the indexers will be paying a lot more money than even their infrastructure costs per month, which is not reliable from an economic perspective.
 
 We’re working on a way to show the pending rewards (for the allocations that are still open and accruing rewards) in our Network dApp.
 
-> 7. How does the delegating/undelegating process work?
+> How does the delegating/undelegating process work?
 
 The current flow of the protocol actions is as follows:
 Wallet → Approve → Delegate → Undelegate → Wait for 28 days (undelegation period) → Withdraw → Wallet
 
-> . I undelegated, where are my tokens?
+> I undelegated, where are my tokens?
 
 You have to go through the 28 days undelegating period before you can withdraw your tokens back into your wallet. You cannot redelegate without going through the 28 days period.
 
-> 9. Will I still get rewards during the 28 days undelegation period?
+> Will I still get rewards during the 28 days undelegation period?
 
 During the undelegation period, you won’t be getting any rewards on the amount that you undelegated.
 
-> 10. Why do I have to send two transactions when delegating to an indexer?
+> Why do I have to send two transactions when delegating to an indexer?
 
 If you read the flow above, you’ll notice that there are two actions taken when delegating. First, there is an `approve()` transaction, that lets the protocol know it can spend your GRT. Second, there’s the `delegate()` transaction that will bind the tokens in the smart contract.
 
-> 11. I’m stuck on “Approving Funds” screen
+> I’m stuck on “Approving Funds” screen
 
 If you get stuck on the approving funds screen, you can check your metamask/etherscan if the `approve()` transaction went through and it’s confirmed. If that happened, you can close the delegation pane and try again.
 
@@ -311,15 +311,15 @@ We recently implemented a way to track the number of approved GRT, so you don’
 
 It also helps to restart the browser, as Metamask can get stuck and not connecting to the Ethereum Network properly.
 
-> 12. Can I use Ledger/Trezor hardware wallets in order to delegate or store my tokens?
+> Can I use Ledger/Trezor hardware wallets in order to delegate or store my tokens?
 
 Yes. Make sure you have the latest firmware version and the latest ETH app version installed, as well as contract interaction enabled in the ETH app settings on your device.
 
-> 13. Why is the gas cost so high?
+> Why is the gas cost so high?
 
 The gas price is not something that The Graph team has control over. Gas price goes up when the Ethereum network is congested or heavily used.
 
-> 14. Why do I have to wait for 28 days?
+> Why do I have to wait for 28 days?
 
 The undelegating/thawing period is there to avoid certain economic attacks from taking place. It has to coincide with the max allocation lifetime of 28 epochs.
 Given how the rewards system currently works, a shorter undelegating period would potentially allow delegation to be “double-counted” across multiple simultaneous allocations.
@@ -328,15 +328,15 @@ Given how the rewards system currently works, a shorter undelegating period woul
 
 – from Brandon during the AMA.
 
-> 15. Why can’t I redelegate without waiting
+> Why can’t I redelegate without waiting
 
 For the same reason stated above, the flow is designed to avoid certain economic attacks.
 
-> 16. Can the delegated GRT be slashed?
+> Can the delegated GRT be slashed?
 
 No, only indexers owned stake can be slashed.
 
-> 17. I’m using Brave browser. Why doesn’t it work?
+> I’m using Brave browser. Why doesn’t it work?
 
 You need to install MetaMask and switch to it as a default crypto wallet in the settings. The default Brave Wallet won’t work, even though it looks identical to MetaMask.
 
