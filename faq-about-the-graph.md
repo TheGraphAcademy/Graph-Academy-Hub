@@ -263,12 +263,12 @@ When rewards are distributed between the indexer and his delegates, the total re
 - An indexer with 80% rewards cut, and very low delegation received, will end up giving away a lot of his own rewards to the delegation pool.
 - An indexer with 15.25% rewards cut at full delegation capacity, will effectively take approximately 10% of his delegates’ rewards as a commission.
 
-You can play around with the tools pinned in the #delegators channels in the Discord server or in this notion board 47, especially the rewards calculators, since they give a much better insight into how the rewards are calculated and distributed.
+You can play around with the tools pinned in the #delegators channels in the Discord server or in this [notion board](https://www.notion.so/Community-Guides-abbb10f4dba040d5ba81648ca093e70c "notion board"), especially the rewards calculators, since they give a much better insight into how the rewards are calculated and distributed.
 
 > 3. How to calculate my personal rewards?
 
 You can check some of the community-made tools, for rewards projection. Note that rewards might get diluted over time, as more stake is allocated in the network.
-You can find the tools pinned in the #delegators channels in the Discord server, or in this notion board 34.
+You can find the tools pinned in the #delegators channels in the Discord server, or in this [notion board](https://www.notion.so/thegraph/Community-Guides-abbb10f4dba040d5ba81648ca093e70c "notion board").
 
 > 4. When are rewards distributed
 
@@ -278,7 +278,7 @@ Indexer’s active allocations are continuously accruing rewards while they’re
 
 You can see your rewards in your profile/wallet dashboard, in the Network dApp.
 
-There are also some really great community-made tools you can check, the list is pinned in the #delegators channels in the Discord server or here 47.
+There are also some really great community-made tools you can check, the list is pinned in the #delegators channels in the Discord server or [here](https://www.notion.so/Community-Guides-abbb10f4dba040d5ba81648ca093e70c "here").
 
 > 6. Why are my rewards not increasing every day?
 
@@ -324,7 +324,7 @@ The gas price is not something that The Graph team has control over. Gas price g
 The undelegating/thawing period is there to avoid certain economic attacks from taking place. It has to coincide with the max allocation lifetime of 28 epochs.
 Given how the rewards system currently works, a shorter undelegating period would potentially allow delegation to be “double-counted” across multiple simultaneous allocations.
 
-That being said, we do understand that this is a UX challenge for Delegators so we are considering proposals that would still mitigate the above issue, while reducing or eliminating the undelegating period (we had actually considered this before, but none of the solutions we had at the time were very gas-efficient).
+> That being said, we do understand that this is a UX challenge for Delegators so we are considering proposals that would still mitigate the above issue, while reducing or eliminating the undelegating period (we had actually considered this before, but none of the solutions we had at the time were very gas-efficient).
 
 – from Brandon during the AMA.
 
