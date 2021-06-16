@@ -16,9 +16,10 @@ This FAQ is categorized into different topics to give you an easy overview. **Cl
 2. **Indexing** Questions about indexing on the network.
 3. **Subgraphs** Everything related to subgraphs.
 4. **Delegating / Staking** Frequently asked questions by delegators.
-5. **Curating** Everything there is to know about curating.
-6. **Grants** For those interested in applying for a grant.
-7. **The Graph explorer**
+5. **Delegators Protocol Actions**
+6. **Curating** Everything there is to know about curating.
+7. **Grants** For those interested in applying for a grant.
+8. **The Graph explorer**
 
    Questions about The Graph explorer.
 
@@ -229,6 +230,115 @@ Undelegating takes 28 days because that is the maximum duration of an allocation
 > Is there any way to see the balance and time left for thawing undelegated tokens?
 
 In your profile dashboard, you’ll have dots \(purple for undelegating / green for when it’s ready to be withdrawn\). Furthermore, if you open the `undelegate` tab of the ones that are still undelegating, you'll see the timer there.
+
+### Delegators Protocol Actions (by Indexer_Payne)
+
+> 1. How are rewards distributed? What is the current APY?
+
+Rewards that come from the protocol inflation are first distributed proportional to the curation signal a subgraph has, then distributed proportional towards allocated stake on that subgraph.
+
+The current protocol inflation is set to 3% annual issuance.
+
+You can calculate the APY by looking at the number of allocated stake versus the total supply, knowing that the total supply is 10b GRT, and 3% annual inflation.
+
+**Examples:**
+
+- At 1b allocated stake (10% of the total supply is allocated) - the APY is ~30%
+- At 5b allocated stake (50% of the total supply is allocated) - the APY is ~6%
+.
+.
+.
+- At 10b allocated stake (100% of the total supply is allocated) - the APY is 3%
+
+*Note that your APY as a delegator depends on the indexer’s rewards cut. Indexers take part of your rewards as their cut, but some of them may also give you some of their own rewards, in order to attract more delegators.*
+
+> 2. How does the rewards cuts system work?
+
+From an indexer perspective, rewards are distributed proportionally to their active allocation. From that, the indexer gives away to delegators a percentage of the rewards, based on his cuts %.
+
+When rewards are distributed between the indexer and his delegates, the total rewards number is considered when the split is done. That has certain practical implications when it comes to the amount of GRT everyone gets.
+
+**Examples:**
+
+- An indexer with 80% rewards cut, and very low delegation received, will end up giving away a lot of his own rewards to the delegation pool.
+- An indexer with 15.25% rewards cut at full delegation capacity, will effectively take approximately 10% of his delegates’ rewards as a commission.
+
+You can play around with the tools pinned in the #delegators channels in the Discord server or in this notion board 47, especially the rewards calculators, since they give a much better insight into how the rewards are calculated and distributed.
+
+> 3. How to calculate my personal rewards?
+
+You can check some of the community-made tools, for rewards projection. Note that rewards might get diluted over time, as more stake is allocated in the network.
+You can find the tools pinned in the #delegators channels in the Discord server, or in this notion board 34.
+
+> 4. When are rewards distributed
+
+Indexer’s active allocations are continuously accruing rewards while they’re active. Rewards are collected by the indexers, and distributed whenever their allocations are closed. That happens either manually, whenever the indexer wants to force close them, or automatically every maximum 28 epochs - max allocation lifetime (right now, one epoch lasts for ~24h).
+
+> 5. Where do I see my rewards
+
+You can see your rewards in your profile/wallet dashboard, in the Network dApp.
+
+There are also some really great community-made tools you can check, the list is pinned in the #delegators channels in the Discord server or here 47.
+
+> 6. Why are my rewards not increasing every day?
+
+Read the 4th question and answer. To further add to that point, it’s also important to know that every time an indexer closes and reopens his allocation(s), it costs them quite a bit of money in terms of gas, to do so. With the current gas prices, it costs around $50 to close and another $50 reopen an allocation. Doing so daily, for 2 parallel allocations (default configuration for the indexers), means the indexers will be paying a lot more money than even their infrastructure costs per month, which is not reliable from an economic perspective.
+
+We’re working on a way to show the pending rewards (for the allocations that are still open and accruing rewards) in our Network dApp.
+
+> 7. How does the delegating/undelegating process work?
+
+The current flow of the protocol actions is as follows:
+Wallet → Approve → Delegate → Undelegate → Wait for 28 days (undelegation period) → Withdraw → Wallet
+
+> . I undelegated, where are my tokens?
+
+You have to go through the 28 days undelegating period before you can withdraw your tokens back into your wallet. You cannot redelegate without going through the 28 days period.
+
+> 9. Will I still get rewards during the 28 days undelegation period?
+
+During the undelegation period, you won’t be getting any rewards on the amount that you undelegated.
+
+> 10. Why do I have to send two transactions when delegating to an indexer?
+
+If you read the flow above, you’ll notice that there are two actions taken when delegating. First, there is an `approve()` transaction, that lets the protocol know it can spend your GRT. Second, there’s the `delegate()` transaction that will bind the tokens in the smart contract.
+
+> 11. I’m stuck on “Approving Funds” screen
+
+If you get stuck on the approving funds screen, you can check your metamask/etherscan if the `approve()` transaction went through and it’s confirmed. If that happened, you can close the delegation pane and try again.
+
+We recently implemented a way to track the number of approved GRT, so you don’t have to `approve()` again, it will send you directly to the `delegate()` transaction, assuming you’re trying to delegate the same number (or less) of tokens that you initially approved.
+
+It also helps to restart the browser, as Metamask can get stuck and not connecting to the Ethereum Network properly.
+
+> 12. Can I use Ledger/Trezor hardware wallets in order to delegate or store my tokens?
+
+Yes. Make sure you have the latest firmware version and the latest ETH app version installed, as well as contract interaction enabled in the ETH app settings on your device.
+
+> 13. Why is the gas cost so high?
+
+The gas price is not something that The Graph team has control over. Gas price goes up when the Ethereum network is congested or heavily used.
+
+> 14. Why do I have to wait for 28 days?
+
+The undelegating/thawing period is there to avoid certain economic attacks from taking place. It has to coincide with the max allocation lifetime of 28 epochs.
+Given how the rewards system currently works, a shorter undelegating period would potentially allow delegation to be “double-counted” across multiple simultaneous allocations.
+
+That being said, we do understand that this is a UX challenge for Delegators so we are considering proposals that would still mitigate the above issue, while reducing or eliminating the undelegating period (we had actually considered this before, but none of the solutions we had at the time were very gas-efficient).
+
+– from Brandon during the AMA.
+
+> 15. Why can’t I redelegate without waiting
+
+For the same reason stated above, the flow is designed to avoid certain economic attacks.
+
+> 16. Can the delegated GRT be slashed?
+
+No, only indexers owned stake can be slashed.
+
+> 17. I’m using Brave browser. Why doesn’t it work?
+
+You need to install MetaMask and switch to it as a default crypto wallet in the settings. The default Brave Wallet won’t work, even though it looks identical to MetaMask.
 
 ### Curating <a id="666c"></a>
 
