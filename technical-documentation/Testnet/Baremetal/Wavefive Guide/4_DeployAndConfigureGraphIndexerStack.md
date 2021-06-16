@@ -45,7 +45,7 @@ To support Rust compiles - `sudo apt-get install -y clang libpq-dev libssl-dev p
 Per the reference architecture, one indexer-agent should be deployed. Reminder: this must be completed signed into the root account, not using `sudo`
 
 ```
-npm install -g @graphprotocol/indexer-agent@0.12.0
+npm install -g @graphprotocol/indexer-agent@0.16.0
 ```
 
 Now that you have installed the agent, you can check that it is working by logging out of the root account and into another user account and running:
@@ -91,7 +91,9 @@ graph-indexer-agent start \\
     --indexer-address 0x... \\
     --no-restake-rewards \\
     --allocation-claim-threshold 50
-
+    --collect-receipts-endpoint https://gateway.testnet.thegraph.com/collect-receipts
+    --network-subgraph-deployment QmUBRDENCjFt57vVjFc3D4EQoYqXJffKiyFyuGYB2BN8Wi
+    
 EOF
 ```
 Make your startup script executable `chmod +x graph-indexer-agent-startup.sh`
@@ -135,7 +137,7 @@ Install the additional packages described earlier, just as you did for indexer-a
 Now you can install the service (again, do this as root)
 
 ```
-npm install -g @graphprotocol/indexer-service@0.12.0
+npm install -g @graphprotocol/indexer-service@0.16.0
 ```
 
 #### Configure the indexer-service
@@ -160,7 +162,9 @@ graph-indexer-service start \\
     --postgres-database graph-agent \\
     --wallet-worker-threads 4 \\
     --wallet-skip-evm-validation true
-
+    --client-signer-address 0xe1EC4339019eC9628438F8755f847e3023e4ff9c
+    --network-subgraph-deployment QmUBRDENCjFt57vVjFc3D4EQoYqXJffKiyFyuGYB2BN8Wi
+    --free-query-auth-token 'thisIsMyToken'
 EOF
 ```
 
