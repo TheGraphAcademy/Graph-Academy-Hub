@@ -1,6 +1,6 @@
 {% hint style="info" %}
 ## Contributor Details
-This documentation was contributed by **Gary Morris** at **0xFury**. 0xFury is a blockchain infrastructure provider with a focus on decentralization and projects that push for Web3 enablement. 0xFury has been running Graph Indexer services actively since the original testnet phase.
+This documentation was contributed by **Gary Morris** at [0xFury](https://www.0xfury.com/). 0xFury is a blockchain infrastructure provider with a focus on decentralization and projects that push for Web3 enablement. 0xFury has been running Graph Indexer services actively since the original testnet phase.
 {% endhint %}
 
 Manually Closing Allocations for a Failed Subgraph
