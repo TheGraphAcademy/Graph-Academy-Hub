@@ -63,9 +63,9 @@ blockNumber": **XXXXXXXXXX** }'
 
 **Note:**
 
-To maximize your rewards in the case of a failed subgraph, you should check each Epoch to see which is the latest one you have a (valid) POI for.
+To maximize your rewards in the case of a failed subgraph, you should check each Epoch to see which is the latest one you have a (valid) PoI for.
 
-This guide only covers how to obtain the POI held by your own Indexer. However, or whether, you decide to further validate it beyond that, is another topic.
+This guide only covers how to obtain the PoI held by your own Indexer. However, or whether, you decide to further validate it beyond that, is another topic.
 
 **Considerations around the indexer-agent before manually closing an allocation**
 
