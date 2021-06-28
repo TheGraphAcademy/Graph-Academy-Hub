@@ -15,6 +15,10 @@
 
 * [Monitoring](technical-documentation/Monitoring/)
     * [Ethereum Node Chainhead Monitoring - no third parties ](technical-documentation/Monitoring/LocalEthereumNodeChainheadMonitoring.md)
+    
+* [Tips&Tricks](technical-documentation/Tips%20&%20Tricks/)
+    * [Failed subgraphs - Manually Closing Allocations](technical-documentation/Tips%20&%20Tricks/manuallyClosingAllocationsForFailedSubgraphs.md)
+
 
 ## Network Roles <a id="network"></a>
 
