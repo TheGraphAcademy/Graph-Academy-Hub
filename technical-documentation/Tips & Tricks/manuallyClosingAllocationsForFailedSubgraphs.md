@@ -1,7 +1,16 @@
-Note: You can use this guide to close allocations for any situation, but if the allocation is healthy i.e. the subgraph has not failed, you are better served by using the agent to close the allocation. This will avoid causing any confusion in the agent's process. This is not an issue when an allocation is for a failed subgraph that is past its last good Epoch, because the agent will be unable to close that allocation anyway because the PoI will be invalid (and the agent logs will say as much).
+{% hint style="info" %}
+## Contributor Details
+This documentation was contributed by **Gary Morris** at **0xFury**. 0xFury is a blockchain infrastructure provider with a focus on decentralization and projects that push for Web3 enablement. 0xFury has been running Graph Indexer services actively since the original testnet phase.
+{% endhint %}
+
+Manually Closing Allocations for a Failed Subgraph
+========
+## Summary
+You can use this guide to close allocations for any situation, but if the allocation is healthy i.e. the subgraph has not failed, you are better served by using the agent to close the allocation. This will avoid causing any confusion in the agent's process. This is not an issue when an allocation is for a failed subgraph that is past its last good Epoch, because the agent will be unable to close that allocation anyway because the PoI will be invalid (and the agent logs will say as much).
 
 Warning: This guide does not currently settle the queryFees for you. If this is possible, it will be added to the guide at a later date. Be warned that your queryFees for any manually closed allocation will not be claimed automatically.
 
+### Retrieve the last good PoI
 You can query your PoIs for an allocation in two ways.
 
 **1. Using GraphQL against your own query node graphql endpoint (http://query-node:8030/graphql)**
@@ -70,7 +79,7 @@ When you do this, your agent will try and settle the allocation but will find th
 
 ---
 
-**Submit POI:**
+### Submit the last good PoI manually
 
 Once you have obtained your POI. You can submit it via Etherscan on this Proxy contract:
 
