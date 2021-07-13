@@ -16,7 +16,7 @@ We seek to create this single source of essential information on The Graph throu
 
 You are now in the Docs section which is the core of The Graph Academy. The documentation is hosted on GitHub and made freely available as open source. This means that anyone in the community is able to contribute to this documentation. Doing so allows this initiative to keep the community-driven information unbiased, up to date and concise.
 
-If you're new to The Graph Protocol, you can learn more about it in this introduction: [What the Graph Is](https://thegraph.com/docs/introduction#what-the-graph-is)
+If you're new to The Graph Protocol, you can learn more about it in this introduction: [What the Graph Is](https://thegraph.com/docs/about/introduction)
 
 ## How to make changes to The Graph Hub
 
