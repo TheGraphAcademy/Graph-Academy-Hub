@@ -68,9 +68,7 @@ This documentation was contributed by [Jim Cousins](https://twitter.com/_cryptov
     - Data comes from six months of Ethereum transaction data for Wavefive's indexing operation ([source](https://docs.google.com/spreadsheets/d/1zOtH7qGiSkN-IF-QUdt8MJp6Eh36ELDm_OSNZwxPcjM/edit?usp=sharing))
     - Average total cost of all four transactions required for the full lifecycle of one allocation in the last six months - $77.75
     - Scaling up for more subgraphs and different monthly allocation lengths (assuming parallelAllocations=1):
-
 ![Modelling Indexer Transaction Costs](Indexer%20Subgraph%20Selection%20Guide/Untitled%206.png)
-
 
     - **The impact of Ether price and gas cost on Graph Indexing Business Decisions**
         - Although the above data is based on real transaction costs from a real Indexing operation, actual costs are entirely dependent on the price of Ether at the time of a transaction, and the current demand on the Ethereum network, so your mileage may vary. It is wise to have a reserve of Ether available to the business at all times, so the impact of Ether price fluctuations to your business can be mitigated to some degree.
@@ -166,7 +164,6 @@ This documentation was contributed by [Jim Cousins](https://twitter.com/_cryptov
         - Once the Indexer knows the amount of query fees they are capturing per subgraph on average, they can tune the ratio between the query fees and the GRT allocation to each subgraph being served, in order to maximise the amount of GRT they receive from the revenue share function
         - Indexers needs to work together on improving the ratio of total fees to total GRT allocated to a subgraph, in order that everyone sees improved rebates from the revenue share function
         - Indexers with very large stake compared to an average Indexer can have severe negative impact on everyone's rebates if their cost models are not tuned correctly.
-
 ![A basic example of the Revenue Share function, demonstrating how a very large Indexer can have a profoundly negative impact on the returns of smaller Indexers, while taking more than their "fair" share of the rebate pool and burning a large amount of fees at the same time.](Indexer%20Subgraph%20Selection%20Guide/Untitled%205.png)
 
 
