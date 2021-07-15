@@ -20,7 +20,7 @@
 
             ![Indexer%20Subgraph%20Selection%20Guide/Untitled.png](Indexer%20Subgraph%20Selection%20Guide/Untitled.png)
 
-            Examples showing how effective network inflation rates impact Indexer revenue
+            *Examples above show how effective network inflation rates impact Indexer revenue*
 
         - **Projected revenue from Query Business:** The Indexer's knowledge of the market's appetite for query business on subgraphs at a specific price or price range
             - This is challenging to project because the network does not openly share any information about the query demand within the network
@@ -58,7 +58,7 @@
     - Average total cost of all four transactions required for the full lifecycle of one allocation in the last six months - $77.75
     - Scaling up for more subgraphs and different monthly allocation lengths (assuming parallelAllocations=1):
 
-        [Graph Indexer Monthly Gas Costs Analysis](https://www.notion.so/ed9a3072ebb749cb9d87de437edc0465)
+        ![Indexer%20Subgraph%20Selection%20Guide/Untitled%206.png](Indexer%20Subgraph%20Selection%20Guide/Untitled%206.png)
 
         - The above table shows how transaction costs can increase significantly as you add allocations, and even faster if you increase the frequency at which you settle allocations
 
@@ -68,7 +68,7 @@
 
         ![Indexer%20Subgraph%20Selection%20Guide/Untitled%201.png](Indexer%20Subgraph%20Selection%20Guide/Untitled%201.png)
 
-        Oracleminer's Graph Transaction costing tool
+        *Oracleminer's Graph Transaction costing tool*
 
 - Gas Price prediction tools
     - There are many gas price prediction tools out there. One of the most popular is [https://www.gasnow.org/](https://www.gasnow.org/) and you can use this tool to check demand, and therefore gas price, on the Ethereum network at any time.
@@ -76,7 +76,7 @@
 
     ![Indexer%20Subgraph%20Selection%20Guide/Untitled%202.png](Indexer%20Subgraph%20Selection%20Guide/Untitled%202.png)
 
-    Gasnow's Average historical gas price tool
+    *gasnow.org average historical gas price tool*
 
 ### Subgraph Deployment Strategies
 
@@ -118,7 +118,7 @@
 
             ![Indexer%20Subgraph%20Selection%20Guide/Untitled%203.png](Indexer%20Subgraph%20Selection%20Guide/Untitled%203.png)
 
-            Example subgraph analysis by stake-weighting
+            *Example subgraph analysis by stake-weighting*
 
             - The table has been sorted by potential rewards per 1M GRT allocated
             - Notice how three subgraphs in particular are more profitable to stake on in the current network state
@@ -146,7 +146,7 @@
 
             ![Indexer%20Subgraph%20Selection%20Guide/Untitled%204.png](Indexer%20Subgraph%20Selection%20Guide/Untitled%204.png)
 
-            Example subgraph analysis by signal-weighting
+            *Example subgraph analysis by signal-weighting*
 
             - The table has been sorted by Signal % total, from largest signal to smallest
             - The higher the signal on a subgraph, the larger proportion of your stake should be allocated to it
@@ -166,7 +166,7 @@
 
             ![Indexer%20Subgraph%20Selection%20Guide/Untitled%205.png](Indexer%20Subgraph%20Selection%20Guide/Untitled%205.png)
 
-            A basic example of the Revenue Share function, demonstrating how a very large Indexer can have a profoundly negative impact on the returns of smaller Indexers, while taking more than their "fair" share of the rebate pool and burning a large amount of fees at the same time.
+            *A basic example of the Revenue Share function, demonstrating how a very large Indexer can have a profoundly negative impact on the returns of smaller Indexers, while taking more than their "fair" share of the rebate pool and burning a large amount of fees at the same time.*
 
             - The reality of migration is that this imbalance is going to continue until there are significantly more subgraphs in the network and significantly more demand for query business.
 
