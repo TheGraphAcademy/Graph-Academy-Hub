@@ -2,16 +2,15 @@
 ## Contributor Details
 This documentation was contributed by [Jim Cousins](https://twitter.com/_cryptovestor) as part of his work at The Graph Foundation. Thanks also to the following community members for peer review and other contributions to this article:
 
-Aderks @ Oracleminer
-Chris Wessels @ Graphops
-Gary Morris @ Staking facilities / 0xFury
-Juan Manuel Rodriguez Defago @ Bootnode
-Konstantin Zaitcev @ P2P
-Oliver Z @ The Graph Foundation
-Payne @ Stakesquid
+- Aderks @ Oracleminer
+- Chris Wessels @ Graphops
+- Gary Morris @ Staking facilities / 0xFury
+- Juan Manuel Rodriguez Defago @ Bootnode
+- Konstantin Zaitcev @ P2P
+- Oliver Z @ The Graph Foundation
+- Payne @ Stakesquid
 {% endhint %}
 
-======
 # Indexer Subgraph Selection Guide
 
 ***In this guide:***
