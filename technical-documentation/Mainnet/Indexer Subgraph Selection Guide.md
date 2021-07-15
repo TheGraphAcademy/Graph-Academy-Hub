@@ -31,9 +31,9 @@ This documentation was contributed by [Jim Cousins](https://twitter.com/_cryptov
     - This is an Indexer-specific question, depending on two revenue streams:
         - **Projected revenue from Staking Rewards:** Staking or Indexing rewards are heavily dependent upon the amount of GRT allocated within the network. The example tables below show how Indexer revenue can be impacted as a larger amount of the total GRT in the market enter the protocol and is allocated.
 
-            ![Indexer%20Subgraph%20Selection%20Guide/Untitled.png](Indexer%20Subgraph%20Selection%20Guide/Untitled.png)
+![Indexer%20Subgraph%20Selection%20Guide/Untitled.png](Indexer%20Subgraph%20Selection%20Guide/Untitled.png)
 
-            *Examples above show how effective network inflation rates impact Indexer revenue*
+*Examples above show how effective network inflation rates impact Indexer revenue*
 
         - **Projected revenue from Query Business:** The Indexer's knowledge of the market's appetite for query business on subgraphs at a specific price or price range
             - This is challenging to project because the network does not openly share any information about the query demand within the network
