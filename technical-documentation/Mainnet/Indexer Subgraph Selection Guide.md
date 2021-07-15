@@ -83,7 +83,7 @@ This documentation was contributed by [Jim Cousins](https://twitter.com/_cryptov
     - There are many gas price prediction tools out there. One of the most popular is [https://www.gasnow.org/](https://www.gasnow.org/) and you can use this tool to check demand, and therefore gas price, on the Ethereum network at any time.
     - Many gas price tools also provide historical data, so you can plan out the most gas-efficient times to perform your on-chain Indexing operations.
 
-    ![gasnow.org average historical gas price tool](Indexer%20Subgraph%20Selection%20Guide/Untitled%202.png)
+![gasnow.org average historical gas price tool](Indexer%20Subgraph%20Selection%20Guide/Untitled%202.png)
 
 
 ### Subgraph Deployment Strategies
@@ -132,6 +132,7 @@ This documentation was contributed by [Jim Cousins](https://twitter.com/_cryptov
             - Notice how adding your own stake to each subgraph will change how profitable it is
                 - For this very reason, the larger an Indexer, the closer they might bring a profitable subgraph into or beyond **optimal staking.** By allocating beyond the optimal staking number, the Indexer will impact both their own profitability and that of every other Indexer allocated to that subgraph.
                 - Effective Indexers with a large proportion of the total network stake take stake-weighted optimisation very seriously because they understand how their subgraph selection decisions can impact everyone, both positively and negatively.
+                
     - Signal weighting
         - What is signal-weighting?
             - Building a subgraph selection model based on the highest signalled subgraphs across the network, allocating a larger proportion of stake to the highest signalled subgraphs
