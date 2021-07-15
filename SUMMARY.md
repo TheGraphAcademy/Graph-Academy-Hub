@@ -4,6 +4,9 @@
 * [FAQs](faq-about-the-graph.md)
 
 ## Technical documentation <a id="technical-documentation"></a>
+* [Mainnet](technical-documentation/Mainnet/)
+	* [Indexer Subgraph Selection Guide](technical-documentation/Mainnet/Indexer%20Subgraph%20Selection%20Guide.md)
+
 
 * [Testnet](technical-documentation/Testnet/)
     * [Graph Protocol Testnet Docker Compose](technical-documentation/Testnet/Docker/StakeSquid%20Guide/guide.md)
