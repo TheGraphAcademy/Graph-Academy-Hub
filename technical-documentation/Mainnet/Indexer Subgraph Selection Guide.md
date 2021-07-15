@@ -30,8 +30,8 @@ This documentation was contributed by [Jim Cousins](https://twitter.com/_cryptov
 - How much revenue can an Indexer generate at a specific number of subgraphs
     - This is an Indexer-specific question, depending on two revenue streams:
         - **Projected revenue from Staking Rewards:** Staking or Indexing rewards are heavily dependent upon the amount of GRT allocated within the network. The example tables below show how Indexer revenue can be impacted as a larger amount of the total GRT in the market enter the protocol and is allocated.
-
 ![Examples above show how effective network inflation rates impact Indexer revenue](Indexer%20Subgraph%20Selection%20Guide/Untitled.png)
+
 
         - **Projected revenue from Query Business:** The Indexer's knowledge of the market's appetite for query business on subgraphs at a specific price or price range
             - This is challenging to project because the network does not openly share any information about the query demand within the network
@@ -65,24 +65,22 @@ This documentation was contributed by [Jim Cousins](https://twitter.com/_cryptov
         - The full lifecycle of one allocation includes four Ethereum transactions
             - AllocateFrom → CloseAllocation → Redeem → Claim
 - **Average Graph Transaction Costs from a real Mainnet Indexing Operation**
-    - Data comes from six months of Ethereum transaction data for Wavefive's indexing operation ([source](https://docs.google.com/spreadsheets/d/1zOtH7qGiSkN-IF-QUdt8MJp6Eh36ELDm_OSNZwxPcjM/edit?usp=sharing)) ****
+    - Data comes from six months of Ethereum transaction data for Wavefive's indexing operation ([source](https://docs.google.com/spreadsheets/d/1zOtH7qGiSkN-IF-QUdt8MJp6Eh36ELDm_OSNZwxPcjM/edit?usp=sharing))
     - Average total cost of all four transactions required for the full lifecycle of one allocation in the last six months - $77.75
     - Scaling up for more subgraphs and different monthly allocation lengths (assuming parallelAllocations=1):
 
-![The above table shows how transaction costs can increase significantly as you add allocations, and even faster if you increase the frequency at which you settle allocations](Indexer%20Subgraph%20Selection%20Guide/Untitled%206.png)
+![Modelling Indexer Transaction Costs](Indexer%20Subgraph%20Selection%20Guide/Untitled%206.png)
 
 
     - **The impact of Ether price and gas cost on Graph Indexing Business Decisions**
         - Although the above data is based on real transaction costs from a real Indexing operation, actual costs are entirely dependent on the price of Ether at the time of a transaction, and the current demand on the Ethereum network, so your mileage may vary. It is wise to have a reserve of Ether available to the business at all times, so the impact of Ether price fluctuations to your business can be mitigated to some degree.
         - Oracleminer (aderks#7408 on Discord, [@MinerOracle](https://twitter.com/MinerOracle) on Twitter) provides a handy tool for predicting the cost of transactions [here](https://oracleminer.com/graph/indexer/0xbfe2a198cb0cdfb50fb03cd932c7387ddb0d25aa)
-
 ![Oracleminer's Graph Transaction costing tool](Indexer%20Subgraph%20Selection%20Guide/Untitled%201.png)
 
 
 - Gas Price prediction tools
     - There are many gas price prediction tools out there. One of the most popular is [https://www.gasnow.org/](https://www.gasnow.org/) and you can use this tool to check demand, and therefore gas price, on the Ethereum network at any time.
     - Many gas price tools also provide historical data, so you can plan out the most gas-efficient times to perform your on-chain Indexing operations.
-
 ![gasnow.org average historical gas price tool](Indexer%20Subgraph%20Selection%20Guide/Untitled%202.png)
 
 
@@ -123,7 +121,6 @@ This documentation was contributed by [Jim Cousins](https://twitter.com/_cryptov
                 - The difference between the current and optimal stake on the subgraph
         - With the above information, the Indexer can assess which subgraphs are the most profitable to allocate to (GRT rewarded per GRT staked) **but more importantly,** by using the last statistic in the list, **difference between current and optimal stake on the subgraph,** the Indexer can assess if the subgraph is worth deploying their targeted amount of stake to.
         - Example analysis
-
 ![Example subgraph analysis by stake-weighting](Indexer%20Subgraph%20Selection%20Guide/Untitled%203.png)
 
 
@@ -151,7 +148,6 @@ This documentation was contributed by [Jim Cousins](https://twitter.com/_cryptov
                 - Signal on as many of the high signal subgraphs as is practical in terms of transaction costs
                 - In the early stages of the network, unless everyone is signal-weighting, large Indexers cannot stick to signal weighted decisions alone - this is due to the reasons explained at the start of this section - very large allocations can have a negative impact on overall profitability on a subgraph if the large Indexer isn't also considering the optimal stake scenario.
             - Example analysis
-
 ![Example subgraph analysis by signal-weighting](Indexer%20Subgraph%20Selection%20Guide/Untitled%204.png)
 
 
