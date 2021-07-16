@@ -83,7 +83,7 @@ When you do this, your agent will try and settle the allocation but will find th
 
 Once you have obtained your POI. You can submit it via Etherscan on this Proxy contract:
 
-[https://etherscan.io/address/0xf55041e37e12cd407ad00ce2910b8269b01263b9#writeProxyContract](https://www.notion.so/7e12cd407ad00ce2910b8269b01263b9)
+[https://etherscan.io/address/0xf55041e37e12cd407ad00ce2910b8269b01263b9#writeProxyContract](https://etherscan.io/address/0xf55041e37e12cd407ad00ce2910b8269b01263b9#writeProxyContract)
 
 1. Connect your wallet via MetaMask or WalletConnect, and click the "Connect to Web3" button near the top-left of the page.
 2. Click on `7. closeAllocation`.
