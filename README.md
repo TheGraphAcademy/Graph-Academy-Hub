@@ -20,7 +20,7 @@ If you're new to The Graph Protocol, you can learn more about it in this introdu
 
 ## How to make changes to The Graph Hub
 
-The The Graph Hub is a decentralized community documentation, which allows everyone to contribute in a meaningful way. If you like to participate, follow these steps:
+The Graph Hub is a decentralized community documentation, which allows everyone to contribute in a meaningful way. If you like to participate, follow these steps:
 
 1. Create a GitHub account or login with your existing account
 2. Navigate to the [The Graph Hub's GitHub repository]([https://github.com/TheGraphAcademy/Graph-Academy-Hub/)
