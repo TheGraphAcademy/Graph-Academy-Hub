@@ -11,7 +11,7 @@ description: Documentation for Indexers how to get subgraph's ipfs hash from id 
   ```
   $ pip install base58
   $ python
-     print(base58.b58decode("ipfs_hash").hex()[4:]+"0x")
+     print("0x"+base58.b58decode("ipfs_hash").hex()[4:])
   ```
 
 ## Getting ipfs from id
