@@ -8,23 +8,38 @@ The Graph Network consists of three roles that provide services to the ecosystem
 
 You can find detailed documentation for each of the roles in the following.
 
-{% page-ref page="indexers/" %}
+{% content-ref url="indexers/" %}
+[indexers](indexers/)
+{% endcontent-ref %}
 
-{% page-ref page="../the-graph-ecosystem/organizational-structure/curators.md" %}
+{% content-ref url="curators.md" %}
+[curators.md](curators.md)
+{% endcontent-ref %}
 
-{% page-ref page="delegators/" %}
+{% content-ref url="delegators/" %}
+[delegators](delegators/)
+{% endcontent-ref %}
 
 The Graph ecosystem also includes Edge & Node, The Graph Foundation, and The Graph Council:
 
 {% tabs %}
+{% tab title="undefined" %}
+
+{% endtab %}
+{% endtabs %}
 
 
 
-{% page-ref page="../the-graph-ecosystem/organizational-structure/edge-and-node.md" %}
+{% content-ref url="../the-graph-ecosystem/organizational-structure/edge-and-node.md" %}
+[edge-and-node.md](../the-graph-ecosystem/organizational-structure/edge-and-node.md)
+{% endcontent-ref %}
 
 
 
-{% page-ref page="../the-graph-ecosystem/organizational-structure/the-graph-foundation.md" %}
+{% content-ref url="../the-graph-ecosystem/organizational-structure/the-graph-foundation.md" %}
+[the-graph-foundation.md](../the-graph-ecosystem/organizational-structure/the-graph-foundation.md)
+{% endcontent-ref %}
 
-{% page-ref page="../the-graph-ecosystem/organizational-structure/the-graph-council.md" %}
-
+{% content-ref url="../the-graph-ecosystem/organizational-structure/the-graph-council.md" %}
+[the-graph-council.md](../the-graph-ecosystem/organizational-structure/the-graph-council.md)
+{% endcontent-ref %}

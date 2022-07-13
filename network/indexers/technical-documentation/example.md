@@ -8,7 +8,7 @@ description: Documentation for Indexers on indexing and querying
 
 Indexers should expect to receive requests from the following IP addresses:
 
-```text
+```
 34.66.143.111
 35.193.209.143
 35.202.175.180
@@ -28,7 +28,7 @@ Indexers can use the following key metrics to evaluate subgraphs. Based on this 
 {% tab title="Curation Signal" %}
 ### Curation Signal
 
-[Curators](../../../the-graph-ecosystem/organizational-structure/curators.md) stake GRT in order to signal to Indexers which subgraphs are of a high-quality and should accordingly be indexed in the network. The strength of the curation signal is an indicator to Indexers about the interest in the curated subgraph.
+[Curators](../../curators.md) stake GRT in order to signal to Indexers which subgraphs are of a high-quality and should accordingly be indexed in the network. The strength of the curation signal is an indicator to Indexers about the interest in the curated subgraph.
 
 {% hint style="success" %}
 This is especially true during the bootstrapping phase during which query volume is starting to ramp up.
@@ -55,4 +55,3 @@ By means of evaluating the supply side, subgraphs that may need more supply or s
 {% endhint %}
 {% endtab %}
 {% endtabs %}
-

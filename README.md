@@ -1,6 +1,6 @@
 # Welcome to The Graph Hub
 
-**The Graph Hub is a free, open-source and community-driven knowledge base and documentation initiative on** [**The Graph Protocol**](https://thegraph.com) **kickstarted by The Graph Academy.** 
+**The Graph Hub is a free, open-source and community-driven knowledge base and documentation initiative on** [**The Graph Protocol**](https://thegraph.com) **kickstarted by The Graph Academy.**
 
 The goal of The Graph Academy is to establish a single go-to-resource for essential information about The Graph Protocol. It is our vision to jointly build a vast knowledge base that empowers community members to master The Graph and to excel as participants in the protocol.
 
@@ -8,7 +8,7 @@ The goal of The Graph Academy is to establish a single go-to-resource for essent
 
 We seek to create this single source of essential information on The Graph through the following community initiatives:
 
-1. [The Graph Academy](https://thegraph.academy/) for hands-on, interactive tutorials and detailed guides´as well as news and discussions on recent developments in the The Graph ecosystem and much more 
+1. [The Graph Academy](https://thegraph.academy/) for hands-on, interactive tutorials and detailed guides´as well as news and discussions on recent developments in the The Graph ecosystem and much more&#x20;
 2. [The Graph Hub](https://github.com/TheGraphAcademy/Graph-Academy-Hub/) for detailed documentation from the figureheads and experts in The Graph community as well as everyone else who likes to participate
 3. Montly community meetups that showcase new features and use cases
 4. [The monthly The Graph Academy Podcast](https://soundcloud.com/graph-community-podcast) with exciting interviews and in-depth discussions on the protocol we all have come to love so much
@@ -23,14 +23,14 @@ If you're new to The Graph Protocol, you can learn more about it in this introdu
 The Graph Hub is a decentralized community documentation, which allows everyone to contribute in a meaningful way. If you like to participate, follow these steps:
 
 1. Create a GitHub account or login with your existing account
-2. Navigate to the [The Graph Hub's GitHub repository]([https://github.com/TheGraphAcademy/Graph-Academy-Hub/)
-3. Make your first pull request. This [tutorial video](https://www.youtube.com/watch?v=YTbRzhQju4c&t=1s) explains how this is done.
+2. Navigate to the [The Graph Hub's GitHub repository](https://github.com/TheGraphAcademy/Graph-Academy-Hub/tree/652e922719a8318b4cd8b27d264db60ab5f50269/\[https:/github.com/TheGraphAcademy/Graph-Academy-Hub/README.md)
+3. Make your first pull request. This [tutorial video](https://www.youtube.com/watch?v=YTbRzhQju4c\&t=1s) explains how this is done.
 
 Members of the community will review your pull request and check it for accuracy.
 
 ## Guidelines for contributors
 
-To help you get started and to keep the content within this documentation uniform, we have created a [template](https://github.com/TheGraphAcademy/Graph-Academy-Hub/blob/main/template.md) you can use when adding your own pages to the repo.
+To help you get started and to keep the content within this documentation uniform, we have created a [template](template.md) you can use when adding your own pages to the repo.
 
 To keep the community safe and secure, every contributor upholds the following guidelines:
 
@@ -46,4 +46,3 @@ To keep the community safe and secure, every contributor upholds the following g
 ### We reserve the right to moderate or remove posts that contain factual inaccuracies or unsubstantiated claims or violate the rules.
 
 **DISCLAIMER: The Graph Academy and The Graph Hub are free and open-source initiatives founded by The Graph community members. Nothing contained in this Github repository should be considered financial or investment advice - it is for informational purposes only.**
-

@@ -3,25 +3,23 @@
 * [Welcome to The Graph Hub](README.md)
 * [FAQs](faq-about-the-graph.md)
 
-## Technical documentation <a id="technical-documentation"></a>
-* [Mainnet](technical-documentation/Mainnet/)
-	* [Indexer Subgraph Selection Guide](technical-documentation/Mainnet/Indexer%20Subgraph%20Selection%20Guide.md)
-* [Testnet](technical-documentation/Testnet/)
-    * [Graph Protocol Testnet Docker Compose](technical-documentation/Testnet/Docker/StakeSquid%20Guide/guide.md)
-    * [Graph Protocol Testnet Baremetal](technical-documentation/Testnet/Docker/technical-documentation/Testnet/Baremetal/Wavefive%20Guide/README.md)
-		* [Architecture Considerations](technical-documentation/Testnet/Baremetal/Wavefive%20Guide/1_ArchitectureConsiderations.md)
-		* [Deploy and Configure Database](technical-documentation/Testnet/Baremetal/Wavefive%20Guide/2_DeployAndConfigurePostgresDatabase.md)
-		* [Deploy and Configure Graph-node](technical-documentation/Testnet/Baremetal/Wavefive%20Guide/3_DeployAndConfigureGraphNode.md)
-		* [Deploy and Configure Indexer stack](technical-documentation/Testnet/Baremetal/Wavefive%20Guide/4_DeployAndConfigureGraphIndexerStack.md)    
+## Technical documentation
 
-* [Monitoring](technical-documentation/Monitoring/)
-    * [Ethereum Node Chainhead Monitoring - no third parties ](technical-documentation/Monitoring/LocalEthereumNodeChainheadMonitoring.md)
-    
-* [Tips&Tricks](technical-documentation/Tips%20&%20Tricks/)
-    * [Failed subgraphs - Manually Closing Allocations](technical-documentation/Tips%20&%20Tricks/manuallyClosingAllocationsForFailedSubgraphs.md)
+* [Mainnet](technical-documentation/mainnet/README.md)
+  * [Indexer Subgraph Selection Guide](<technical-documentation/Mainnet/Indexer Subgraph Selection Guide.md>)
+* [Testnet](technical-documentation/testnet/README.md)
+  * [Graph Protocol Testnet Docker Compose](<technical-documentation/Testnet/Docker/StakeSquid Guide/guide.md>)
+  * [Graph Protocol Testnet Baremetal](technical-documentation/testnet/graph-protocol-testnet-baremetal/README.md)
+    * [Architecture Considerations](<technical-documentation/Testnet/Baremetal/Wavefive Guide/1\_ArchitectureConsiderations.md>)
+    * [Deploy and Configure Database](<technical-documentation/Testnet/Baremetal/Wavefive Guide/2\_DeployAndConfigurePostgresDatabase.md>)
+    * [Deploy and Configure Graph-node](<technical-documentation/Testnet/Baremetal/Wavefive Guide/3\_DeployAndConfigureGraphNode.md>)
+    * [Deploy and Configure Indexer stack](<technical-documentation/Testnet/Baremetal/Wavefive Guide/4\_DeployAndConfigureGraphIndexerStack.md>)
+* [Monitoring](technical-documentation/monitoring/README.md)
+  * [Ethereum Node Chainhead Monitoring - no third parties](technical-documentation/Monitoring/LocalEthereumNodeChainheadMonitoring.md)
+* [Tips\&Tricks](technical-documentation/tips-and-tricks/README.md)
+  * [Failed subgraphs - Manually Closing Allocations](<technical-documentation/Tips & Tricks/manuallyClosingAllocationsForFailedSubgraphs.md>)
 
-
-## Network Roles <a id="network"></a>
+## Network Roles <a href="#network" id="network"></a>
 
 * [Overview](network/overview.md)
 * [Indexers](network/indexers/README.md)
@@ -64,4 +62,3 @@
 
 * [Users/Consumers](users/users-consumers/README.md)
   * [Uniswap](users/users-consumers/uniswap.md)
-
