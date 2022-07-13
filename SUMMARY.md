@@ -2,6 +2,7 @@
 
 * [Welcome to The Graph Hub](README.md)
 * [FAQs](faq-about-the-graph.md)
+* [Get Started](get-started.md)
 
 ## Technical documentation
 
