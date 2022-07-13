@@ -184,7 +184,7 @@ An entity may have a relationship to one or more other entities in your schema. 
 
 Relationships are defined on entities just like any other field except that the type specified is that of another entity.
 
-**One-To-One Relationships**[**#Link to this section**](https://thegraph.com/docs/en/developer/create-subgraph-hosted/#one-to-one-relationships)
+**One-To-One Relationships**
 
 Define a `Transaction` entity type with an optional one-to-one relationship with a `TransactionReceipt` entity type:
 

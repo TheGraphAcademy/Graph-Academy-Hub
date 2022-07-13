@@ -4,7 +4,7 @@ The Graph Network is a decentralized indexing protocol for organizing blockchain
 
 > GRT Token Address: [0xc944e90c64b2c07662a292be6244bdf05cda44a7](https://etherscan.io/token/0xc944e90c64b2c07662a292be6244bdf05cda44a7)
 
-### Overview[#Link to this section](https://thegraph.com/docs/en/about/network/#overview) <a href="#overview" id="overview"></a>
+### Overview <a href="#overview" id="overview"></a>
 
 The Graph Network consists of Indexers, Curators and Delegators that provide services to the network, and serve data to Web3 applications. Consumers use the applications and consume the data.
 

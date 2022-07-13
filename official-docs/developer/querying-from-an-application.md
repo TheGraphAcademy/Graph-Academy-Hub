@@ -20,7 +20,7 @@ Using the GraphQL endpoint, you can use various GraphQL Client libraries to quer
 
 Here are a couple of the more popular GraphQL clients in the ecosystem and how to use them:
 
-#### Apollo client[#Link to this section](https://thegraph.com/docs/en/developer/querying-from-your-app/#apollo-client) <a href="#apollo-client" id="apollo-client"></a>
+#### Apollo client <a href="#apollo-client" id="apollo-client"></a>
 
 [Apollo client](https://www.apollographql.com/docs/) supports web projects, including frameworks like React and Vue, as well as mobile clients like iOS, Android, and React Native.
 
@@ -49,7 +49,7 @@ const tokensQuery = `  query($first: Int, $orderBy: BigInt, $orderDirection: Str
 client  .query({    query: gql(tokensQuery),    variables: {      first: 10,      orderBy: 'createdAtTimestamp',      orderDirection: 'desc',    },  })  .then((data) => console.log('Subgraph data: ', data))  .catch((err) => {    console.log('Error fetching data: ', err)  })
 ```
 
-#### URQL[#Link to this section](https://thegraph.com/docs/en/developer/querying-from-your-app/#urql) <a href="#urql" id="urql"></a>
+#### URQL <a href="#urql" id="urql"></a>
 
 Another option is [URQL](https://formidable.com/open-source/urql/), a somewhat lighter-weight GraphQL client library.
 
