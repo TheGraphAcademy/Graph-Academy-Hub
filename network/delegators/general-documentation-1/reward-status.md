@@ -10,8 +10,8 @@ The reward status `pending` refers to your rewards being accumulated in an activ
 The rewards in `pending` are subject to changes of the Indexers indexing and fee cuts. This is a vulnerability that can be exploited by malicious Indexers, see the link to Indexer Behavior below.
 {% endhint %}
 
-{% content-ref url="../indexer/vulnerabilities.md" %}
-[vulnerabilities.md](../indexer/vulnerabilities.md)
+{% content-ref url="../../indexers/vulnerabilities.md" %}
+[vulnerabilities.md](../../indexers/vulnerabilities.md)
 {% endcontent-ref %}
 
 ## Unrealized

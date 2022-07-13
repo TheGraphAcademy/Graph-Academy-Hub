@@ -34,7 +34,7 @@ _**In this guide:**_
   * This is an Indexer-specific question, depending on two revenue streams:
     *   **Projected revenue from Staking Rewards:** Staking or Indexing rewards are heavily dependent upon the amount of GRT allocated within the network. The example tables below show how Indexer revenue can be impacted as a larger amount of the total GRT in the market enter the protocol and is allocated.
 
-        ![Examples above show how effective network inflation rates impact Indexer revenue](<Indexer Subgraph Selection Guide/Untitled.png>)
+        ![Examples above show how effective network inflation rates impact Indexer revenue](<../../technical-documentation/Mainnet/Indexer Subgraph Selection Guide/Untitled.png>)
 * **Projected revenue from Query Business:** The Indexer's knowledge of the market's appetite for query business on subgraphs at a specific price or price range
   * This is challenging to project because the network does not openly share any information about the query demand within the network
   * Indexers have tools such as [Agora](https://github.com/graphprotocol/agora) to help understand how much query revenue they can make with a certain query cost model, however good projections require large volumes of real data in order to be useful
@@ -66,17 +66,17 @@ _**In this guide:**_
 * **Average Graph Transaction Costs from a real Mainnet Indexing Operation**
   * Data comes from six months of Ethereum transaction data for Wavefive's indexing operation ([source](https://docs.google.com/spreadsheets/d/1zOtH7qGiSkN-IF-QUdt8MJp6Eh36ELDm\_OSNZwxPcjM/edit?usp=sharing))
   * Average total cost of all four transactions required for the full lifecycle of one allocation in the last six months - $77.75
-  * Scaling up for more subgraphs and different monthly allocation lengths (assuming parallelAllocations=1): ![Modelling Indexer Transaction Costs](<Indexer Subgraph Selection Guide/Untitled 6.png>)
+  * Scaling up for more subgraphs and different monthly allocation lengths (assuming parallelAllocations=1): ![Modelling Indexer Transaction Costs](<../../technical-documentation/Mainnet/Indexer Subgraph Selection Guide/Untitled 6.png>)
   * **The impact of Ether price and gas cost on Graph Indexing Business Decisions**
     * Although the above data is based on real transaction costs from a real Indexing operation, actual costs are entirely dependent on the price of Ether at the time of a transaction, and the current demand on the Ethereum network, so your mileage may vary. It is wise to have a reserve of Ether available to the business at all times, so the impact of Ether price fluctuations to your business can be mitigated to some degree.
     *   Oracleminer (aderks#7408 on Discord, [@MinerOracle](https://twitter.com/MinerOracle) on Twitter) provides a handy tool for predicting the cost of transactions [here](https://oracleminer.com/graph/indexer/0xbfe2a198cb0cdfb50fb03cd932c7387ddb0d25aa)
 
-        ![Oracleminer's Graph Transaction costing tool](<Indexer Subgraph Selection Guide/Untitled 1.png>)
+        ![Oracleminer's Graph Transaction costing tool](<../../technical-documentation/Mainnet/Indexer Subgraph Selection Guide/Untitled 1.png>)
 * Gas Price prediction tools
   * There are many gas price prediction tools out there. One of the most popular is [https://www.gasnow.org/](https://www.gasnow.org/) and you can use this tool to check demand, and therefore gas price, on the Ethereum network at any time.
   *   Many gas price tools also provide historical data, so you can plan out the most gas-efficient times to perform your on-chain Indexing operations.
 
-      ![gasnow.org average historical gas price tool](<Indexer Subgraph Selection Guide/Untitled 2.png>)
+      ![gasnow.org average historical gas price tool](<../../technical-documentation/Mainnet/Indexer Subgraph Selection Guide/Untitled 2.png>)
 
 #### Subgraph Deployment Strategies
 
@@ -111,7 +111,7 @@ _**In this guide:**_
     * With the above information, the Indexer can assess which subgraphs are the most profitable to allocate to (GRT rewarded per GRT staked) **but more importantly,** by using the last statistic in the list, **difference between current and optimal stake on the subgraph,** the Indexer can assess if the subgraph is worth deploying their targeted amount of stake to.
     *   Example analysis
 
-        ![Example subgraph analysis by stake-weighting](<Indexer Subgraph Selection Guide/Untitled 3.png>)
+        ![Example subgraph analysis by stake-weighting](<../../technical-documentation/Mainnet/Indexer Subgraph Selection Guide/Untitled 3.png>)
 * The table has been sorted by potential rewards per 1M GRT allocated
 * Notice how three subgraphs in particular are more profitable to stake on in the current network state
 * Notice how adding your own stake to each subgraph will change how profitable it is
@@ -134,7 +134,7 @@ _**In this guide:**_
   * In the early stages of the network, unless everyone is signal-weighting, large Indexers cannot stick to signal weighted decisions alone - this is due to the reasons explained at the start of this section - very large allocations can have a negative impact on overall profitability on a subgraph if the large Indexer isn't also considering the optimal stake scenario.
 *   Example analysis
 
-    ![Example subgraph analysis by signal-weighting](<Indexer Subgraph Selection Guide/Untitled 4.png>)
+    ![Example subgraph analysis by signal-weighting](<../../technical-documentation/Mainnet/Indexer Subgraph Selection Guide/Untitled 4.png>)
 * The table has been sorted by Signal % total, from largest signal to smallest
 * The higher the signal on a subgraph, the larger proportion of your stake should be allocated to it
   * Other stake-related strategies
@@ -149,7 +149,7 @@ _**In this guide:**_
     * Indexers needs to work together on improving the ratio of total fees to total GRT allocated to a subgraph, in order that everyone sees improved rebates from the revenue share function
     *   Indexers with very large stake compared to an average Indexer can have severe negative impact on everyone's rebates if their cost models are not tuned correctly.
 
-        ![A basic example of the Revenue Share function, demonstrating how a very large Indexer can have a profoundly negative impact on the returns of smaller Indexers, while taking more than their "fair" share of the rebate pool and burning a large amount of fees at the same time.](<Indexer Subgraph Selection Guide/Untitled 5.png>)
+        ![A basic example of the Revenue Share function, demonstrating how a very large Indexer can have a profoundly negative impact on the returns of smaller Indexers, while taking more than their "fair" share of the rebate pool and burning a large amount of fees at the same time.](<../../technical-documentation/Mainnet/Indexer Subgraph Selection Guide/Untitled 5.png>)
 * The reality of migration is that this imbalance is going to continue until there are significantly more subgraphs in the network and significantly more demand for query business.
 
 #### Selection Strategies for the Future
