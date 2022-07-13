@@ -4,7 +4,7 @@ description: What are Indexers in The Graph Network?
 
 # What are Indexers?
 
-Indexers operate nodes in The Graph Network and provide indexing and query processing services to customers. By staking Graph Tokens (GRT), Indexers earn **indexing rewards** and **query fees** for their services. Additionally, Indexers earn from a **Rebate Pool** that is shared with all network contributors proportional to their work, following the [Cobb-Douglas Production Function](https://en.wikipedia.org/wiki/Cobb%E2%80%93Douglas\_production\_function). See [Revenue Streams](revenues/revenue-streams.md) for more details on Indexer incentives.
+Indexers operate nodes in The Graph Network and provide indexing and query processing services to customers. By staking Graph Tokens (GRT), Indexers earn **indexing rewards** and **query fees** for their services. Additionally, Indexers earn from a **Rebate Pool** that is shared with all network contributors proportional to their work, following the [Cobb-Douglas Production Function](https://en.wikipedia.org/wiki/Cobb%E2%80%93Douglas\_production\_function). See [Revenue Streams](../../official-docs/indexer/revenue-streams.md) for more details on Indexer incentives.
 
 {% hint style="danger" %}
 The technical level to participate in the network as an Indexer is **ADVANCED**. To get started as an Indexer, follow the [Indexer documentation](https://thegraph.com/docs/network#infrastructure).
