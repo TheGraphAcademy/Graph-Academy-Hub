@@ -8,6 +8,12 @@
 * [Get Started](official-docs/get-started.md)
 * [About The Graph](official-docs/about-the-graph/README.md)
   * [Introduction](official-docs/about-the-graph/introduction.md)
+  * [Network Overview](official-docs/about-the-graph/network-overview.md)
+* [Developer](official-docs/developer/README.md)
+  * [Quick Start](official-docs/developer/quick-start.md)
+  * [Define a Subgraph](official-docs/developer/define-a-subgraph.md)
+  * [Create a Subgraph](official-docs/developer/create-a-subgraph.md)
+  * [Publish a Subgraph to the Decentralized Network](official-docs/developer/publish-a-subgraph-to-the-decentralized-network.md)
 
 ## Technical documentation
 
