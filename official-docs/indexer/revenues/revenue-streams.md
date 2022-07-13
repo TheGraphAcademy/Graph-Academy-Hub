@@ -4,13 +4,13 @@ description: What are the incentives for Indexers to participate in the network?
 
 # Revenue Streams
 
-In order to ensure the decentralization of The Graph Network, different incentives are given to [network participants](../../overview.md). These are the incentives for **Indexers**:
+In order to ensure the decentralization of The Graph Network, different incentives are given to [network participants](broken-reference). These are the incentives for **Indexers**:
 
 {% tabs %}
 {% tab title="Indexing rewards" %}
 ## Indexing rewards
 
-[Curators](../../curators.md) stake GRT in order to signal to Indexers which subgraphs are of a high-quality and should accordingly be indexed in the network. Based on the curation signal, Indexers select subgraphs and index their contents. The indexing rewards for doing so are generated via a **3% annual protocol wide inflation**. The rewards are distributed to all Indexers who are providing subgraphs developments for the network proportional to the amount of their indexing work.
+[Curators](broken-reference) stake GRT in order to signal to Indexers which subgraphs are of a high-quality and should accordingly be indexed in the network. Based on the curation signal, Indexers select subgraphs and index their contents. The indexing rewards for doing so are generated via a **3% annual protocol wide inflation**. The rewards are distributed to all Indexers who are providing subgraphs developments for the network proportional to the amount of their indexing work.
 {% endtab %}
 
 {% tab title="Query fee rebates" %}

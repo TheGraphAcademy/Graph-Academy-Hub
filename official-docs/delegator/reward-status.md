@@ -10,7 +10,9 @@ The reward status `pending` refers to your rewards being accumulated in an activ
 The rewards in `pending` are subject to changes of the Indexers indexing and fee cuts. This is a vulnerability that can be exploited by malicious Indexers, see the link to Indexer Behavior below.
 {% endhint %}
 
-{% page-ref page="../../indexers/vulnerabilities.md" %}
+{% content-ref url="../indexer/vulnerabilities.md" %}
+[vulnerabilities.md](../indexer/vulnerabilities.md)
+{% endcontent-ref %}
 
 ## Unrealized
 
@@ -18,5 +20,4 @@ The section `unrealized` shows the final amount of GRT that has been assigned to
 
 ## Realized
 
-Once you have exited your rewards \(subject to a 28 day thawing period\) you can withdraw your realized rewards. It is important to note that your realized rewards are no longer delegated and do no longer earn rewards.
-
+Once you have exited your rewards (subject to a 28 day thawing period) you can withdraw your realized rewards. It is important to note that your realized rewards are no longer delegated and do no longer earn rewards.

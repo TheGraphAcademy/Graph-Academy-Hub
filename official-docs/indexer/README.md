@@ -149,9 +149,9 @@ Note: To support agile scaling, it is recommended that query and indexing concer
 | ---- | ---------------------- | ------ | ------------------------- | --------------------------------------- |
 | 8000 | Indexer management API | /      | --indexer-management-port | `INDEXER_AGENT_INDEXER_MANAGEMENT_PORT` |
 
-#### Setup server infrastructure using Terraform on Google Cloud[#Link to this section](https://thegraph.com/docs/en/indexing/#setup-server-infrastructure-using-terraform-on-google-cloud) <a href="#setup-server-infrastructure-using-terraform-on-google-cloud" id="setup-server-infrastructure-using-terraform-on-google-cloud"></a>
+#### Setup server infrastructure using Terraform on Google Cloud <a href="#setup-server-infrastructure-using-terraform-on-google-cloud" id="setup-server-infrastructure-using-terraform-on-google-cloud"></a>
 
-**Install prerequisites**[**#Link to this section**](https://thegraph.com/docs/en/indexing/#install-prerequisites)
+**Install prerequisites**
 
 * Google Cloud SDK
 * Kubectl command line tool

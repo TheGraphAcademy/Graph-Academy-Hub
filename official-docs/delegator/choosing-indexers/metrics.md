@@ -8,13 +8,13 @@ First of all, the network page shows you the most important stats about the netw
 
 The metrics on the network page help Delegators to gain a quick overview of Indexers.
 
-![Network Page of The Graph](../../../../.gitbook/assets/image%20%288%29.png)
+![Network Page of The Graph](<../../../.gitbook/assets/image (8).png>)
 
 ### Fee and Reward cut Percentages
 
 `Fee and reward cuts` refer to the percentages Indexers deduct from the indexing and querying rewards that are distributed to their Delegators.
 
-![](../../../../.gitbook/assets/image%20%289%29.png)
+![](<../../../.gitbook/assets/image (9).png>)
 
 An indexer with a fee cut of 20% keeps a total of 20% of earned rewards for themselves.
 
@@ -36,11 +36,13 @@ Indexers have a `cooldown period` that determines how often they can change dele
 
 Within the `stake owned` _\*\*_column Delegators can see how many GRT are deposited by the Indexer as collateral to prevent malicious behavior.
 
-![](../../../../.gitbook/assets/image%20%285%29.png)
+![](<../../../.gitbook/assets/image (5).png>)
 
 Should an indexer behave in a harmful way, a percentage of his owned stake will be deducted as punishment. This is called `slashing`. You can learn more about it here:
 
-{% page-ref page="../../../indexers/" %}
+{% content-ref url="../../indexer/indexers.md" %}
+[indexers.md](../../indexer/indexers.md)
+{% endcontent-ref %}
 
 The higher the collateral, the more is at risk for the indexer.
 
@@ -56,9 +58,9 @@ The section `Available` within the category `Delegation Capacity` indicates the 
 
 `Max Capacity` indicates the maximum amount of delegated stake the indexer can productively accept. An excess of delegated stake cannot be used for allocations or rewards allocations.
 
-What is important to analyze is whether or not an Indexer is `overdelegated`. If `Delegation Capacity` of an Indexer is negative \(indicated by the small glowing square\), the Indexer is overdelegated.
+What is important to analyze is whether or not an Indexer is `overdelegated`. If `Delegation Capacity` of an Indexer is negative (indicated by the small glowing square), the Indexer is overdelegated.
 
-![](../../../../.gitbook/assets/1%20%281%29.jpg)
+![](<../../../.gitbook/assets/1 (1).jpg>)
 
 This implies that the amount of GRT delegated to the Indexer is higher than the available delegation capacity the Indexer can still productively accept.
 
@@ -72,7 +74,6 @@ This means that it could be more profitable to delegate to an Indexer that is no
 
 Fourth and last, Delegators can find two columns with stats about the generated revenue of an Indexer.
 
-![](../../../../.gitbook/assets/image%20%281%29.png)
+![](<../../../.gitbook/assets/image (1).png>)
 
 The `query fees` and the `indexer rewards` show how many GRT an Indexer has earned so far. These two columns are important if Delegators want to evaluate the activity level of one particular Indexer. When doing so, it is important to keep in mind that there may be indexers with attractive rewards cut percentages that are not active for a variety of reasons. Having a look at the earned rewards of the Indexer in these two columns can help to assess if an Indexer has been active.
-

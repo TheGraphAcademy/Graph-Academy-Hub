@@ -2,7 +2,7 @@
 description: What are Indexers in The Graph Network?
 ---
 
-# Indexers
+# What are Indexers?
 
 Indexers operate nodes in The Graph Network and provide indexing and query processing services to customers. By staking Graph Tokens (GRT), Indexers earn **indexing rewards** and **query fees** for their services. Additionally, Indexers earn from a **Rebate Pool** that is shared with all network contributors proportional to their work, following the [Cobb-Douglas Production Function](https://en.wikipedia.org/wiki/Cobb%E2%80%93Douglas\_production\_function). See [Revenue Streams](revenues/revenue-streams.md) for more details on Indexer incentives.
 
@@ -18,7 +18,7 @@ Indexers need to stake at least 100k GRT tokens to run a node and participate in
 
 Indexers select subgraphs in The Graph Network to index. Customers (typically end-users) query the indexed data by paying for their metered usage based on the laws of supply and demand. Indexers are running an indexer agent that programmatically monitors their resource usage, sets prices, and decides which subgraphs to index. Indexers can set their own pricing models and strategies to gain a competitive edge in the marketplace.
 
-The selection of subgraphs by indexers is based on subgraph’s curation signal, where [Curators ](../curators.md)stake GRT in order to indicate which subgraphs are high-quality and should be prioritized. Consumers (eg. applications) can also set parameters for which Indexers process queries for their subgraphs and set preferences for query fee pricing.
+The selection of subgraphs by indexers is based on subgraph’s curation signal, where [Curators ](broken-reference)stake GRT in order to indicate which subgraphs are high-quality and should be prioritized. Consumers (eg. applications) can also set parameters for which Indexers process queries for their subgraphs and set preferences for query fee pricing.
 
 ## Indexer staking
 
@@ -36,15 +36,15 @@ Indexers in The Graph Network are incentivized to provide honest and reliable in
 Slashing is a mechanism built into The Graph protocol to discourage and punish malicious Indexer behavior. Additionally, slashing incentivizes node security, availability, and network participation.
 
 {% hint style="success" %}
-It is important to note that [curators ](../curators.md)and [delegators ](../delegators/)are not subject to slashing or other punishments for Indexer misbehavior.
+It is important to note that [curators ](broken-reference)and [delegators ](broken-reference)are not subject to slashing or other punishments for Indexer misbehavior.
 {% endhint %}
 
 ## Delegation
 
 Indexers can also be delegated stake from Delegators, to contribute to the network. You can find further documentation about delegators here:
 
-{% content-ref url="../delegators/" %}
-[delegators](../delegators/)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
 ## Thawing period

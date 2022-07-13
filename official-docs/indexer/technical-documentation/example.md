@@ -28,7 +28,7 @@ Indexers can use the following key metrics to evaluate subgraphs. Based on this 
 {% tab title="Curation Signal" %}
 ### Curation Signal
 
-[Curators](../../curators.md) stake GRT in order to signal to Indexers which subgraphs are of a high-quality and should accordingly be indexed in the network. The strength of the curation signal is an indicator to Indexers about the interest in the curated subgraph.
+[Curators](broken-reference) stake GRT in order to signal to Indexers which subgraphs are of a high-quality and should accordingly be indexed in the network. The strength of the curation signal is an indicator to Indexers about the interest in the curated subgraph.
 
 {% hint style="success" %}
 This is especially true during the bootstrapping phase during which query volume is starting to ramp up.
