@@ -4,7 +4,7 @@ With the subgraph deployed, visit the [Graph Explorer](https://thegraph.com/expl
 
 An example is provided below, but please see the [Query API](https://thegraph.com/docs/en/developer/graphql-api/) for a complete reference on how to query the subgraph's entities.
 
-**Example**[**#Link to this section**](https://thegraph.com/docs/en/developer/query-the-graph/#example)
+**Example**
 
 This query lists all the counters our mapping has created. Since we only create one, the result will only contain our one `default-counter`:
 
