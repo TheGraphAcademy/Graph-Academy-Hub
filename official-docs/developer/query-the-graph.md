@@ -1,0 +1,25 @@
+# Query The Graph
+
+With the subgraph deployed, visit the [Graph Explorer](https://thegraph.com/explorer) to open up a [GraphiQL](https://github.com/graphql/graphiql) interface where you can explore the deployed GraphQL API for the subgraph by issuing queries and viewing the schema.
+
+An example is provided below, but please see the [Query API](https://thegraph.com/docs/en/developer/graphql-api/) for a complete reference on how to query the subgraph's entities.
+
+**Example**[**#Link to this section**](https://thegraph.com/docs/en/developer/query-the-graph/#example)
+
+This query lists all the counters our mapping has created. Since we only create one, the result will only contain our one `default-counter`:
+
+```
+{  counters {    id    value  }}
+```
+
+### Using The Graph Explorer <a href="#using-the-graph-explorer" id="using-the-graph-explorer"></a>
+
+Each subgraph published to the decentralized Graph Explorer has a unique query URL that you can find by navigating to the subgraph details page and clicking on the "Query" button on the top right corner. This will open a side pane that will give you the unique query URL of the subgraph as well as some instructions about how to query it.
+
+![Query Subgraph Pane](https://thegraph.com/docs/img/query-subgraph-pane.png)
+
+As you can notice, this query URL must use a unique API key. You can create and manage your API keys in the [Subgraph Studio](https://thegraph.com/studio) in the "API Keys" section. Learn more about how to use Subgraph Studio [here](https://thegraph.com/docs/en/studio/subgraph-studio/).
+
+Querying subgraphs using your API keys will generate query fees that will be paid in GRT. You can learn more about billing [here](https://thegraph.com/docs/en/studio/billing/).
+
+You can also use the GraphQL playground in the "Playground" tab to query a subgraph within The Graph Explorer.

@@ -14,6 +14,16 @@
   * [Define a Subgraph](official-docs/developer/define-a-subgraph.md)
   * [Create a Subgraph](official-docs/developer/create-a-subgraph.md)
   * [Publish a Subgraph to the Decentralized Network](official-docs/developer/publish-a-subgraph-to-the-decentralized-network.md)
+  * [Query The Graph](official-docs/developer/query-the-graph.md)
+  * [Querying from an Application](official-docs/developer/querying-from-an-application.md)
+  * [Distributed Systems](official-docs/developer/distributed-systems.md)
+  * [AssemblyScript API](official-docs/developer/assemblyscript-api.md)
+  * [AssemblyScript Migration Guide](official-docs/developer/assemblyscript-migration-guide.md)
+  * [GraphQL API](official-docs/developer/graphql-api.md)
+  * [Unit Testing Framework](official-docs/developer/unit-testing-framework.md)
+  * [Quick and easy subgraph debugging using forks](official-docs/developer/quick-and-easy-subgraph-debugging-using-forks.md)
+  * [Deprecating a Subgraph](official-docs/developer/deprecating-a-subgraph.md)
+* [Indexer](official-docs/indexer.md)
 
 ## Technical documentation
 
