@@ -1,29 +1,32 @@
-# Summary
+# Deploy and Configure Graph-node
+
 This guide provides instructions for:
+
 * Installing graph-node, query-node
 * Where relevant, configuring a systemd unitfile for each component, so they auto-restart on failure.
 
 ## Acknowledgements and Disclaimer
-The contents of this guide has been pulled together from a variety of sources. It has been tested on Ubuntu Server 18.04 and 20.04. Your mileage may vary. The exact versions of Graph components needed for mainnet/testnet are documented [here](https://github.com/graphprotocol/indexer/blob/main/docs/networks.md#testnet-httpstestnetthegraphcom-rinkeby) - many of the commands include specific versions of the Graph software and you will need to crosscheck and use the latest versions approved for the network you are deploying on. 
+
+The contents of this guide has been pulled together from a variety of sources. It has been tested on Ubuntu Server 18.04 and 20.04. Your mileage may vary. The exact versions of Graph components needed for mainnet/testnet are documented [here](https://github.com/graphprotocol/indexer/blob/main/docs/networks.md#testnet-httpstestnetthegraphcom-rinkeby) - many of the commands include specific versions of the Graph software and you will need to crosscheck and use the latest versions approved for the network you are deploying on.
 
 ## Prerequisites
+
 First and foremost, it is assumed that you have decided on your architecture per the earlier part of this guide series - VMs or containers, storage sizing and redundancy, Eth node choice. At all times, this guide will use the reference architecture from the first page for all instructions. This guide is not intended for absolute beginners. It assumes some knowledge of using a linux terminal. Before you get started you will need to have your Ubuntu server instance up and running and up to date. Your server will require an internet connection. This guide assumes that you are logged into the server using a non-root account with SUDO access. Security will not be covered in this guide.
 
 Note: If you are using Linux containers and being economical with the resources you assign to them, you need to be sure that you supply them with enough memory and compute power to install and build rust packages, or you will see strange, un-diagnosable behavior when compiling the source code. 4 vcpu and 2GB of memory should be sufficient in most cases.
 
 ## graph-node installation
+
 Per the reference architecture, two of these nodes should be deployed. To avoid repetition, the guide will only run through the first install. We will also build a query-node, which is simply a graph-node with indexing turned off and graphql query logging turned on, for use in serving queries to consumers and analyzing the performance of served queries.
 
-Additional packages that may need to be installed: 
+Additional packages that may need to be installed:
 
-Rust - `curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh`
-Git - `sudo apt install git`
-To support Rust compiles - `sudo apt-get install -y clang libpq-dev libssl-dev pkg-config build-essential`
+Rust - `curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh` Git - `sudo apt install git` To support Rust compiles - `sudo apt-get install -y clang libpq-dev libssl-dev pkg-config build-essential`
 
-Make a directory graph-node in home:
-`mkdir ~/graph-node`
+Make a directory graph-node in home: `mkdir ~/graph-node`
 
 #### Build graph-node
+
 Download and compile the tagged release of graph-node using the following command:
 
 `cd ~/ && rm -rf ~/graph-node && git clone https://github.com/graphprotocol/graph-node ~/graph-node && cd ~/graph-node && git checkout v0.21.1 && cargo build --release`
@@ -31,6 +34,7 @@ Download and compile the tagged release of graph-node using the following comman
 In the above case we are checking out the `v0.21.1` tag. Make sure and check that you are using the right version for the network you are deploying to as per the link in the Acknowledgements section.
 
 #### Configure graph-node startup script
+
 Run the following to create the graph-node startup script
 
 ```
@@ -48,9 +52,11 @@ cargo run -p graph-node --release -- \\
 
 EOF
 ```
+
 Make the script executable by running `chmod +x graph-startup.sh`
 
 As a preliminary test, you can manually execute the script `./graph-startup.sh` and should see the initial compilation process kick off (this will take some time)
+
 ```
 $ ./graph-startup.sh 
    Compiling libc v0.2.80
@@ -60,7 +66,9 @@ $ ./graph-startup.sh
    Compiling lazy_static v1.4.0
      Building [============>            ] 10/650...
 ```
+
 Once compilation is complete the graph-node should start and will look something like:
+
 ```
 Feb 15 17:27:04.779 INFO Graph Node version: v0.21.1 (8915fd15c 2021-01-11)
 Feb 15 17:27:04.779 INFO Generating configuration from command line arguments
@@ -88,9 +96,11 @@ Feb 15 17:27:08.027 INFO Downloading latest blocks from Ethereum. This may take 
 ```
 
 ### graph-node systemd configuration
+
 Once confident that your node runs correctly, it is important to configure the node to start automatically and restart itself if a failure occurs. To achieve this we can used systemd to manage the node process.
 
 Run the following command to create your graphindexer unit file
+
 ```
 sudo tee /etc/systemd/system/graphindexer.service<<EOF
 
@@ -210,5 +220,3 @@ Mar 23 16:36:22.023 INFO Starting GraphQL WebSocket server at: ws://localhost:80
 You can now use the graph-node systemd configuration section of this guide to automate restarting of the query node.
 
 You have successfully built two graph-nodes and one query node.
-
-        
