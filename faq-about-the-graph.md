@@ -22,6 +22,31 @@ This guide provides a full review of this document, and how to consider everythi
 
 {% embed url="https://youtu.be/2G7S2gdURdc" %}
 
+### Do you have any good indexers to recommend?
+
+When it comes to selecting an Indexer, you can diversify by choosing 2-4 Indexers. This depends on the size of your stack, however. (The more Indexers you choose, the more gas fees you will have to pay so it makes only sense with a larger stack). Here’s what you should take into consideration when making your selection: 
+
+#### Indexer Selection Metrics 
+- Indexer metrics in comparison to other Indexers (especially effective cut percentages) 
+- Parameter cooldown of the Indexer 
+- APY (it’s better to have a dependable Indexer with a reasonable APY you can delegate to over a long period of time) 
+- Historical ROI 
+- Indexer reputation in the community, responsiveness, helpfulness and activity level. Can you get in touch with your Indexer to ask questions? 
+
+#### Becoming a Delegator
+For detailed guides on becoming a Delegator and selecting Indexers, have a look here: 
+- https://thegraph.academy/delegators/
+- https://thegraph.academy/delegators/choosing-indexers/
+
+You can use one of the reward calculators to gain a better understanding about potential rewards and to compare Indexers, for example: https://graphscan.io/. 
+
+#### Other Tools & Dashboards
+- https://dappquery.com/dapp/graph-mainnet-delegator-10053
+- https://thegraph.stake-machine.com/
+- https://maplenodes.com/graph/indexers/
+- https://youtu.be/2G7S2gdURdc
+
+
 ## Curation FAQs <a href="#curation-fa-qs" id="curation-fa-qs"></a>
 
 #### 1. What % of query fees do Curators earn? <a href="#1-what-of-query-fees-do-curators-earn" id="1-what-of-query-fees-do-curators-earn"></a>
