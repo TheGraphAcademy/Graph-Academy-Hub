@@ -12,27 +12,11 @@ The mandate of The Graph Council includes the following core functions:
 
 In the future, it is planned to further decentralize The Graph's governance, for instance by replacing individual members with nested multisigs or DAOs.
 
-## Council Members:
+## The Graph ecosystem also consists of:
 
-### Indexers
-
-Jim Cousins & Gary Morris
-
-### Users
-
-Justin J Moses & Kayvon Tehranian
-
-### Researchers
-
-Santiago Palladino & Yondon Fu
-
-### Backers
-
-Michael Anderson & Spencer Noon
-
-### Initial Team
-
-Brandon Ramirez & Yaniv Tal
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
+{% endcontent-ref %}
 
 {% content-ref url="the-graph-foundation.md" %}
 [the-graph-foundation.md](the-graph-foundation.md)

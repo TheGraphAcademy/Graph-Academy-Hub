@@ -71,9 +71,16 @@
 
 ## The Graph Ecosystem
 
-* [Network](the-graph-ecosystem/organizational-structure/README.md)
+* [Organizational Structure](the-graph-ecosystem/organizational-structure/README.md)
   * [Core Developer Teams](the-graph-ecosystem/organizational-structure/core-developer-teams.md)
   * [The Graph Foundation](the-graph-ecosystem/organizational-structure/the-graph-foundation.md)
   * [The Graph Council](the-graph-ecosystem/organizational-structure/the-graph-council.md)
   * [Graph Advocates](the-graph-ecosystem/organizational-structure/graph-advocates.md)
   * [Graph Advocates DAO](the-graph-ecosystem/organizational-structure/graph-advocates-dao.md)
+  * [Investors/Backers](the-graph-ecosystem/organizational-structure/investors-backers.md)
+  * [Advisors](the-graph-ecosystem/organizational-structure/advisors.md)
+  * [Users](the-graph-ecosystem/organizational-structure/users.md)
+  * [Indexers](the-graph-ecosystem/organizational-structure/indexers.md)
+  * [Curators](the-graph-ecosystem/organizational-structure/curators.md)
+  * [Delegators](the-graph-ecosystem/organizational-structure/delegators.md)
+  * [Community](the-graph-ecosystem/organizational-structure/community.md)
