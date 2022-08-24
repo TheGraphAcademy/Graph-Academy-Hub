@@ -1,0 +1,3 @@
+# Edge & Node
+
+Edge & Node is the initial team behind The Graph. E\&N creates and supports protocols and dApps that empower individuals and move humanity forward. The idea behind The Graph Network was conceived and given shape by Graph Protocol, Inc. After having launched the mainnet of The Graph Network on December 17th, 2020, Graph Protocol, Inc. decided to change its name to [**Edge & Node**](https://edgeandnode.com/). The intention behind the change of the name was to highlight the ongoing decentralization in the network. As such, Edge & Node is no longer the central team developing and promoting the protocol. Instead, Edge & Node will provide services to the ecosystem and will be involved with the protocol.
