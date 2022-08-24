@@ -4,11 +4,7 @@ An overview of The Graph's core developer teams.
 
 ### Edge & Node
 
-The idea behind The Graph Network was conceived and given shape by [Graph Protocol, Inc.](edge-and-node/graph-protocol-inc..md) After having launched the mainnet of The Graph Network on December 17th, 2020, Graph Protocol, Inc. decided to change its name to [**Edge & Node**](https://edgeandnode.com/). The intention behind the change of the name was to highlight the ongoing decentralization in the network. As such, Edge & Node is no longer the central team developing and promoting the protocol. Instead, Edge & Node will provide services to the ecosystem and will be involved with the protocol.
-
-{% content-ref url="edge-and-node/" %}
-[edge-and-node](edge-and-node/)
-{% endcontent-ref %}
+The idea behind The Graph Network was conceived and given shape by [Graph Protocol, Inc.](broken-reference) After having launched the mainnet of The Graph Network on December 17th, 2020, Graph Protocol, Inc. decided to change its name to [**Edge & Node**](https://edgeandnode.com/). The intention behind the change of the name was to highlight the ongoing decentralization in the network. As such, Edge & Node is no longer the central team developing and promoting the protocol. Instead, Edge & Node will provide services to the ecosystem and will be involved with the protocol.
 
 ### Streamingfast
 
