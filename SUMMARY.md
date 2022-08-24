@@ -72,8 +72,9 @@
 ## The Graph Ecosystem
 
 * [Organizational Structure](the-graph-ecosystem/organizational-structure/README.md)
-  * [Graph Protocol, Inc.](the-graph-ecosystem/organizational-structure/graph-protocol-inc..md)
-  * [Edge & Node](the-graph-ecosystem/organizational-structure/edge-and-node.md)
+  * [Core Developer Teams](the-graph-ecosystem/organizational-structure/core-developer-teams/README.md)
+    * [Edge & Node](the-graph-ecosystem/organizational-structure/core-developer-teams/edge-and-node/README.md)
+      * [Graph Protocol, Inc.](the-graph-ecosystem/organizational-structure/core-developer-teams/edge-and-node/graph-protocol-inc..md)
   * [The Graph Foundation](the-graph-ecosystem/organizational-structure/the-graph-foundation.md)
   * [The Graph Council](the-graph-ecosystem/organizational-structure/the-graph-council.md)
   * [Graph Advocates](the-graph-ecosystem/organizational-structure/graph-advocates.md)

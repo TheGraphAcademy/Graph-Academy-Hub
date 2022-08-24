@@ -26,7 +26,10 @@ Brandon Ramirez & Yaniv Tal
 
 ### The Graph ecosystem also consists of:
 
-{% page-ref page="edge-and-node.md" %}
+{% content-ref url="core-developer-teams/edge-and-node/" %}
+[edge-and-node](core-developer-teams/edge-and-node/)
+{% endcontent-ref %}
 
-{% page-ref page="the-graph-council.md" %}
-
+{% content-ref url="the-graph-council.md" %}
+[the-graph-council.md](the-graph-council.md)
+{% endcontent-ref %}

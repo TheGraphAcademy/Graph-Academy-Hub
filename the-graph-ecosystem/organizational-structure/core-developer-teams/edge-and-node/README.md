@@ -4,9 +4,13 @@ The idea behind The Graph Network was conceived and given shape by [Graph Protoc
 
 ### The Graph ecosystem also consists of:
 
-{% page-ref page="the-graph-foundation.md" %}
+{% content-ref url="../../the-graph-foundation.md" %}
+[the-graph-foundation.md](../../the-graph-foundation.md)
+{% endcontent-ref %}
 
-{% page-ref page="the-graph-council.md" %}
+{% content-ref url="../../the-graph-council.md" %}
+[the-graph-council.md](../../the-graph-council.md)
+{% endcontent-ref %}
 
 ## Present team members of Edge & Node
 
@@ -30,4 +34,3 @@ The idea behind The Graph Network was conceived and given shape by [Graph Protoc
 ## Former team members
 
 None.
-
