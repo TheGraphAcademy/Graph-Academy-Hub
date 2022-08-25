@@ -83,3 +83,7 @@
   * [The Graph Council](the-graph-ecosystem/organizational-structure/the-graph-council.md)
   * [Graph Advocates](the-graph-ecosystem/organizational-structure/graph-advocates.md)
   * [Graph Advocates DAO](the-graph-ecosystem/organizational-structure/graph-advocates-dao.md)
+* [Infrastructure](the-graph-ecosystem/infrastructure/README.md)
+  * [Firehose](the-graph-ecosystem/infrastructure/firehose.md)
+  * [Substreams](the-graph-ecosystem/infrastructure/substreams.md)
+  * [The Graph Client](the-graph-ecosystem/infrastructure/the-graph-client.md)
