@@ -10,6 +10,7 @@
   * [Introduction](official-docs/about-the-graph/introduction.md)
   * [Network Overview](official-docs/about-the-graph/network-overview.md)
 * [Developer](official-docs/developer/README.md)
+  * [Mastering Subgraphs](official-docs/developer/mastering-subgraphs.md)
   * [Quick Start](official-docs/developer/quick-start.md)
   * [Define a Subgraph](official-docs/developer/define-a-subgraph.md)
   * [Create a Subgraph](official-docs/developer/create-a-subgraph.md)
