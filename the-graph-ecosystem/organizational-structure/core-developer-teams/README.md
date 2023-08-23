@@ -12,12 +12,6 @@ StreamingFast is a protocol infrastructure company that excels at building highl
 
 The StreamingFast team has proven themselves as experts in building critical infrastructure and providing API services. **StreamingFast will contribute its technology, developer talent, and resources to advance The Graph as a protocol and ecosystem. Relevant IP and products will be open-sourced under The Graph Protocol Github repo and API products will migrate to The Graph Network for backend indexing and querying support.** As a team dedicated to core protocol development, StreamingFast will work alongside Edge & Node, Indexers, and The Graph community to help with ongoing Graph Node improvements, contribute to governance and the GIP process, and support subgraph feature development.
 
-### Figment
-
-Figment is one of the world’s largest blockchain infrastructure and services providers serving customers worldwide. The Figment team is experienced with contributing to protocols, improving node infrastructure and indexing on The Graph. Joining The Graph community allows Figment to contribute to a decentralized and community-owned infrastructure for Web3, powering the future of the Internet. In this role, Figment will contribute to improving indexing performance, adding support for native network subgraphs, expanding multiblockchain support, and contributing to the evolution of the core protocol. Figment’s native DataHub service will also migrate to The Graph for its indexing infrastructure.&#x20;
-
-Figment is a leading provider of staking, middleware, and application layer solutions for token holders and developers investing in and building on Web3 technologies. Their validator infrastructure, data indexers, and developer tooling spans across 35+ proof-of-stake networks, including The Graph. Their technology is already used by thousands of token holders and developers across the globe, with over $6B in assets staked to their infrastructure.
-
 ### Semiotic
 
 Semiotic AI, which was founded in 2020 by professionals with experience in AI and cryptography, has been contributing to The Graph core research including automation of query negotiations through reinforcement learning (RL), AI-based determination of query costs, and query latency prediction. The team also open sourced an [Indexer Stress Test](https://forum.thegraph.com/t/indexer-stress-test-tool-release/2119) tool over the summer, and has built an AI-powered query generator that’s currently being heavily used and tested by other core devs!
@@ -36,7 +30,25 @@ Chris Wessels is joined by Juan Manuel Rodriguez Defango, Ana Maria Calin, Abel 
 
 GraphOps has long contributed to The Graph ecosystem, making a significant push to expand resources, information, and education. GraphOps provides a range of support, education, and the development of technology and tooling for Indexers in The Graph ecosystem.
 
+### Messari
 
+The Graph Foundation has awarded Messari a $12.5mm grant to become the first Core Subgraph Developer. With the grant, Messari will contribute its developer talent and domain expertise to develop and maintain high-quality, accurate, complex, and standardized protocol subgraphs. All subgraphs will be open source and available for the broader community.
+
+### Pinax
+
+Pinax is building world-class data streaming solutions using the experience gained from existing indexing, analytics, and search tools. Pinax joined The Graph in August 2023 as a core developer team.
+
+
+
+***
+
+### Former Core Dev Teams
+
+#### Figment
+
+Figment is one of the world’s largest blockchain infrastructure and services providers serving customers worldwide. The Figment team is experienced with contributing to protocols, improving node infrastructure and indexing on The Graph. Joining The Graph community allows Figment to contribute to a decentralized and community-owned infrastructure for Web3, powering the future of the Internet. In this role, Figment will contribute to improving indexing performance, adding support for native network subgraphs, expanding multiblockchain support, and contributing to the evolution of the core protocol. Figment’s native DataHub service will also migrate to The Graph for its indexing infrastructure.&#x20;
+
+Figment is a leading provider of staking, middleware, and application layer solutions for token holders and developers investing in and building on Web3 technologies. Their validator infrastructure, data indexers, and developer tooling spans across 35+ proof-of-stake networks, including The Graph. Their technology is already used by thousands of token holders and developers across the globe, with over $6B in assets staked to their infrastructure.
 
 
 
