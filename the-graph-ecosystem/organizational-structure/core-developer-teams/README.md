@@ -36,9 +36,18 @@ The Graph Foundation has awarded Messari a $12.5mm grant to become the first Cor
 
 ### Pinax
 
-Pinax is building world-class data streaming solutions using the experience gained from existing indexing, analytics, and search tools. Pinax joined The Graph in August 2023 as a core developer team.
+[Pinax](https://pinax.network/en) is a web3 data company focused on enabling true web3 independence. The team has been engineering blockchain data analytics and processing tools since 2018 and operates its own robust infrastructure, managing bare metal hardware across multiple hosted data centers. Pinax has over three years of experience operating a sophisticated Firehose-related tech stack.
 
+Pinax joined The Graph as a core developer team in July 2023.
 
+In addition to being an [indexer](https://forum.thegraph.com/t/know-your-indexer-28-pinax/4997) on The Graph Network, Pinax:
+
+* Supports the adoption and scalability of Firehose and Substreams as new data services on The Graph.
+* Assists new chains as they onboard to The Graph as new data sources.
+* Collaborates with core developers to experiment with operating and developing new data services on The Graph, such as WebSockets, SQL, and LLMs.
+* Supports indexers and developers on The Graph with [educational content and documentation](https://blog.pinax.network/).
+
+Follow Pinax on [X](https://twitter.com/PinaxNetwork) or [LinkedIn](https://www.linkedin.com/company/pinax-network/).
 
 ***
 
