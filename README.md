@@ -23,7 +23,7 @@ If you're new to The Graph Protocol, you can learn more about it in this introdu
 The Graph Hub is a decentralized community documentation, which allows everyone to contribute in a meaningful way. If you like to participate, follow these steps:
 
 1. Create a GitHub account or login with your existing account
-2. Navigate to the [The Graph Hub's GitHub repository](https://github.com/TheGraphAcademy/Graph-Academy-Hub/tree/652e922719a8318b4cd8b27d264db60ab5f50269/\[https:/github.com/TheGraphAcademy/Graph-Academy-Hub/README.md)
+2. Navigate to the [The Graph Hub's GitHub repository](https://github.com/TheGraphAcademy/Graph-Academy-Hub)
 3. Make your first pull request. This [tutorial video](https://www.youtube.com/watch?v=YTbRzhQju4c\&t=1s) explains how this is done.
 
 Members of the community will review your pull request and check it for accuracy.
