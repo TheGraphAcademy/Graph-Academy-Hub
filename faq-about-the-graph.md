@@ -24,26 +24,26 @@ This guide provides a full review of this document, and how to consider everythi
 
 ## Curation FAQs <a href="#curation-fa-qs" id="curation-fa-qs"></a>
 
-#### 1. What % of query fees do Curators earn? <a href="#1-what-of-query-fees-do-curators-earn" id="1-what-of-query-fees-do-curators-earn"></a>
+#### 1. What % of query fees do Curators earn? <a href="#id-1-what-of-query-fees-do-curators-earn" id="id-1-what-of-query-fees-do-curators-earn"></a>
 
 By signalling on a subgraph, you will earn a share of all the query fees that this subgraph generates. 10% of all query fees goes to the Curators pro-rata to their curation shares. This 10% is subject to governance.
 
-#### 2. How do I decide which subgraphs are high quality to signal on? <a href="#2-how-do-i-decide-which-subgraphs-are-high-quality-to-signal-on" id="2-how-do-i-decide-which-subgraphs-are-high-quality-to-signal-on"></a>
+#### 2. How do I decide which subgraphs are high quality to signal on? <a href="#id-2-how-do-i-decide-which-subgraphs-are-high-quality-to-signal-on" id="id-2-how-do-i-decide-which-subgraphs-are-high-quality-to-signal-on"></a>
 
 Finding high-quality subgraphs is a complex task, but it can be approached in many different ways. As a Curator, you want to look for trustworthy subgraphs that are driving query volume. A trustworthy subgraph may be valuable if it is complete, accurate, and supports a dApp’s data needs. A poorly architected subgraph might need to be revised or re-published, and can also end up failing. It is critical for Curators to review a subgraph’s architecture or code in order to assess if a subgraph is valuable. As a result:
 
 * Curators can use their understanding of a network to try and predict how an individual subgraph may generate a higher or lower query volume in the future
 * Curators should also understand the metrics that are available through The Graph Explorer. Metrics like past query volume and who the subgraph developer is can help determine whether or not a subgraph is worth signalling on.
 
-#### 3. What’s the cost of upgrading a subgraph? <a href="#3-what-s-the-cost-of-upgrading-a-subgraph" id="3-what-s-the-cost-of-upgrading-a-subgraph"></a>
+#### 3. What’s the cost of upgrading a subgraph? <a href="#id-3-what-s-the-cost-of-upgrading-a-subgraph" id="id-3-what-s-the-cost-of-upgrading-a-subgraph"></a>
 
 Migrating your curation shares to a new subgraph version incurs a curation tax of 1%. Curators can choose to subscribe to the newest version of a subgraph. When curator shares get auto-migrated to a new version, Curators will also pay half curation tax, ie. 0.5%, because upgrading subgraphs is an on-chain action that costs gas.
 
-#### 4. How often can I upgrade my subgraph? <a href="#4-how-often-can-i-upgrade-my-subgraph" id="4-how-often-can-i-upgrade-my-subgraph"></a>
+#### 4. How often can I upgrade my subgraph? <a href="#id-4-how-often-can-i-upgrade-my-subgraph" id="id-4-how-often-can-i-upgrade-my-subgraph"></a>
 
 It’s suggested that you don’t upgrade your subgraphs too frequently. See the question above for more details.
 
-#### 5. Can I sell my curation shares? <a href="#5-can-i-sell-my-curation-shares" id="5-can-i-sell-my-curation-shares"></a>
+#### 5. Can I sell my curation shares? <a href="#id-5-can-i-sell-my-curation-shares" id="id-5-can-i-sell-my-curation-shares"></a>
 
 Curation shares cannot be "bought" or "sold" like other ERC20 tokens that you may be familiar with. They can only be minted (created) or burned (destroyed) along the bonding curve for a particular subgraph. The amount of GRT needed to mint a new signal, and the amount of GRT you receive when you burn your existing signal are determined by that bonding curve. As a Curator, you need to know that when you burn your curation shares to withdraw GRT, you can end up with more or less GRT than you initially deposited.
 
@@ -516,35 +516,35 @@ After being created by an indexer a healthy allocation goes through four states.
 
 ## Developer FAQs
 
-#### 1. Can I delete my subgraph? <a href="#1-can-i-delete-my-subgraph" id="1-can-i-delete-my-subgraph"></a>
+#### 1. Can I delete my subgraph? <a href="#id-1-can-i-delete-my-subgraph" id="id-1-can-i-delete-my-subgraph"></a>
 
 It is not possible to delete subgraphs once they are created.
 
-#### 2. Can I change my subgraph name? <a href="#2-can-i-change-my-subgraph-name" id="2-can-i-change-my-subgraph-name"></a>
+#### 2. Can I change my subgraph name? <a href="#id-2-can-i-change-my-subgraph-name" id="id-2-can-i-change-my-subgraph-name"></a>
 
 No. Once a subgraph is created, the name cannot be changed. Make sure to think of this carefully before you create your subgraph so it is easily searchable and identifiable by other dapps.
 
-#### 3. Can I change the GitHub account associated with my subgraph? <a href="#3-can-i-change-the-git-hub-account-associated-with-my-subgraph" id="3-can-i-change-the-git-hub-account-associated-with-my-subgraph"></a>
+#### 3. Can I change the GitHub account associated with my subgraph? <a href="#id-3-can-i-change-the-git-hub-account-associated-with-my-subgraph" id="id-3-can-i-change-the-git-hub-account-associated-with-my-subgraph"></a>
 
 No. Once a subgraph is created, the associated GitHub account cannot be changed. Make sure to think of this carefully before you create your subgraph.
 
-#### 4. Am I still able to create a subgraph if my smart contracts don't have events? <a href="#4-am-i-still-able-to-create-a-subgraph-if-my-smart-contracts-don-t-have-events" id="4-am-i-still-able-to-create-a-subgraph-if-my-smart-contracts-don-t-have-events"></a>
+#### 4. Am I still able to create a subgraph if my smart contracts don't have events? <a href="#id-4-am-i-still-able-to-create-a-subgraph-if-my-smart-contracts-don-t-have-events" id="id-4-am-i-still-able-to-create-a-subgraph-if-my-smart-contracts-don-t-have-events"></a>
 
 It is highly recommended that you structure your smart contracts to have events associated with data you are interested in querying. Event handlers in the subgraph are triggered by contract events and are by far the fastest way to retrieve useful data.
 
 If the contracts you are working with do not contain events, your subgraph can use call and block handlers to trigger indexing. Although this is not recommended, as performance will be significantly slower.
 
-#### 5. Is it possible to deploy one subgraph with the same name for multiple networks? <a href="#5-is-it-possible-to-deploy-one-subgraph-with-the-same-name-for-multiple-networks" id="5-is-it-possible-to-deploy-one-subgraph-with-the-same-name-for-multiple-networks"></a>
+#### 5. Is it possible to deploy one subgraph with the same name for multiple networks? <a href="#id-5-is-it-possible-to-deploy-one-subgraph-with-the-same-name-for-multiple-networks" id="id-5-is-it-possible-to-deploy-one-subgraph-with-the-same-name-for-multiple-networks"></a>
 
 You will need separate names for multiple networks. While you can't have different subgraphs under the same name, there are convenient ways of having a single codebase for multiple networks. Find more on this in our documentation: [Redeploying a Subgraph](https://thegraph.com/docs/en/hosted-service/deploy-subgraph-hosted/#redeploying-a-subgraph)
 
-#### 6. How are templates different from data sources? <a href="#6-how-are-templates-different-from-data-sources" id="6-how-are-templates-different-from-data-sources"></a>
+#### 6. How are templates different from data sources? <a href="#id-6-how-are-templates-different-from-data-sources" id="id-6-how-are-templates-different-from-data-sources"></a>
 
 Templates allow you to create data sources on the fly, while your subgraph is indexing. It might be the case that your contract will spawn new contracts as people interact with it, and since you know the shape of those contracts (ABI, events, etc) upfront you can define how you want to index them in a template and when they are spawned your subgraph will create a dynamic data source by supplying the contract address.
 
 Check out the "Instantiating a data source template" section on: [Data Source Templates](https://thegraph.com/docs/en/developer/create-subgraph-hosted/#data-source-templates).
 
-#### 7. How do I make sure I'm using the latest version of graph-node for my local deployments? <a href="#7-how-do-i-make-sure-i-m-using-the-latest-version-of-graph-node-for-my-local-deployments" id="7-how-do-i-make-sure-i-m-using-the-latest-version-of-graph-node-for-my-local-deployments"></a>
+#### 7. How do I make sure I'm using the latest version of graph-node for my local deployments? <a href="#id-7-how-do-i-make-sure-i-m-using-the-latest-version-of-graph-node-for-my-local-deployments" id="id-7-how-do-i-make-sure-i-m-using-the-latest-version-of-graph-node-for-my-local-deployments"></a>
 
 You can run the following command:
 
@@ -554,29 +554,29 @@ docker pull graphprotocol/graph-node:latest
 
 **NOTE:** docker / docker-compose will always use whatever graph-node version was pulled the first time you ran it, so it is important to do this to make sure you are up to date with the latest version of graph-node.
 
-#### 8. How do I call a contract function or access a public state variable from my subgraph mappings? <a href="#8-how-do-i-call-a-contract-function-or-access-a-public-state-variable-from-my-subgraph-mappings" id="8-how-do-i-call-a-contract-function-or-access-a-public-state-variable-from-my-subgraph-mappings"></a>
+#### 8. How do I call a contract function or access a public state variable from my subgraph mappings? <a href="#id-8-how-do-i-call-a-contract-function-or-access-a-public-state-variable-from-my-subgraph-mappings" id="id-8-how-do-i-call-a-contract-function-or-access-a-public-state-variable-from-my-subgraph-mappings"></a>
 
 Take a look at `Access to smart contract` state inside the section [AssemblyScript API](https://thegraph.com/docs/en/developer/assemblyscript-api/).
 
-#### 9. Is it possible to set up a subgraph using `graph init` from `graph-cli` with two contracts? Or should I manually add another datasource in `subgraph.yaml` after running `graph init`? <a href="#9-is-it-possible-to-set-up-a-subgraph-using-from-with-two-contracts-or-should-i-manually-add-another" id="9-is-it-possible-to-set-up-a-subgraph-using-from-with-two-contracts-or-should-i-manually-add-another"></a>
+#### 9. Is it possible to set up a subgraph using `graph init` from `graph-cli` with two contracts? Or should I manually add another datasource in `subgraph.yaml` after running `graph init`? <a href="#id-9-is-it-possible-to-set-up-a-subgraph-using-from-with-two-contracts-or-should-i-manually-add-another" id="id-9-is-it-possible-to-set-up-a-subgraph-using-from-with-two-contracts-or-should-i-manually-add-another"></a>
 
 Unfortunately, this is currently not possible. `graph init` is intended as a basic starting point, from which you can then add more data sources manually.
 
-#### 10. I want to contribute or add a GitHub issue. Where can I find the open source repositories? <a href="#10-i-want-to-contribute-or-add-a-git-hub-issue-where-can-i-find-the-open-source-repositories" id="10-i-want-to-contribute-or-add-a-git-hub-issue-where-can-i-find-the-open-source-repositories"></a>
+#### 10. I want to contribute or add a GitHub issue. Where can I find the open source repositories? <a href="#id-10-i-want-to-contribute-or-add-a-git-hub-issue-where-can-i-find-the-open-source-repositories" id="id-10-i-want-to-contribute-or-add-a-git-hub-issue-where-can-i-find-the-open-source-repositories"></a>
 
 * [graph-node](https://github.com/graphprotocol/graph-node)
 * [graph-cli](https://github.com/graphprotocol/graph-cli)
 * [graph-ts](https://github.com/graphprotocol/graph-ts)
 
-#### 11. What is the recommended way to build "autogenerated" ids for an entity when handling events? <a href="#11-what-is-the-recommended-way-to-build-autogenerated-ids-for-an-entity-when-handling-events" id="11-what-is-the-recommended-way-to-build-autogenerated-ids-for-an-entity-when-handling-events"></a>
+#### 11. What is the recommended way to build "autogenerated" ids for an entity when handling events? <a href="#id-11-what-is-the-recommended-way-to-build-autogenerated-ids-for-an-entity-when-handling-events" id="id-11-what-is-the-recommended-way-to-build-autogenerated-ids-for-an-entity-when-handling-events"></a>
 
 If only one entity is created during the event and if there's nothing better available, then the transaction hash + log index would be unique. You can obfuscate these by converting that to Bytes and then piping it through `crypto.keccak256` but this won't make it more unique.
 
-#### 12. When listening to multiple contracts, is it possible to select the contract order to listen to events? <a href="#12-when-listening-to-multiple-contracts-is-it-possible-to-select-the-contract-order-to-listen-to-eve" id="12-when-listening-to-multiple-contracts-is-it-possible-to-select-the-contract-order-to-listen-to-eve"></a>
+#### 12. When listening to multiple contracts, is it possible to select the contract order to listen to events? <a href="#id-12-when-listening-to-multiple-contracts-is-it-possible-to-select-the-contract-order-to-listen-to-eve" id="id-12-when-listening-to-multiple-contracts-is-it-possible-to-select-the-contract-order-to-listen-to-eve"></a>
 
 Within a subgraph, the events are always processed in the order they appear in the blocks, regardless of whether that is across multiple contracts or not.
 
-#### 13. Is it possible to differentiate between networks (mainnet, Kovan, Ropsten, local) from within event handlers? <a href="#13-is-it-possible-to-differentiate-between-networks-mainnet-kovan-ropsten-local-from-within-event-ha" id="13-is-it-possible-to-differentiate-between-networks-mainnet-kovan-ropsten-local-from-within-event-ha"></a>
+#### 13. Is it possible to differentiate between networks (mainnet, Kovan, Ropsten, local) from within event handlers? <a href="#id-13-is-it-possible-to-differentiate-between-networks-mainnet-kovan-ropsten-local-from-within-event-ha" id="id-13-is-it-possible-to-differentiate-between-networks-mainnet-kovan-ropsten-local-from-within-event-ha"></a>
 
 Yes. You can do this by importing `graph-ts` as per the example below:
 
@@ -585,23 +585,23 @@ import { dataSource } from '@graphprotocol/graph-ts'
 dataSource.network()dataSource.address()
 ```
 
-#### 14. Do you support block and call handlers on Rinkeby? <a href="#14-do-you-support-block-and-call-handlers-on-rinkeby" id="14-do-you-support-block-and-call-handlers-on-rinkeby"></a>
+#### 14. Do you support block and call handlers on Rinkeby? <a href="#id-14-do-you-support-block-and-call-handlers-on-rinkeby" id="id-14-do-you-support-block-and-call-handlers-on-rinkeby"></a>
 
 On Rinkeby we support block handlers, but without `filter: call`. Call handlers are not supported for the time being.
 
-#### 15. Can I import ethers.js or other JS libraries into my subgraph mappings? <a href="#15-can-i-import-ethers-js-or-other-js-libraries-into-my-subgraph-mappings" id="15-can-i-import-ethers-js-or-other-js-libraries-into-my-subgraph-mappings"></a>
+#### 15. Can I import ethers.js or other JS libraries into my subgraph mappings? <a href="#id-15-can-i-import-ethers-js-or-other-js-libraries-into-my-subgraph-mappings" id="id-15-can-i-import-ethers-js-or-other-js-libraries-into-my-subgraph-mappings"></a>
 
 Not currently, as mappings are written in AssemblyScript. One possible alternative solution to this is to store raw data in entities and perform logic that requires JS libraries on the client.
 
-#### 16. Is it possible to specify what block to start indexing on? <a href="#16-is-it-possible-to-specify-what-block-to-start-indexing-on" id="16-is-it-possible-to-specify-what-block-to-start-indexing-on"></a>
+#### 16. Is it possible to specify what block to start indexing on? <a href="#id-16-is-it-possible-to-specify-what-block-to-start-indexing-on" id="id-16-is-it-possible-to-specify-what-block-to-start-indexing-on"></a>
 
 Yes. `dataSources.source.startBlock` in the `subgraph.yaml` file specifies the number of the block that the data source starts indexing from. In most cases, we suggest using the block in which the contract was created: Start blocks
 
-#### 17. Are there some tips to increase the performance of indexing? My subgraph is taking a very long time to sync. <a href="#17-are-there-some-tips-to-increase-the-performance-of-indexing-my-subgraph-is-taking-a-very-long-tim" id="17-are-there-some-tips-to-increase-the-performance-of-indexing-my-subgraph-is-taking-a-very-long-tim"></a>
+#### 17. Are there some tips to increase the performance of indexing? My subgraph is taking a very long time to sync. <a href="#id-17-are-there-some-tips-to-increase-the-performance-of-indexing-my-subgraph-is-taking-a-very-long-tim" id="id-17-are-there-some-tips-to-increase-the-performance-of-indexing-my-subgraph-is-taking-a-very-long-tim"></a>
 
 Yes, you should take a look at the optional start block feature to start indexing from the block that the contract was deployed: [Start blocks](https://thegraph.com/docs/en/developer/create-subgraph-hosted/#start-blocks)
 
-#### 18. Is there a way to query the subgraph directly to determine the latest block number it has indexed? <a href="#18-is-there-a-way-to-query-the-subgraph-directly-to-determine-the-latest-block-number-it-has-indexed" id="18-is-there-a-way-to-query-the-subgraph-directly-to-determine-the-latest-block-number-it-has-indexed"></a>
+#### 18. Is there a way to query the subgraph directly to determine the latest block number it has indexed? <a href="#id-18-is-there-a-way-to-query-the-subgraph-directly-to-determine-the-latest-block-number-it-has-indexed" id="id-18-is-there-a-way-to-query-the-subgraph-directly-to-determine-the-latest-block-number-it-has-indexed"></a>
 
 Yes! Try the following command, substituting "organization/subgraphName" with the organization under it is published and the name of your subgraph:
 
@@ -609,7 +609,7 @@ Yes! Try the following command, substituting "organization/subgraphName" with th
 curl -X POST -d '{ "query": "{indexingStatusForCurrentVersion(subgraphName: \"organization/subgraphName\") { chains { latestBlock { hash number }}}}"}' https://api.thegraph.com/index-node/graphql
 ```
 
-#### 19. What networks are supported by The Graph? <a href="#19-what-networks-are-supported-by-the-graph" id="19-what-networks-are-supported-by-the-graph"></a>
+#### 19. What networks are supported by The Graph? <a href="#id-19-what-networks-are-supported-by-the-graph" id="id-19-what-networks-are-supported-by-the-graph"></a>
 
 The graph-node supports any EVM-compatible JSON RPC API chain.
 
@@ -647,15 +647,15 @@ In the Hosted Service, the following networks are supported:
 
 There is work in progress towards integrating other blockchains, you can read more in our repo: [RFC-0003: Multi-Blockchain Support](https://github.com/graphprotocol/rfcs/pull/8/files).
 
-#### 20. Is it possible to duplicate a subgraph to another account or endpoint without redeploying? <a href="#20-is-it-possible-to-duplicate-a-subgraph-to-another-account-or-endpoint-without-redeploying" id="20-is-it-possible-to-duplicate-a-subgraph-to-another-account-or-endpoint-without-redeploying"></a>
+#### 20. Is it possible to duplicate a subgraph to another account or endpoint without redeploying? <a href="#id-20-is-it-possible-to-duplicate-a-subgraph-to-another-account-or-endpoint-without-redeploying" id="id-20-is-it-possible-to-duplicate-a-subgraph-to-another-account-or-endpoint-without-redeploying"></a>
 
 You have to redeploy the subgraph, but if the subgraph ID (IPFS hash) doesn't change, it won't have to sync from the beginning.
 
-#### 21. Is this possible to use Apollo Federation on top of graph-node? <a href="#21-is-this-possible-to-use-apollo-federation-on-top-of-graph-node" id="21-is-this-possible-to-use-apollo-federation-on-top-of-graph-node"></a>
+#### 21. Is this possible to use Apollo Federation on top of graph-node? <a href="#id-21-is-this-possible-to-use-apollo-federation-on-top-of-graph-node" id="id-21-is-this-possible-to-use-apollo-federation-on-top-of-graph-node"></a>
 
 Federation is not supported yet, although we do want to support it in the future. At the moment, something you can do is use schema stitching, either on the client or via a proxy service.
 
-#### 22. Is there a limit to how many objects The Graph can return per query? <a href="#22-is-there-a-limit-to-how-many-objects-the-graph-can-return-per-query" id="22-is-there-a-limit-to-how-many-objects-the-graph-can-return-per-query"></a>
+#### 22. Is there a limit to how many objects The Graph can return per query? <a href="#id-22-is-there-a-limit-to-how-many-objects-the-graph-can-return-per-query" id="id-22-is-there-a-limit-to-how-many-objects-the-graph-can-return-per-query"></a>
 
 By default, query responses are limited to 100 items per collection. If you want to receive more, you can go up to 1000 items per collection and beyond that, you can paginate with:
 
@@ -663,23 +663,23 @@ By default, query responses are limited to 100 items per collection. If you want
 someCollection(first: 1000, skip: <number>) { ... }
 ```
 
-#### 23. If my dapp frontend uses The Graph for querying, do I need to write my query key into the frontend directly? What if we pay query fees for users – will malicious users cause our query fees to be very high? <a href="#23-if-my-dapp-frontend-uses-the-graph-for-querying-do-i-need-to-write-my-query-key-into-the-frontend" id="23-if-my-dapp-frontend-uses-the-graph-for-querying-do-i-need-to-write-my-query-key-into-the-frontend"></a>
+#### 23. If my dapp frontend uses The Graph for querying, do I need to write my query key into the frontend directly? What if we pay query fees for users – will malicious users cause our query fees to be very high? <a href="#id-23-if-my-dapp-frontend-uses-the-graph-for-querying-do-i-need-to-write-my-query-key-into-the-frontend" id="id-23-if-my-dapp-frontend-uses-the-graph-for-querying-do-i-need-to-write-my-query-key-into-the-frontend"></a>
 
 Currently, the recommended approach for a dapp is to add the key to the frontend and expose it to end users. That said, you can limit that key to a hostname, like _yourdapp.io_ and subgraph. The gateway is currently being run by Edge & Node. Part of the responsibility of a gateway is to monitor for abusive behavior and block traffic from malicious clients.
 
-#### 24. Where do I go to find my current subgraph on the Hosted Service? <a href="#24-where-do-i-go-to-find-my-current-subgraph-on-the-hosted-service" id="24-where-do-i-go-to-find-my-current-subgraph-on-the-hosted-service"></a>
+#### 24. Where do I go to find my current subgraph on the Hosted Service? <a href="#id-24-where-do-i-go-to-find-my-current-subgraph-on-the-hosted-service" id="id-24-where-do-i-go-to-find-my-current-subgraph-on-the-hosted-service"></a>
 
 Head over to the Hosted Service in order to find subgraphs that you or others deployed to the Hosted Service. You can find it [here.](https://thegraph.com/hosted-service)
 
-#### 25. Will the Hosted Service start charging query fees? <a href="#25-will-the-hosted-service-start-charging-query-fees" id="25-will-the-hosted-service-start-charging-query-fees"></a>
+#### 25. Will the Hosted Service start charging query fees? <a href="#id-25-will-the-hosted-service-start-charging-query-fees" id="id-25-will-the-hosted-service-start-charging-query-fees"></a>
 
 The Graph will never charge for the Hosted Service. The Graph is a decentralized protocol, and charging for a centralized service is not aligned with The Graph’s values. The Hosted Service was always a temporary step to help get to the decentralized network. Developers will have a sufficient amount of time to migrate to the decentralized network as they are comfortable.
 
-#### 26. When will the Hosted Service be shut down? <a href="#26-when-will-the-hosted-service-be-shut-down" id="26-when-will-the-hosted-service-be-shut-down"></a>
+#### 26. When will the Hosted Service be shut down? <a href="#id-26-when-will-the-hosted-service-be-shut-down" id="id-26-when-will-the-hosted-service-be-shut-down"></a>
 
 If and when there are plans to do this, the community will be notified well ahead of time with considerations made for any subgraphs built on the Hosted Service.
 
-#### 27. How do I upgrade a subgraph on mainnet? <a href="#27-how-do-i-upgrade-a-subgraph-on-mainnet" id="27-how-do-i-upgrade-a-subgraph-on-mainnet"></a>
+#### 27. How do I upgrade a subgraph on mainnet? <a href="#id-27-how-do-i-upgrade-a-subgraph-on-mainnet" id="id-27-how-do-i-upgrade-a-subgraph-on-mainnet"></a>
 
 If you’re a subgraph developer, you can upgrade a new version of your subgraph to the Studio using the CLI. It’ll be private at that point, but if you’re happy with it, you can publish to the decentralized Graph Explorer. This will create a new version of your subgraph that Curators can start signaling on.
 
@@ -687,25 +687,25 @@ If you’re a subgraph developer, you can upgrade a new version of your subgraph
 
 ## Subgraph Studio FAQs
 
-#### 1. How do I create an API Key? <a href="#1-how-do-i-create-an-api-key" id="1-how-do-i-create-an-api-key"></a>
+#### 1. How do I create an API Key? <a href="#id-1-how-do-i-create-an-api-key" id="id-1-how-do-i-create-an-api-key"></a>
 
 In the Subgraph Studio, you can create API Keys as needed and add security settings to each of them.
 
-#### 2. Can I create multiple API Keys? <a href="#2-can-i-create-multiple-api-keys" id="2-can-i-create-multiple-api-keys"></a>
+#### 2. Can I create multiple API Keys? <a href="#id-2-can-i-create-multiple-api-keys" id="id-2-can-i-create-multiple-api-keys"></a>
 
 A: Yes! You can create multiple API Keys to use in different projects. Check out the link [here](https://thegraph.com/studio/apikeys/).
 
-#### 3. How do I restrict a domain for an API Key? <a href="#3-how-do-i-restrict-a-domain-for-an-api-key" id="3-how-do-i-restrict-a-domain-for-an-api-key"></a>
+#### 3. How do I restrict a domain for an API Key? <a href="#id-3-how-do-i-restrict-a-domain-for-an-api-key" id="id-3-how-do-i-restrict-a-domain-for-an-api-key"></a>
 
 After creating an API Key, in the Security section, you can define the domains that can query a specific API Key.
 
-#### 4. Can I transfer my subgraph to another owner? <a href="#4-can-i-transfer-my-subgraph-to-another-owner" id="4-can-i-transfer-my-subgraph-to-another-owner"></a>
+#### 4. Can I transfer my subgraph to another owner? <a href="#id-4-can-i-transfer-my-subgraph-to-another-owner" id="id-4-can-i-transfer-my-subgraph-to-another-owner"></a>
 
 Yes, subgraphs that have been published to Mainnet can be transferred to a new wallet or a Multisig. You can do so by clicking the three dots next to the 'Publish' button on the subgraph's details page and selecting 'Transfer ownership'.
 
 Note that you will no longer be able to see or edit the subgraph in Studio once it has been transferred.
 
-#### 5. How do I find query URLs for subgraphs if I’m not the developer of the subgraph I want to use? <a href="#5-how-do-i-find-query-ur-ls-for-subgraphs-if-i-m-not-the-developer-of-the-subgraph-i-want-to-use" id="5-how-do-i-find-query-ur-ls-for-subgraphs-if-i-m-not-the-developer-of-the-subgraph-i-want-to-use"></a>
+#### 5. How do I find query URLs for subgraphs if I’m not the developer of the subgraph I want to use? <a href="#id-5-how-do-i-find-query-ur-ls-for-subgraphs-if-i-m-not-the-developer-of-the-subgraph-i-want-to-use" id="id-5-how-do-i-find-query-ur-ls-for-subgraphs-if-i-m-not-the-developer-of-the-subgraph-i-want-to-use"></a>
 
 You can find the query URL of each subgraph in the Subgraph Details section of The Graph Explorer. When you click on the “Query” button, you will be directed to a pane wherein you can view the query URL of the subgraph you’re interested in. You can then replace the `<api_key>` placeholder with the API key you wish to leverage in the Subgraph Studio.
 

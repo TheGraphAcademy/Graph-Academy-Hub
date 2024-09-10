@@ -20,7 +20,7 @@ You could also build out your own server, process the transactions there, save t
 
 Blockchain properties like finality, chain reorganizations, or uncled blocks complicate this process further, and make it not just time consuming but conceptually hard to retrieve correct query results from blockchain data.
 
-The Graph solves this with a decentralized protocol that indexes and enables the performant and efficient querying of blockchain data. These APIs (indexed "subgraphs") can then be queried with a standard GraphQL API. Today, there is a hosted service as well as a decentralized protocol with the same capabilities. Both are backed by the open source implementation of [Graph Node](https://github.com/graphprotocol/graph-node).
+The Graph solves this with a decentralized protocol that indexes and enables the performant and efficient querying of blockchain data. These APIs (indexed "subgraphs") can then be queried with a standard GraphQL API, backed by the open source implementation of [Graph Node](https://github.com/graphprotocol/graph-node).
 
 ### How The Graph Works <a href="#how-the-graph-works" id="how-the-graph-works"></a>
 

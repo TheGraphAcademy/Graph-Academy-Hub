@@ -30,7 +30,7 @@ Whenever a Delegator wants to undelegate, their tokens are subject to a 28-day u
 
 One thing to consider as well is choosing an Indexer wisely. If you choose an Indexer who was not trustworthy, or not doing a good job, you will want to undelegate, which means you will be losing a lot of opportunities to earn rewards, which can be just as bad as burning GRT.
 
-![Delegation unbonding](https://thegraph.com/docs/img/Delegation-Unbonding.png)__
+![Delegation unbonding](https://thegraph.com/docs/img/Delegation-Unbonding.png)
 
 _Note the 0.5% fee in the Delegation UI, as well as the 28 day unbonding period._
 
