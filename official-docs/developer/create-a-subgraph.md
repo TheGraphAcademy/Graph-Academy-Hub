@@ -14,41 +14,6 @@ The Graph Network supports subgraphs indexing mainnet Ethereum:
 
 * `mainnet`
 
-**Additional Networks are supported in beta on the Hosted Service**:
-
-* `mainnet`
-* `kovan`
-* `rinkeby`
-* `ropsten`
-* `goerli`
-* `poa-core`
-* `poa-sokol`
-* `xdai` (now known as Gnosis Chain)
-* `near-mainnet`
-* `near-testnet`
-* `matic` (now known as Polygon)
-* `mumbai`
-* `fantom`
-* `bsc` (now known as BNB Chain)
-* `chapel`
-* `clover`
-* `avalanche`
-* `fuji`
-* `celo`
-* `celo-alfajores`
-* `fuse`
-* `moonriver`
-* `mbase`
-* `arbitrum-one`
-* `arbitrum-rinkeby`
-* `optimism`
-* `optimism-kovan`
-* `aurora`
-* `aurora-testnet`
-* `boba`
-
-The Graph's Hosted Service relies on the stability and reliability of the underlying technologies, namely the provided JSON RPC endpoints. Newer networks will be marked as being in beta until the network has proven itself in terms of stability, reliability, and scalability. During this beta period, there is a risk of downtime and unexpected behaviour.
-
 Remember that you will **not be able** to publish a subgraph that indexes a non-mainnet network to the decentralized Graph Network in [Subgraph Studio](https://thegraph.com/docs/en/studio/subgraph-studio/).
 
 ### From An Existing Contract <a href="#from-an-existing-contract" id="from-an-existing-contract"></a>
@@ -83,7 +48,7 @@ specVersion: 0.0.4description: Gravatar for Ethereumrepository: https://github.c
 
 The important entries to update for the manifest are:
 
-* `description`: a human-readable description of what the subgraph is. This description is displayed by the Graph Explorer when the subgraph is deployed to the Hosted Service.
+* `description`: a human-readable description of what the subgraph is. This description is displayed by the Graph Explorer when the subgraph is deployed
 * `repository`: the URL of the repository where the subgraph manifest can be found. This is also displayed by The Graph Explorer.
 * `features`: a list of all used [feature](https://thegraph.com/docs/en/developer/create-subgraph-hosted/#experimental-features) names.
 * `dataSources.source`: the address of the smart contract the subgraph sources, and the ABI of the smart contract to use. The address is optional; omitting it allows to index matching events from all contracts.
@@ -536,7 +501,7 @@ Note that using a feature without declaring it will incur a **validation error**
 
 A common use case for combining IPFS with Ethereum is to store data on IPFS that would be too expensive to maintain on-chain, and reference the IPFS hash in Ethereum contracts.
 
-Given such IPFS hashes, subgraphs can read the corresponding files from IPFS using `ipfs.cat` and `ipfs.map`. To do this reliably, it is required that these files are pinned to an IPFS node with high availability, so that the [hosted service](https://thegraph.com/hosted-service) IPFS node can find them during indexing.
+Given such IPFS hashes, subgraphs can read the corresponding files from IPFS using `ipfs.cat` and `ipfs.map`. To do this reliably, it is required that these files are pinned to an IPFS node with high availability.
 
 > **Note:** The Graph Network does not yet support `ipfs.cat` and `ipfs.map`, and developers should not deploy subgraphs using that functionality to the network via the Studio.
 

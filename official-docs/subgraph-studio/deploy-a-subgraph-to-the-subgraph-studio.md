@@ -9,7 +9,7 @@ Deploying a Subgraph to the Subgraph Studio is quite simple. This will take you 
 
 ### Installing Graph CLI <a href="#installing-graph-cli" id="installing-graph-cli"></a>
 
-We are using the same CLI to deploy subgraphs to our [hosted service](https://thegraph.com/hosted-service/) and to the [Subgraph Studio](https://thegraph.com/studio/). Here are the commands to install graph-cli. This can be done using npm or yarn.
+We are using the same CLI to deploy subgraphs to the [Subgraph Studio](https://thegraph.com/studio/). Here are the commands to install graph-cli. This can be done using npm or yarn.
 
 **Install with yarn:**
 

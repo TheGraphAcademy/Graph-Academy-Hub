@@ -103,16 +103,6 @@ $ graph build
 
 Once your subgraph has been created, you can deploy your subgraph by using the `graph deploy` CLI command after running the `graph create` CLI command:
 
-**Hosted Service**
-
-```
-graph create subgraph-name --product hosted-service # creates a subgraph on a local Graph Node (on the Hosted Service, this is done via the UI)
-```
-
-```
-graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ --access-token <your-access-token>
-```
-
 **Local Graph Node (based on default configuration):**
 
 ```
@@ -139,10 +129,6 @@ The [Cosmos Hub blockchain](https://hub.cosmos.network/) is the first blockchain
 
 Cosmos Hub mainnet is `cosmoshub-4`. Cosmos Hub current testnet is `theta-testnet-001`.\
 Other Cosmos Hub networks, i.e. `cosmoshub-3`, are halted, therefore no data is provided for them.
-
-#### Osmosis <a href="#osmosis" id="osmosis"></a>
-
-> Osmosis support in Graph Node and on the Hosted Service is in beta: please contact the graph team with any questions about building Osmosis subgraphs!
 
 **What is Osmosis?**
 

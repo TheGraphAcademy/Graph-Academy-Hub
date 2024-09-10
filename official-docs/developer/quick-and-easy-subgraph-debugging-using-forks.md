@@ -25,12 +25,12 @@ export function handleNewGravatar(event: NewGravatar): void {  let gravatar = ne
 export function handleUpdatedGravatar(event: UpdatedGravatar): void {  let gravatar = Gravatar.load(event.params.id.toI32().toString())  if (gravatar == null) {    log.critical('Gravatar not found!', [])    return  }  gravatar.owner = event.params.owner  gravatar.displayName = event.params.displayName  gravatar.imageUrl = event.params.imageUrl  gravatar.save()}
 ```
 
-Oops, how unfortunate, when I deploy my perfect looking subgraph to the [Hosted Service](https://thegraph.com/hosted-service/) it fails with the _"Gravatar not found!"_ error.
+Oops, how unfortunate, when I deploy my perfect looking subgraph.
 
 The usual way to attempt a fix is:
 
 1. Make a change in the mappings source, which you believe will solve the issue (while I know it won't).
-2. Re-deploy the subgraph to the [Hosted Service](https://thegraph.com/hosted-service/) (or another remote Graph node).
+2. Re-deploy the subgraph
 3. Wait for it to sync-up.
 4. If it breaks again go back to 1, otherwise: Hooray!
 
